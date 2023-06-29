@@ -27,11 +27,7 @@ const cards = [
 
       // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
     ],
-    title: React.createElement(AnimatedText, {
-      color: "black",
-      text: "Vibe Interior",
-      variant: "h3"
-    }),
+    title: "cacat",
     divider: React.createElement(SimpleDivider, {
       animate: true,
       loop: true,
@@ -102,11 +98,7 @@ const cards = [
 
       // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
     ],
-    title: React.createElement(AnimatedText, {
-      color: "black",
-      text: "Nextjs Component Library",
-      variant: "h3"
-    }),
+    title: "cacat",
     divider: React.createElement(SimpleDivider, {
       animate: true,
       loop: true,
