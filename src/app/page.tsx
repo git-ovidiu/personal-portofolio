@@ -20,13 +20,13 @@ import Projects from "main/components/Projects/Projects"
 
 
 
-const smoothScrollToSection = (e, sectionId) => {
+const smoothScrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string): void => {
 	e.preventDefault();
-	const target = document.querySelector(sectionId);
+	const target = document.querySelector(sectionId) as HTMLElement; // Type assertion
 	if (target) {
 		window.scrollTo({
 			top: target.offsetTop,
-			behavior: 'smooth',
+			behavior: "smooth",
 		});
 	}
 };
@@ -37,11 +37,11 @@ export default function Homepage() {
 	useEffect(() => {
 		// Scroll to section if the URL contains a hash
 		if (window.location.hash) {
-			const target = document.querySelector(window.location.hash);
+			const target = document.querySelector(window.location.hash) as HTMLElement; // Type assertion
 			if (target) {
 				window.scrollTo({
 					top: target.offsetTop,
-					behavior: 'smooth',
+					behavior: "smooth",
 				});
 			}
 		}
