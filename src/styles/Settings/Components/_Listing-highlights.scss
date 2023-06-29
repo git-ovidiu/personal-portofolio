@@ -1,0 +1,9 @@
+@use '../../Settings/Design/Colors' as *;
+
+.styleguide{
+  --s-custom-wrapper-background-primary: #{$primary-color};
+  --s-custom-wrapper-background-secondary: #{$secondary-color};
+  --s-custom-wrapper-background-tertiary: #{$tertiary-color};
+
+  --m-card-overlapped-side-distance-desktop: 30px;
+}

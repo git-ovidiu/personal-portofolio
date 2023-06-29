@@ -1,7 +1,11 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import '../styles/main.module.scss';
+import '../styles/bootstrap/css/bootstrap-grid.css';
+import {Outfit} from "next/font/google"
+import styles from '../styles/main.module.scss';
 
-const inter = Inter({ subsets: ['latin'] })
+
+const outfit = Outfit({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={styles['styleguide']}>
+      <div className={outfit.className}>
+        {children}
+      </div>
+      </body>
     </html>
   )
 }

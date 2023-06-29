@@ -1,0 +1,29 @@
+
+.m-listing-logos{
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+
+  picture{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	column-gap: 50px;
+	row-gap: 70px;
+	height: 100%;
+
+	img{
+	  width: 100%;
+	  filter: grayscale(100%);
+	  transition: all 0.37s;
+	  transform: scale(1);
+
+	  &:hover{
+		filter: none;
+		transform: scale(1.025);
+	  }
+	}
+  }
+
+}

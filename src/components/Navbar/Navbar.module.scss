@@ -1,0 +1,23 @@
+
+
+.m-navbar{
+  position: fixed;
+  z-index: 23;
+  display: flex;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  bottom: 20px;
+  padding: 20px;
+
+  a{
+    writing-mode: vertical-rl;
+    transition: all 1s;
+    transform: rotate(180deg);
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}

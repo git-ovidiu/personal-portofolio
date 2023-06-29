@@ -1,0 +1,25 @@
+
+.o-projects{
+
+  .ul-list{
+	display: flex;
+	flex-direction: column;
+	gap: 7.5px;
+  }
+  .divider{
+	margin-bottom: 24px;
+  }
+
+  .splide{
+	background: red;
+
+	&__splide__track{
+
+	background: red;
+	}
+
+	.splide--slide{
+	  background: red;
+	}
+  }
+}

@@ -1,0 +1,9 @@
+@use '../../Settings/Design/Colors' as *;
+
+.styleguide{
+  :host{
+
+  }
+  --a-button-slide-background: #{$primary-color};
+  --a-button-slide-background-hover: #{$tertiary-color};
+}
