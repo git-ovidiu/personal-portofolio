@@ -33,6 +33,7 @@ export default function Projects() {
           <InteractivePanel
             button={buttons.map((button, index) => (
               <ButtonSlideSecond
+                  key={index}
                 hover_effect="tertiary"
                 icon={button.icon}
                 iconPosition="right"
@@ -86,9 +87,9 @@ export default function Projects() {
                 buttons={
                     <>
                         {card.actions?.map((action, actionIndex) => (
-                            <div  className="card-buttons-container">
+                            <div  className="card-buttons-container"
+                                  key={actionIndex}>
                               <ButtonLineDrawing
-                            key={actionIndex}
                                 icon={action.icon}
                                 icon-position="right"
                                 line-effect="line-below"
