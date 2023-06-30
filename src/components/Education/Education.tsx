@@ -12,49 +12,12 @@ import {
 } from "@git-ovidiu/nextjs-component-library"
 import {Splide, SplideSlide} from "@splidejs/react-splide"
 import {AiOutlineDownload} from "react-icons/ai"
-// Default theme
 import '@splidejs/react-splide/css';
-
-// or other themes
 import '@splidejs/react-splide/css/skyblue';
 import '@splidejs/react-splide/css/sea-green';
-
-// or only core styles
 import '@splidejs/react-splide/css/core';
 
 export default function Education() {
-
-
-	const logos = [
-		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/git.png",
-		},
-		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/hubspot.png",
-		},
-		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/lit.png",
-		},
-		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/js.png",
-		},
-		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/Nextjs-logo.png",
-		},
-		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/sass.png",
-		},
-		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/ts.png",
-		},
-		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/storybook.png",
-		},
-		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/React.png",
-		}
-	];
-
 
 	return (
 		<div className={styles["o-education"]}>
@@ -110,7 +73,7 @@ export default function Education() {
 										is-overlapped
 										image={
 										<div className={styles["card-image"]}>
-											<Image alt={"Placeholder"} src={"https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/New%20Project.jpg"} fill/>
+											<Image alt={"Placeholder"} src={"https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/Screenshot%202023-06-28%20at%2023.52.07.png"} fill/>
 										</div>
 										}
 										labels={
@@ -165,7 +128,7 @@ export default function Education() {
 										is-overlapped
 										image={
 											<div className={styles["card-image"]}>
-												<Image alt={"Placeholder"} src={"https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/univ-bv.jpg"} fill/>
+												<Image alt={"Placeholder"} src={"https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/Screenshot%202023-06-28%20at%2023.52.07.png"} fill/>
 											</div>
 										}
 										labels={
