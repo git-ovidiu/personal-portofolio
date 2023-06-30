@@ -10,6 +10,11 @@ const cards = [
     },
     labels: [
       {
+        text: "nextJs",
+        color: "white",
+        background: "#000",
+      },
+      {
         text: "javascript",
         color: "white",
         background: "#E5CE18",
@@ -19,15 +24,14 @@ const cards = [
         color: "white",
         background: "#B4497F",
       },
-      {
-        text: "nextJs",
-        color: "white",
-        background: "#000",
-      },
 
       // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
     ],
-    title: "cacat",
+    title: React.createElement(AnimatedText, {
+      color: "black",
+      text: "Vibe Interior",
+      variant: "h3"
+    }),
     divider: React.createElement(SimpleDivider, {
       animate: true,
       loop: true,
@@ -98,7 +102,11 @@ const cards = [
 
       // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
     ],
-    title: "cacat",
+    title: React.createElement(AnimatedText, {
+      color: "black",
+      text: "Nextjs Component Library",
+      variant: "h3"
+    }),
     divider: React.createElement(SimpleDivider, {
       animate: true,
       loop: true,

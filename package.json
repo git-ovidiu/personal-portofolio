@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@git-ovidiu/nextjs-component-library": "^20.1.4",
+    "@git-ovidiu/nextjs-component-library": "^20.1.5",
     "@splidejs/react-splide": "^0.7.12",
     "@types/node": "20.3.1",
     "@types/react": "18.2.13",

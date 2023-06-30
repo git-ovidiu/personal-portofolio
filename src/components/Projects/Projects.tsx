@@ -70,7 +70,7 @@ export default function Projects() {
                 }
                 description={
                   <>
-                    <h3>{card.title}</h3>
+                    {card.title}
                     <div className={styles.divider}>{card.divider}</div>
                     <p>{card.description}</p>
                     <br/>

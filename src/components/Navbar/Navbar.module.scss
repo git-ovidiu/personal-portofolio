@@ -2,12 +2,26 @@
 
 .m-navbar{
   position: fixed;
-  z-index: 23;
+  top: 0;
+  right: 0;
+  height: 50px;
   display: flex;
-  left: 0;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 992px){
+.m-navbar{
+  position: fixed;
+  right: unset;
+  top: unset;
+  height: unset;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  left: 0;
+  z-index: 23;
   gap: 50px;
   bottom: 20px;
   padding: 20px;
@@ -20,4 +34,5 @@
     font-size: 20px;
     cursor: pointer;
   }
+}
 }
