@@ -2,10 +2,10 @@
 
 .m-navbar{
   position: fixed;
+  display: none;
   top: 0;
   right: 0;
   height: 50px;
-  display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }

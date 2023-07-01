@@ -82,7 +82,7 @@ export default function Avatar() {
                   color="#000"
                   height="2px"
                   loop
-                  width="100vw"
+                  width="100%"
                 />
               </div>
               <div
@@ -118,7 +118,7 @@ export default function Avatar() {
                   color="#000"
                   height="2px"
                   loop
-                  width="100vw"
+                  width="100%"
                 />
               </div>
             </motion.div>
