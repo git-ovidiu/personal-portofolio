@@ -1,5 +1,55 @@
+@use '../../styles/main.module.scss' as *;
 
 .o-projects{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  --o-interactive-panel-splide-background: transparent;
+  --o-interactive-panel-splide-box-shadow: none;
+  --o-interactive-panel-splide-card-buttons-pagination-margin-bottom: 55px;
+  --m-card-background: rgba(255, 255, 255, 0.64);
+
+
+  img{
+	box-shadow: 0px 0px 12px rgba(16, 24, 40, 0.08);
+  }
+
+
+
+  .shape{
+	position: absolute;
+	top: -150px;
+	left: -50px;
+	width: 100%;
+	height: 100%;
+	filter: blur(37px);
+
+	img {
+	  position: absolute;
+	  animation: scale 10s infinite linear;
+	  z-index: -2;
+	  opacity: 0.4;
+	  top: 0;
+	  left: 0;
+
+	  @keyframes scale {
+		0% {
+		  transform: scale(1);
+		  filter: blur(37px);
+		}
+		50% {
+		  transform: scale(1.1);
+		  filter: blur(0px);
+
+		}
+		100% {
+		  transform: scale(1);
+		  filter: blur(37px);
+
+		}
+	  }
+	}
+  }
 
   .ul-list{
 	display: flex;
@@ -10,16 +60,23 @@
 	margin-bottom: 24px;
   }
 
-  .splide{
-	background: red;
+}
 
-	&__splide__track{
 
-	background: red;
-	}
+@media (min-width: 992px){
+  .o-projects{
+	.shape{
+	  right: 75px;
+	  bottom: -100px;
+	  top: unset;
+	  left: unset;
 
-	.splide--slide{
-	  background: red;
+	  img{
+		right: 0;
+		bottom: 0;
+		top: unset;
+		left: unset;
+	  }
 	}
   }
 }

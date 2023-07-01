@@ -146,26 +146,9 @@ export default function Homepage() {
 
 					<CustomGridRow vertical-alignment="center">
 						<CustomGridColumn
-							column-background="black"
-							column-background-opacity="0.37"
-							column-padding-top="unset"
-							columns-equal-paddings
-							lg={6}
-							xs={12}
-						>
-
-							<motion.div
-								initial={{opacity: 0, y: 50}}
-								animate={{opacity: 1, y: 0}}
-							>
-								<ListingLogos/>
-							</motion.div>
-						</CustomGridColumn>
-						<CustomGridColumn
 							column-padding-top="unset"
 							columns-equal-paddings
 							lg={5}
-							lg-offset={1}
 							xs={12}
 							style={{zIndex: 3}}
 						>
@@ -181,6 +164,24 @@ export default function Homepage() {
 										fastidii</h6>}
 								/>
 
+							</motion.div>
+						</CustomGridColumn>
+						<CustomGridColumn
+							column-background="black"
+							column-background-opacity="0.37"
+							column-padding-top="unset"
+							columns-equal-paddings
+							lg={6}
+							xs={12}
+							lg-offset={1}
+						>
+
+							<motion.div
+								initial={{opacity: 0, y: 50}}
+								animate={{opacity: 1, y: 0}}
+								className={styles["m-listing-logos"]}
+							>
+								<ListingLogos/>
 							</motion.div>
 						</CustomGridColumn>
 					</CustomGridRow>

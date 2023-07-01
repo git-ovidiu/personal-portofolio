@@ -11,32 +11,33 @@ export default function ListingLogos() {
 
 	const logos = [
 		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/git.png",
+			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/lit.png",
 		},
 		{
 			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/hubspot.png",
 		},
 		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/lit.png",
+			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/js.png",
 		},
 		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/js.png",
+			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/git.png",
+		},
+		{
+			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/React.png",
+		},
+		{
+			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/sass.png",
+		},
+
+		{
+			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/storybook.png",
 		},
 		{
 			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/Nextjs-logo.png",
 		},
 		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/sass.png",
-		},
-		{
 			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/ts.png",
 		},
-		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/storybook.png",
-		},
-		{
-			imageUrl: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/React.png",
-		}
 	];
 
 
@@ -55,7 +56,7 @@ export default function ListingLogos() {
 					// 	open-in-new-tab={"false"}
 					// />
 					<picture key={index}>
-						<Image src={logo.imageUrl} alt="Logo Placeholder" width={700} height={60} />
+						<Image src={logo.imageUrl} alt="Logo Placeholder" width={700} height={50} />
 					</picture>
 				))}
 			</picture>

@@ -13,9 +13,14 @@
 	position: absolute;
   }
 
+  .m-listing-logos{
+	border: 2px solid red;
+  }
+
 
   .homepage-shape {
 	filter: blur(40px);
+	  z-index: 0;
 
 	img {
 	  animation: scale 5s infinite linear;

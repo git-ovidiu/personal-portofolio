@@ -3,6 +3,7 @@ import React from "react";
 import {MdOutlineLiveTv} from "react-icons/md"
 
 const cards = [
+    // vibe interior
   {
     image: {
       src: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/Screenshot%202023-06-28%20at%2023.52.07.png",
@@ -22,7 +23,7 @@ const cards = [
       {
         text: "scss",
         color: "white",
-        background: "#B4497F",
+        background: "#B4497E",
       },
 
       // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
@@ -76,7 +77,7 @@ const cards = [
 
 
 
-
+// nextjs component library
 
   {
     image: {
@@ -85,21 +86,35 @@ const cards = [
     },
     labels: [
       {
-        text: "javascript",
-        color: "white",
-        background: "#E5CE18",
-      },
-      {
-        text: "scss",
-        color: "white",
-        background: "#B4497F",
-      },
-      {
         text: "nextJs",
         color: "white",
         background: "#000",
       },
-
+      {
+        text: "typescript",
+        color: "white",
+        background: "#0D65C0",
+      },
+      {
+        text: "scss",
+        color: "white",
+        background: "#B4497E",
+      },
+      {
+        text: "rollup",
+        color: "white",
+        background: "#F99E2E",
+      },
+      {
+        text: "framer-motion",
+        color: "white",
+        background: "#433982",
+      },
+      {
+        text: "storybook",
+        color: "white",
+        background: "#F2276E",
+      },
       // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
     ],
     title: React.createElement(AnimatedText, {
@@ -117,6 +132,7 @@ const cards = [
       height: "4px",
       width: "75px"
     }),
+    description: "short description of the comp library",
     subtitle: "Other Libraries",
     libs: [
       {
