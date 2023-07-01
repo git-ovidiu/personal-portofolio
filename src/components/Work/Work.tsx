@@ -69,6 +69,7 @@ export default function Work() {
                     <p>skills: </p>
                     {workCard.labels?.map((label, labelIndex) =>(
                         <Label
+                            key={labelIndex}
                             background-color={label.background}
                             color={label.color}
                             text={label.text}
