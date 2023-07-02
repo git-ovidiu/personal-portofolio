@@ -47,7 +47,7 @@ const workCard = {
 			background: "#F56924",
 		},
 	],
-	title: " FrozenLogic",
+	title: " FrozenLogic (de facut cardul sticky)",
 	description: "vix ex vidisse tempor nullam tempor tibique reformidans minim ornatus utroque. "
 }
 

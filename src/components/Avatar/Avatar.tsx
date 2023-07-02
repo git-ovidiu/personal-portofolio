@@ -1,7 +1,7 @@
 "use client";
 
 import React, { Component } from "react";
-import * as NextComponents from "@git-ovidiu/nextjs-component-library";
+import * as NextComponents from "@git-ovidiu/nextjs-component-library"
 
 const {
   MediaImage,
@@ -11,6 +11,8 @@ const {
   CustomWrapper,
   CustomGridRow,
 } = NextComponents;
+
+
 
 import { motion } from "framer-motion";
 import Image from "next/image";

@@ -1,0 +1,98 @@
+@use '../../styles/main.module' as *;
+
+.o-contact{
+  //height: 100vh;
+
+  .description{
+    margin-top: 12px;
+  }
+
+  .divider-container{
+    width: 100%;
+  }
+
+  .content{
+    .contact-with-icon{
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .icon-and-text{
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        :first-child{
+          line-height: 0;
+        }
+      }
+    }
+  }
+
+  form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background: white;
+    border-radius: $border-radius-m;
+    box-shadow: $box-shadow-xxl;
+
+    .name-and-company{
+      display: flex;
+      width: 100%;
+      column-gap: 32px;
+
+    .name{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      input{
+        width: 100%;
+      }
+    }
+    .company{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      input{
+        width: 100%;
+      }
+    }
+    }
+
+    .email{
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      input{
+        width: 100%;
+      }
+    }
+
+    textarea{
+      margin-top: 32px;
+      min-height: 100px;
+      min-width: 100%;
+      max-width: 100%;
+    }
+
+    input{
+      padding: 15px;
+      background: rgba(100, 100, 100, 0.18);
+      border: none;
+      border-radius: $border-radius-m;
+      font-size: calc($font-size-input / 1.2);
+    }
+    label{
+      padding: 0 0 12px 0;
+    }
+
+
+
+    .action{
+      margin: 32px auto 0 auto;
+    }
+  }
+}

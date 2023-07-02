@@ -25,9 +25,10 @@ export default function Education() {
 			<section className={styles["o-listing-highlights"]}>
 				<CustomWrapper
 					border-radius="0px"
-					space-top="m"
-					space-bottom="m"
+					space-top="0"
+					space-bottom="0"
 					custom-background-color={"#f0e5c7"}
+					full-height
 				>
 					<CustomGridRow vertical-alignment="center">
 						<CustomGridColumn lg={6} xs={12}>

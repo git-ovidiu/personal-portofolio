@@ -35,9 +35,10 @@ export default function Work() {
     <div className={styles["o-work"]}>
       <CustomWrapper
         border-radius="0px"
-        space-bottom="m"
-        space-top="m"
+        space-bottom="0"
+        space-top="0"
         custom-background-color={"white"}
+        full-height
       >
         <CustomGridRow vertical-alignment="">
           <CustomGridColumn
@@ -50,7 +51,7 @@ export default function Work() {
             lg={4}
             xs={12}
           >
-            <>
+            <div className={styles["card-column"]} >
               <div className={styles["card-container"]}>
                 <Card
                   image={
@@ -90,7 +91,7 @@ export default function Work() {
                   buttons={"na na"}
                 />
               </div>
-            </>
+            </div>
           </CustomGridColumn>
           <CustomGridColumn
             column-background="black"

@@ -1,12 +1,16 @@
 
 
 .o-work{
-	//border: 2px solid red;
+
+
+  .card-column{
+	border: 2px solid blue;
+	position: sticky;
+	top: 150px;
+	position: -webkit-sticky;
+  }
 
   .card-container{
-	position: sticky;
-	top: 50px;
-	position: -webkit-sticky;
 
 	.card-image-container{
 	position: relative;

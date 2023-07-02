@@ -33,15 +33,17 @@
 
 
   .avatar-image {
-	width: 150px;
-	height: 150px;
 	position: relative;
 	z-index: 2;
 	margin: 0 auto;
+	width: 150px;
+	height: 150px;
 
 	.avatar-container {
 
 	  img {
+	width: 150px;
+	height: 150px;
 	  z-index: 2;
 		border-radius: 50%;
 		border: 2px solid black;
@@ -56,7 +58,6 @@
 	}
 
 	.image-container {
-	  border: 2px solid blue;
 	}
 
 	.divider {
@@ -66,12 +67,12 @@
 	  z-index: 1;
 
 	  &.horizontal-divider-left {
-		left: -100%;
+		left: -100px;
 		top: 75px;
 	  }
 
 	  &.horizontal-divider-right {
-		right: -100%;
+		right: -100px;
 		top: 75px;
 		transform: scaleX(-1);
 

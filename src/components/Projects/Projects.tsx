@@ -33,6 +33,7 @@ export default function Projects() {
         custom-background-color="#f0e5c7"
         space-bottom="m"
         space-top="m"
+        full-height
       >
         <CustomGridRow vertical-alignment="center">
           <div className={styles["shape"]}>
@@ -66,10 +67,10 @@ export default function Projects() {
             card={cards.map((card, index) => (
               <motion.div
                 key={index}
-                animate={{ scale: 1.05 }}
+                animate={{ scale: 0.9 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: false }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
               >
                 <Card
                   is-overlapped
@@ -113,7 +114,7 @@ export default function Projects() {
                     <motion.div
                       animate={{ scale: 1.05 }}
                       whileInView={{ scale: 1 }}
-                      transition={{ duration: 1 }}
+                      transition={{ duration: 0.5 }}
                     >
                       {card.title}
                       <div className={styles.divider}>{card.divider}</div>

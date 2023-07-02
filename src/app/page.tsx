@@ -1,203 +1,226 @@
-"use client"
-import Avatar from "main/components/Avatar/Avatar"
+"use client";
+import Avatar from "main/components/Avatar/Avatar";
 import {
-	CustomWrapper,
-	CustomShape,
-	CustomGridRow,
-	CustomGridColumn,
-	AnimatedText, Description, Logo
-} from "@git-ovidiu/nextjs-component-library"
-import {motion} from "framer-motion";
+  CustomWrapper,
+  CustomShape,
+  CustomGridRow,
+  CustomGridColumn,
+  AnimatedText,
+  Description,
+  Logo,
+} from "@git-ovidiu/nextjs-component-library";
+import { motion } from "framer-motion";
 import styles from "./Homepage.module.scss";
-import ListingLogos from "main/components/Listing-logos/ListingLogos"
-import Image from "next/image"
-import Navbar from "main/components/Navbar/Navbar"
-import Link from "next/link"
-import {useEffect} from "react"
-import Education from "main/components/Education/Education"
-import Work from "main/components/Work/Work"
-import Projects from "main/components/Projects/Projects"
+import ListingLogos from "main/components/Listing-logos/ListingLogos";
+import Image from "next/image";
+import Navbar from "main/components/Navbar/Navbar";
+import Link from "next/link";
+import { useEffect } from "react";
+import Education from "main/components/Education/Education";
+import Work from "main/components/Work/Work";
+import Projects from "main/components/Projects/Projects";
+import Contact from "main/components/Contact/Contact";
 
-
-
-const smoothScrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string): void => {
-	e.preventDefault();
-	const target = document.querySelector(sectionId) as HTMLElement; // Type assertion
-	if (target) {
-		window.scrollTo({
-			top: target.offsetTop,
-			behavior: "smooth",
-		});
-	}
+const smoothScrollToSection = (
+  e: React.MouseEvent<HTMLAnchorElement>,
+  sectionId: string
+): void => {
+  e.preventDefault();
+  const target = document.querySelector(sectionId) as HTMLElement; // Type assertion
+  if (target) {
+    window.scrollTo({
+      top: target.offsetTop,
+      behavior: "smooth",
+    });
+  }
 };
 
-
 export default function Homepage() {
+  useEffect(() => {
+    // Scroll to section if the URL contains a hash
+    if (window.location.hash) {
+      const target = document.querySelector(
+        window.location.hash
+      ) as HTMLElement; // Type assertion
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    }
+  }, []);
 
-	useEffect(() => {
-		// Scroll to section if the URL contains a hash
-		if (window.location.hash) {
-			const target = document.querySelector(window.location.hash) as HTMLElement; // Type assertion
-			if (target) {
-				window.scrollTo({
-					top: target.offsetTop,
-					behavior: "smooth",
-				});
-			}
-		}
-	}, []);
+  return (
+    <section className={styles["homepage"]}>
+      <div className={styles["about-container"]}>
+        <div id="about">
+          <Avatar />
 
-	return (
-		<section>
-			<div className={styles["homepage"]} id="about">
-				<Avatar/>
-				
-				<Navbar
-					link={
-					<>
-						<Link href="/#about" passHref legacyBehavior>
-							<a onClick={(e) => smoothScrollToSection(e, '#about')}>About</a>
-						</Link>
+          <Navbar
+            link={
+              <>
+                <Link href="/#about" passHref legacyBehavior>
+                  <a onClick={(e) => smoothScrollToSection(e, "#about")}>
+                    About
+                  </a>
+                </Link>
 
-						<Link href="/#education" passHref legacyBehavior>
-							<a onClick={(e) => smoothScrollToSection(e, '#education')}>Education</a>
-						</Link>
+                <Link href="/#education" passHref legacyBehavior>
+                  <a onClick={(e) => smoothScrollToSection(e, "#education")}>
+                    Education
+                  </a>
+                </Link>
 
-						<Link href="/#work" passHref legacyBehavior>
-							<a onClick={(e) => smoothScrollToSection(e, '#work')}>Work</a>
-						</Link>
+                <Link href="/#work" passHref legacyBehavior>
+                  <a onClick={(e) => smoothScrollToSection(e, "#work")}>Work</a>
+                </Link>
 
-						<Link href="/#projects" passHref legacyBehavior>
-							<a onClick={(e) => smoothScrollToSection(e, '#projects')}>Projects</a>
-						</Link>
+                <Link href="/#projects" passHref legacyBehavior>
+                  <a onClick={(e) => smoothScrollToSection(e, "#projects")}>
+                    Projects
+                  </a>
+                </Link>
 
-						<Link href="/#contact" passHref legacyBehavior>
-							<a onClick={(e) => smoothScrollToSection(e, '#contact')}>Contact</a>
-						</Link>
-					</>
-					}
-				/>
+                <Link href="/#contact" passHref legacyBehavior>
+                  <a onClick={(e) => smoothScrollToSection(e, "#contact")}>
+                    Contact
+                  </a>
+                </Link>
+              </>
+            }
+          />
 
-				<CustomWrapper
-					border-radius="0px"
-					space-top="0"
-					space-bottom="m"
-					custom-background-color={"transparent"}
-				>
-					<CustomGridRow vertical-alignment="center">
-						<CustomGridColumn
-							column-background="transparent"
-							column-background-opacity="0.6"
-							columns-equal-paddings
-							style={{zIndex: 3}}
-							lg={6}
-							lg-offset={3}
-							xs={12}
-						>
-							<motion.div
-								initial={{opacity: 0, y: 50}}
-								animate={{opacity: 1, y: 0}}
-								transition={{delay: 0.2}}
-							>
-								<AnimatedText
-									color="black"
-									text="Hi, I'm ovidiu, facilis fames neglegentur tale splendide pellentesque dico"
-									variant="h1"
-								/>
-							</motion.div>
-						</CustomGridColumn>
+          <CustomWrapper
+            border-radius="0px"
+            space-top="0"
+            space-bottom="m"
+            custom-background-color={"transparent"}
+          >
+            <CustomGridRow vertical-alignment="center">
+              <CustomGridColumn
+                column-background="transparent"
+                column-background-opacity="0.6"
+                columns-equal-paddings
+                style={{ zIndex: 3 }}
+                lg={6}
+                lg-offset={3}
+                xs={12}
+              >
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <AnimatedText
+                    color="black"
+                    text="Hi, I'm ovidiu, facilis fames neglegentur tale splendide pellentesque dico"
+                    variant="h1"
+                  />
+                </motion.div>
+              </CustomGridColumn>
 
-						<CustomGridColumn
-							column-background="transparent"
-							column-background-opacity="0.6"
-							columns-equal-paddings
-							style={{zIndex: 2}}
-							lg={1}
-							lg-offset={0}
-							xs={12}
-						>
-							<motion.div
-								initial={{opacity: 0, transform: "scale(0)"}}
-								animate={{opacity: 1, transform: "scale(1)"}}
-								transition={{delay: 0.3}}
-								className={styles["homepage-shape"]}
-							>
-								<motion.div
-									initial={{opacity: 0, x: 200}}
-									animate={{opacity: 1, x: 0}}
-									transition={{delay: 0.5}}
-								>
-									<Image
-										src={"https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/homepage-shape.svg"}
-										alt={"Placeholder"} width={850} height={850} style={{borderRadius: "500px"}}/>
-								</motion.div>
-							</motion.div>
-						</CustomGridColumn>
-					</CustomGridRow>
-				</CustomWrapper>
+              <CustomGridColumn
+                column-background="transparent"
+                column-background-opacity="0.6"
+                columns-equal-paddings
+                style={{ zIndex: 2 }}
+                lg={1}
+                lg-offset={0}
+                xs={12}
+              >
+                <motion.div
+                  initial={{ opacity: 0, transform: "scale(0)" }}
+                  animate={{ opacity: 1, transform: "scale(1)" }}
+                  transition={{ delay: 0.3 }}
+                  className={styles["homepage-shape"]}
+                >
+                  <motion.div
+                    initial={{ opacity: 0, x: 200 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.5 }}
+                  >
+                    <Image
+                      src={
+                        "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/homepage-shape.svg"
+                      }
+                      alt={"Placeholder"}
+                      width={850}
+                      height={850}
+                      style={{ borderRadius: "500px" }}
+                    />
+                  </motion.div>
+                </motion.div>
+              </CustomGridColumn>
+            </CustomGridRow>
+          </CustomWrapper>
 
+          <CustomWrapper
+            border-radius="0px"
+            space-top="m"
+            space-bottom="m"
+            custom-background-color={"white"}
+          >
+            <CustomGridRow vertical-alignment="center">
+              <CustomGridColumn
+                column-padding-top="unset"
+                columns-equal-paddings
+                lg={5}
+                xs={12}
+                style={{ zIndex: 3 }}
+              >
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                >
+                  <Description
+                    color="black"
+                    text={
+                      <h6>
+                        utinam consetetur eum quo harum facilis commodo hac odio
+                        fermentum vituperatoribus ligula nihil propriae
+                        neglegentur cum odio solet gubergren fastidii
+                      </h6>
+                    }
+                  />
+                </motion.div>
+              </CustomGridColumn>
+              <CustomGridColumn
+                column-background="black"
+                column-background-opacity="0.37"
+                column-padding-top="unset"
+                columns-equal-paddings
+                lg={6}
+                xs={12}
+                lg-offset={1}
+              >
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className={styles["m-listing-logos"]}
+                >
+                  <ListingLogos />
+                </motion.div>
+              </CustomGridColumn>
+            </CustomGridRow>
+          </CustomWrapper>
+        </div>
+      </div>
 
-				<CustomWrapper
-					border-radius="0px"
-					space-top="m"
-					space-bottom="m"
-					custom-background-color={"white"}
-				>
+      <div id="education">
+        <Education />
+      </div>
+      <div id="work">
+        <Work />
+      </div>
 
-					<CustomGridRow vertical-alignment="center">
-						<CustomGridColumn
-							column-padding-top="unset"
-							columns-equal-paddings
-							lg={5}
-							xs={12}
-							style={{zIndex: 3}}
-						>
+      <div id="projects">
+        <Projects />
+      </div>
 
-							<motion.div
-								initial={{opacity: 0, y: 50}}
-								animate={{opacity: 1, y: 0}}
-							>
-								<Description
-									color="black"
-									text={<h6>utinam consetetur eum quo harum facilis commodo hac odio fermentum
-										vituperatoribus ligula nihil propriae neglegentur cum odio solet gubergren
-										fastidii</h6>}
-								/>
-
-							</motion.div>
-						</CustomGridColumn>
-						<CustomGridColumn
-							column-background="black"
-							column-background-opacity="0.37"
-							column-padding-top="unset"
-							columns-equal-paddings
-							lg={6}
-							xs={12}
-							lg-offset={1}
-						>
-
-							<motion.div
-								initial={{opacity: 0, y: 50}}
-								animate={{opacity: 1, y: 0}}
-								className={styles["m-listing-logos"]}
-							>
-								<ListingLogos/>
-							</motion.div>
-						</CustomGridColumn>
-					</CustomGridRow>
-				</CustomWrapper>
-			</div>
-
-			<div id="education">
-				<Education />
-			</div>
-			<div id="work">
-				<Work />
-			</div>
-
-			<div id="projects">
-				<Projects />
-			</div>
-		</section>
-	)
+      <div id="contact">
+        <Contact />
+      </div>
+    </section>
+  );
 }
