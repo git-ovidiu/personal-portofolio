@@ -1,14 +1,23 @@
-import {AnimatedText, SimpleDivider} from "@git-ovidiu/nextjs-component-library";
+import {AnimatedText, MediaImage, MediaVideo, SimpleDivider} from "@git-ovidiu/nextjs-component-library";
 import React from "react";
 import {MdOutlineLiveTv} from "react-icons/md"
+import Image from "next/image"
 
 const cards = [
     // vibe interior
   {
-    image: {
-      src: "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/Screenshot%202023-06-28%20at%2023.52.07.png",
-      alt: "Placeholder",
-    },
+    media: React.createElement(MediaImage, {
+      image: React.createElement(Image, {
+        alt: "Placeholder",
+        fill: true,
+        src: "https://camonysi.sirv.com/portofolio/Screenshot%202023-06-28%20at%2023.52.07.png"
+      }),
+      "image-border-radius": "20px",
+      "object-fit": "cover",
+      "padding-bottom-desktop": "50%",
+      "padding-bottom-mobile": "50%",
+      "padding-bottom-tablet": "50%",
+    }),
     labels: [
       {
         text: "nextJs",
@@ -80,10 +89,18 @@ const cards = [
 // nextjs component library
 
   {
-    image: {
-      src: "https://camonysi.sirv.com/NextJS%20Component%20Library/react-component-library-2.jpg",
-      alt: "Placeholder",
-    },
+    media: React.createElement(MediaImage, {
+      image: React.createElement(Image, {
+        alt: "Placeholder",
+        fill: true,
+        src: "https://camonysi.sirv.com/NextJS%20Component%20Library/react-component-library-2.jpg"
+      }),
+      "image-border-radius": "20px",
+      "object-fit": "cover",
+      "padding-bottom-desktop": "50%",
+      "padding-bottom-mobile": "50%",
+      "padding-bottom-tablet": "50%",
+    }),
     labels: [
       {
         text: "nextJs",
@@ -120,6 +137,90 @@ const cards = [
     title: React.createElement(AnimatedText, {
       color: "black",
       text: "Nextjs Component Library",
+      variant: "h3"
+    }),
+    divider: React.createElement(SimpleDivider, {
+      animate: true,
+      loop: true,
+      "animation-delay": "-0.05s",
+      "animation-duration": "1s",
+      "border-radius":"10px",
+      color: "black",
+      height: "4px",
+      width: "75px"
+    }),
+    description: "short description of the comp library",
+    subtitle: "Other Libraries",
+    libs: [
+      {
+        text: "Rollup"
+      },
+      {
+        text: "Swiper"
+      },
+      {
+        text: "Framer Motion"
+      },
+      {
+        text: "Splide"
+      },
+      {
+        text: "React Icons"
+      },
+      {
+        text: "Formspree"
+      },
+    ]
+  },
+
+  {
+     media: React.createElement(MediaVideo,
+        {
+        "loop": true,
+        "muted": true,
+        "object-fit": "cover",
+        "remove-controls": true,
+        "video" : "https://camonysi.sirv.com/portofolio/Screen%20Recording%202023-07-03%20at%2023.02.14.mov",
+          "video-fullscreen": true,
+          "video-border-radius": "20px"
+        }
+        ),
+    labels: [
+      {
+        text: "nextJs",
+        color: "white",
+        background: "#000",
+      },
+      {
+        text: "nx",
+        color: "white",
+        background: "#012F55",
+      },
+      {
+        text: "typescript",
+        color: "white",
+        background: "#0D65C0",
+      },
+      {
+        text: "scss",
+        color: "white",
+        background: "#B4497E",
+      },
+      {
+        text: "nx",
+        color: "white",
+        background: "#012F55",
+      },
+      {
+        text: "framer-motion",
+        color: "white",
+        background: "#433982",
+      },
+      // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
+    ],
+    title: React.createElement(AnimatedText, {
+      color: "black",
+      text: "MooFree Brews",
       variant: "h3"
     }),
     divider: React.createElement(SimpleDivider, {

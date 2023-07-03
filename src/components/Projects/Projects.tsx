@@ -19,6 +19,7 @@ import "@splidejs/react-splide/css/core";
 
 import cards from "./api/cards-api";
 import buttons from "main/components/Projects/api/buttons-api";
+import {bool} from "prop-types"
 
 export default function Projects() {
   return (
@@ -74,18 +75,7 @@ export default function Projects() {
               >
                 <Card
                   is-overlapped
-                  image={
-                    <MediaImage
-                      image={
-                        <Image alt={card.image.alt} fill src={card.image.src} />
-                      }
-                      image-border-radius="50px"
-                      object-fit="cover"
-                      padding-bottom-desktop="50%"
-                      padding-bottom-mobile="50%"
-                      padding-bottom-tablet="50%"
-                    />
-                  }
+                  image={card.media}
                   labels={
                     <>
                       {card.labels.map((label, labelIndex) => (
