@@ -124,17 +124,15 @@ export default function Contact() {
                 errors={state.errors}
               />
 
-              <div className={styles["action"]}>
+              <button type="submit" disabled={state.submitting} className={styles["action"]}>
                 <ButtonLineDrawing
-                  type="submit"
-                  disabled={state.submitting}
                   icon={<RiMailSendFill size={20} />}
                   icon-position="right"
                   line-effect="line-below"
                   padding="xs"
                   text="Submit"
                 />
-              </div>
+              </button>
             </form>
           </CustomGridColumn>
 
