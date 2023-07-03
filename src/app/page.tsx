@@ -1,47 +1,49 @@
 "use client";
-import Avatar from "main/components/Avatar/Avatar";
-import {
-  CustomWrapper,
-  CustomShape,
-  CustomGridRow,
-  CustomGridColumn,
-  AnimatedText,
-  Description,
-  Logo,
-} from "@git-ovidiu/nextjs-component-library";
+
+import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import styles from "./Homepage.module.scss";
-import ListingLogos from "main/components/Listing-logos/ListingLogos";
 import Image from "next/image";
-import Navbar from "main/components/Navbar/Navbar";
 import Link from "next/link";
-import { useEffect } from "react";
+import Avatar from "main/components/Avatar/Avatar";
+import Navbar from "main/components/Navbar/Navbar";
 import Education from "main/components/Education/Education";
 import Work from "main/components/Work/Work";
 import Projects from "main/components/Projects/Projects";
 import Contact from "main/components/Contact/Contact";
+import ListingLogos from "main/components/Listing-logos/ListingLogos";
+import {
+  CustomWrapper,
+  CustomGridRow,
+  CustomGridColumn,
+  AnimatedText,
+  Description,
+} from "@git-ovidiu/nextjs-component-library";
+import styles from "./Homepage.module.scss";
 
-const smoothScrollToSection = (
-  e: React.MouseEvent<HTMLAnchorElement>,
-  sectionId: string
-): void => {
+const smoothScrollToSection = (e: React.MouseEvent, sectionId: string) => {
   e.preventDefault();
-  const target = document.querySelector(sectionId) as HTMLElement; // Type assertion
+  const target = document.querySelector(sectionId) as HTMLElement;
   if (target) {
-    window.scrollTo({
-      top: target.offsetTop,
-      behavior: "smooth",
-    });
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 };
 
 export default function Homepage() {
+  const sectionRefs = {
+    section1: useRef(null),
+    section2: useRef(null),
+    section3: useRef(null),
+    section4: useRef(null),
+    section5: useRef(null),
+  };
+
+  const scrollTo = (sectionRef: React.RefObject<HTMLElement>) => {
+    sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   useEffect(() => {
-    // Scroll to section if the URL contains a hash
     if (window.location.hash) {
-      const target = document.querySelector(
-        window.location.hash
-      ) as HTMLElement; // Type assertion
+      const target = document.querySelector(window.location.hash) as HTMLElement;
       if (target) {
         window.scrollTo({
           top: target.offsetTop,
@@ -53,7 +55,7 @@ export default function Homepage() {
 
   return (
     <section className={styles["homepage"]}>
-      <div className={styles["about-container"]}>
+      <div className={styles["about-container"]} ref={sectionRefs.section1}>
         <div id="about">
           <Avatar />
 
@@ -207,18 +209,18 @@ export default function Homepage() {
         </div>
       </div>
 
-      <div id="education">
+      <div id="education" className={styles["education"]} ref={sectionRefs.section2}>
         <Education />
       </div>
-      <div id="work">
+      <div id="work" className={styles["work"]} ref={sectionRefs.section3}>
         <Work />
       </div>
 
-      <div id="projects">
+      <div id="projects" className={styles["projects"]} ref={sectionRefs.section4}>
         <Projects />
       </div>
 
-      <div id="contact">
+      <div id="contact" className={styles["contact"]} ref={sectionRefs.section5}>
         <Contact />
       </div>
     </section>
