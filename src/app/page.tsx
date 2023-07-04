@@ -48,12 +48,12 @@ export default function Homepage() {
 
 
 
-  const sectionRefs = useRef([]);
+  const sectionRefs = useRef<HTMLElement[]>([]);
 
   useEffect(() => {
     let isScrolling = false;
 
-    const handleScroll = (event) => {
+    const handleScroll = (event: WheelEvent) => {
       if (!isScrolling) {
         const scrollDirection = Math.sign(event.deltaY);
         const currentSectionIndex = sectionRefs.current.findIndex(
@@ -81,7 +81,7 @@ export default function Homepage() {
     };
   }, []);
 
-  const registerSectionRef = (ref) => {
+  const registerSectionRef = (ref: HTMLElement | null) => {
     if (ref && !sectionRefs.current.includes(ref)) {
       sectionRefs.current.push(ref);
     }
