@@ -9,7 +9,7 @@ const article = {
 			variant: "h5"
 		}
 	),
-	first_description: "pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis",
+	first_description: "pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his ",
 
 	second_title: React.createElement(
 		AnimatedText, {
@@ -18,7 +18,7 @@ const article = {
 			variant: "h5"
 		}
 	),
-	second_description: "pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis",
+	second_description: "pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin ",
 }
 
 
