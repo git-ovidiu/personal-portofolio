@@ -9,15 +9,15 @@
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
-	column-gap: 50px;
-	row-gap: 70px;
+	column-gap: 10px;
+	row-gap: 10px;
 	height: 100%;
 
 	img{
 	  width: 100%;
 	  filter: grayscale(100%);
 	  transition: all 0.37s;
-	  transform: scale(1);
+	  transform: scale(0.5);
 
 	  &:hover{
 		filter: none;
@@ -26,4 +26,17 @@
 	}
   }
 
+}
+
+
+@media (min-width: 992px){
+  .m-listing-logos{
+	picture{
+	  row-gap: 70px;
+	  column-gap: 50px;
+	  img{
+		transform: scale(1);
+	  }
+	}
+  }
 }
