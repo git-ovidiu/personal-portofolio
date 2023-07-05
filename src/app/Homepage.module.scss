@@ -8,24 +8,36 @@
 
   position: relative;
   overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y mandatory;
+  //height: 100vh;
   width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+	display: none;
+  }
+
 
   .about-container{
-	height: 100vh;
+	min-height: 100vh;
+	scroll-snap-align: start;
+	position: relative;
   }
 
   .education{
-	height: 100vh;
+	min-height: 100vh;
   }
   .work{
-	height: 100vh;
+	min-height: 100vh;
   }
   .projects{
-	height: 100vh;
+	min-height: 100vh;
   }
   .contact{
-	height: 100vh;
+	min-height: 100vh;
   }
+
 
   &::before {
 	content: '';

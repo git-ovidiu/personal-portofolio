@@ -30,13 +30,13 @@ const smoothScrollToSection = (e: React.MouseEvent, sectionId: string) => {
 };
 
 export default function Homepage() {
-  const sectionRefs = {
-    section1: useRef<HTMLDivElement>(null),
-    section2: useRef<HTMLDivElement>(null),
-    section3: useRef<HTMLDivElement>(null),
-    section4: useRef<HTMLDivElement>(null),
-    section5: useRef<HTMLDivElement>(null),
-  };
+  // const sectionRefs = {
+  //   section1: useRef<HTMLDivElement>(null),
+  //   section2: useRef<HTMLDivElement>(null),
+  //   section3: useRef<HTMLDivElement>(null),
+  //   section4: useRef<HTMLDivElement>(null),
+  //   section5: useRef<HTMLDivElement>(null),
+  // };
 
   const scrollTo = (sectionRef: React.RefObject<HTMLElement>) => {
     sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -80,11 +80,73 @@ export default function Homepage() {
 
 
 
+  const smoothScrollToSection = (e: React.MouseEvent, sectionId: string) => {
+    e.preventDefault();
+    const target = document.querySelector(sectionId) as HTMLElement;
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+    useEffect(() => {
+      if (window.location.hash) {
+        const target = document.querySelector(window.location.hash) as HTMLElement;
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop,
+            behavior: "smooth",
+          });
+        }
+      }
+    }, []);
+
+
+
+    const sectionRefs = useRef<HTMLElement[]>([]);
+
+    useEffect(() => {
+      let isScrolling = false;
+
+      const handleScroll = (event: WheelEvent) => {
+        if (!isScrolling) {
+          const scrollDirection = Math.sign(event.deltaY);
+          const currentSectionIndex = sectionRefs.current.findIndex(
+              (ref) => ref && ref.getBoundingClientRect().top >= 0
+          );
+          const nextSectionIndex = currentSectionIndex + scrollDirection;
+
+          if (sectionRefs.current[nextSectionIndex]) {
+            sectionRefs.current[nextSectionIndex].scrollIntoView({
+              behavior: "smooth",
+            });
+            isScrolling = true;
+
+            setTimeout(() => {
+              isScrolling = false;
+            }, 1000);
+          }
+        }
+      };
+
+      window.addEventListener("wheel", handleScroll);
+
+      return () => {
+        window.removeEventListener("wheel", handleScroll);
+      };
+    }, []);
+
+    const registerSectionRef = (ref: HTMLElement | null) => {
+      if (ref && !sectionRefs.current.includes(ref)) {
+        sectionRefs.current.push(ref);
+      }
+    };
+
+
 
 
   const desktopContent =  (
     <section className={styles["desktop"]}>
-  <div className={styles["about-container"]} ref={sectionRefs.section1}>
+  <div className={styles["about-container"]} ref={registerSectionRef}>
     <div id="about">
       <Avatar />
 
@@ -238,18 +300,18 @@ export default function Homepage() {
     </div>
   </div>
 
-  <div id="education" className={styles["education"]} ref={sectionRefs.section2}>
+  <div id="education" className={styles["education"]} ref={registerSectionRef}>
     <Education />
   </div>
-  <div id="work" className={styles["work"]} ref={sectionRefs.section3}>
+  <div id="work" className={styles["work"]} ref={registerSectionRef}>
     <Work />
   </div>
 
-  <div id="projects" className={styles["projects"]} ref={sectionRefs.section4}>
+  <div id="projects" className={styles["projects"]} ref={registerSectionRef}>
     <Projects />
   </div>
 
-  <div id="contact" className={styles["contact"]} ref={sectionRefs.section5}>
+  <div id="contact" className={styles["contact"]} ref={registerSectionRef}>
     <Contact />
   </div>
     </section>
