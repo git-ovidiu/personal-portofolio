@@ -29,6 +29,13 @@ const smoothScrollToSection = (e: React.MouseEvent, sectionId: string) => {
 };
 
 export default function Homepage() {
+  const sectionRefs = {
+    section1: useRef(null),
+    section2: useRef(null),
+    section3: useRef(null),
+    section4: useRef(null),
+    section5: useRef(null),
+  };
 
   const scrollTo = (sectionRef: React.RefObject<HTMLElement>) => {
     sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -46,50 +53,9 @@ export default function Homepage() {
     }
   }, []);
 
-
-
-  const sectionRefs = useRef<HTMLElement[]>([]);
-
-  useEffect(() => {
-    let isScrolling = false;
-
-    const handleScroll = (event: WheelEvent) => {
-      if (!isScrolling) {
-        const scrollDirection = Math.sign(event.deltaY);
-        const currentSectionIndex = sectionRefs.current.findIndex(
-            (ref) => ref && ref.getBoundingClientRect().top >= 0
-        );
-        const nextSectionIndex = currentSectionIndex + scrollDirection;
-
-        if (sectionRefs.current[nextSectionIndex]) {
-          sectionRefs.current[nextSectionIndex].scrollIntoView({
-            behavior: "smooth",
-          });
-          isScrolling = true;
-
-          setTimeout(() => {
-            isScrolling = false;
-          }, 1000);
-        }
-      }
-    };
-
-    window.addEventListener("wheel", handleScroll);
-
-    return () => {
-      window.removeEventListener("wheel", handleScroll);
-    };
-  }, []);
-
-  const registerSectionRef = (ref: HTMLElement | null) => {
-    if (ref && !sectionRefs.current.includes(ref)) {
-      sectionRefs.current.push(ref);
-    }
-  };
-
   return (
     <section className={styles["homepage"]}>
-      <div className={styles["about-container"]} ref={registerSectionRef}>
+      <div className={styles["about-container"]} ref={sectionRefs.section1}>
         <div id="about">
           <Avatar />
 
@@ -243,18 +209,18 @@ export default function Homepage() {
         </div>
       </div>
 
-      <div id="education" className={styles["education"]} ref={registerSectionRef}>
+      <div id="education" className={styles["education"]} ref={sectionRefs.section2}>
         <Education />
       </div>
-      <div id="work" className={styles["work"]} ref={registerSectionRef}>
+      <div id="work" className={styles["work"]} ref={sectionRefs.section3}>
         <Work />
       </div>
 
-      <div id="projects" className={styles["projects"]} ref={registerSectionRef}>
+      <div id="projects" className={styles["projects"]} ref={sectionRefs.section4}>
         <Projects />
       </div>
 
-      <div id="contact" className={styles["contact"]} ref={registerSectionRef}>
+      <div id="contact" className={styles["contact"]} ref={sectionRefs.section5}>
         <Contact />
       </div>
     </section>

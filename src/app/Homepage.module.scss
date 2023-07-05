@@ -10,7 +10,7 @@
   overflow-y: auto;
   overscroll-behavior-y: contain;
   scroll-snap-type: y mandatory;
-  //height: 100vh;
+  height: 100vh;
   width: 100%;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -19,24 +19,31 @@
   }
 
 
-
   .about-container{
-	min-height: 100vh;
+	height: 100vh;
 	scroll-snap-align: start;
 	position: relative;
   }
 
   .education{
-	min-height: 100vh;
+	height: 100vh;
+	scroll-snap-align: start;
+	position: relative;
   }
   .work{
-	min-height: 100vh;
+	height: 100vh;
+	scroll-snap-align: start;
+	position: relative;
   }
   .projects{
-	min-height: 100vh;
+	height: 100vh;
+	scroll-snap-align: start;
+	position: relative;
   }
   .contact{
-	min-height: 100vh;
+	height: 100vh;
+	scroll-snap-align: start;
+	position: relative;
   }
 
   &::before {
