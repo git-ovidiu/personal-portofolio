@@ -20,23 +20,23 @@
 
 
   .about-container{
-	min-height: 100vh;
-	scroll-snap-align: start;
-	position: relative;
+	height: 100vh;
+	//scroll-snap-align: start;
+	//position: relative;
   }
 
-  .education{
-	min-height: 100vh;
-  }
-  .work{
-	min-height: 100vh;
-  }
-  .projects{
-	min-height: 100vh;
-  }
-  .contact{
-	min-height: 100vh;
-  }
+  //.education{
+	//min-height: 100vh;
+  //}
+  //.work{
+	//min-height: 100vh;
+  //}
+  //.projects{
+	//min-height: 100vh;
+  //}
+  //.contact{
+	//min-height: 100vh;
+  //}
 
 
   &::before {
@@ -103,28 +103,28 @@
 
   .about-container{
 	height: 100vh;
-	scroll-snap-align: start;
+	scroll-snap-align: center;
 	position: relative;
   }
 
   .education{
 	height: 100vh;
-	scroll-snap-align: start;
+	scroll-snap-align: center;
 	position: relative;
   }
   .work{
 	height: 100vh;
-	scroll-snap-align: start;
+	scroll-snap-align: center;
 	position: relative;
   }
   .projects{
 	height: 100vh;
-	scroll-snap-align: start;
+	scroll-snap-align: center;
 	position: relative;
   }
   .contact{
 	height: 100vh;
-	scroll-snap-align: start;
+	scroll-snap-align: center;
 	position: relative;
   }
 

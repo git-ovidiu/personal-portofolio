@@ -79,67 +79,67 @@ export default function Homepage() {
 
 
 
+  // desktop(only) snap scroll
+  const sectionRefs = useRef<HTMLElement[]>([]);
 
-  const smoothScrollToSection = (e: React.MouseEvent, sectionId: string) => {
+  const smoothScrollToSection = (e, sectionId) => {
     e.preventDefault();
-    const target = document.querySelector(sectionId) as HTMLElement;
+    const target = document.querySelector(sectionId);
     if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
-    useEffect(() => {
-      if (window.location.hash) {
-        const target = document.querySelector(window.location.hash) as HTMLElement;
-        if (target) {
-          window.scrollTo({
-            top: target.offsetTop,
+
+  const updateWindowWidth = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    updateWindowWidth();
+    window.addEventListener("resize", updateWindowWidth);
+
+    return () => {
+      window.removeEventListener("resize", updateWindowWidth);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      if (!isScrolling) {
+        const scrollDirection = Math.sign(event.deltaY);
+        const currentSectionIndex = sectionRefs.current.findIndex(
+            (ref) => ref && ref.getBoundingClientRect().top >= 0
+        );
+        const nextSectionIndex = currentSectionIndex + scrollDirection;
+
+        if (sectionRefs.current[nextSectionIndex]) {
+          sectionRefs.current[nextSectionIndex].scrollIntoView({
             behavior: "smooth",
           });
+          isScrolling = true;
+
+          setTimeout(() => {
+            isScrolling = false;
+          }, 1000);
         }
-      }
-    }, []);
-
-
-
-    const sectionRefs = useRef<HTMLElement[]>([]);
-
-    useEffect(() => {
-      let isScrolling = false;
-
-      const handleScroll = (event: WheelEvent) => {
-        if (!isScrolling) {
-          const scrollDirection = Math.sign(event.deltaY);
-          const currentSectionIndex = sectionRefs.current.findIndex(
-              (ref) => ref && ref.getBoundingClientRect().top >= 0
-          );
-          const nextSectionIndex = currentSectionIndex + scrollDirection;
-
-          if (sectionRefs.current[nextSectionIndex]) {
-            sectionRefs.current[nextSectionIndex].scrollIntoView({
-              behavior: "smooth",
-            });
-            isScrolling = true;
-
-            setTimeout(() => {
-              isScrolling = false;
-            }, 1000);
-          }
-        }
-      };
-
-      window.addEventListener("wheel", handleScroll);
-
-      return () => {
-        window.removeEventListener("wheel", handleScroll);
-      };
-    }, []);
-
-    const registerSectionRef = (ref: HTMLElement | null) => {
-      if (ref && !sectionRefs.current.includes(ref)) {
-        sectionRefs.current.push(ref);
       }
     };
+
+    let isScrolling = false;
+
+    window.addEventListener("wheel", handleScroll);
+
+    return () => {
+      window.removeEventListener("wheel", handleScroll);
+    };
+  }, []);
+
+  const registerSectionRef = (ref) => {
+    if (ref && !sectionRefs.current.includes(ref)) {
+      sectionRefs.current.push(ref);
+    }
+  };
 
 
 
