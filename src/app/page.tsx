@@ -319,7 +319,7 @@ export default function Homepage() {
 
   const mobileContent = (
       <section className={styles["mobile"]}>
-      <div className={styles["about-container"]} ref={sectionRefs.section1}>
+      <div className={styles["about-container"]}>
           <div id="about">
             <Avatar />
 
@@ -473,18 +473,18 @@ export default function Homepage() {
           </div>
         </div>
 
-        <div id="education" className={styles["education"]} ref={sectionRefs.section2}>
+        <div id="education" className={styles["education"]}>
           <Education />
         </div>
-        <div id="work" className={styles["work"]} ref={sectionRefs.section3}>
+        <div id="work" className={styles["work"]}>
           <Work />
         </div>
 
-        <div id="projects" className={styles["projects"]} ref={sectionRefs.section4}>
+        <div id="projects" className={styles["projects"]}>
           <Projects />
         </div>
 
-        <div id="contact" className={styles["contact"]} ref={sectionRefs.section5}>
+        <div id="contact" className={styles["contact"]}>
           <Contact />
         </div>
       </section>
