@@ -38,51 +38,18 @@ export default function Homepage() {
   //   section5: useRef<HTMLDivElement>(null),
   // };
 
+  const [windowWidth, setWindowWidth] = useState<number>(0);
+  const sectionRefs = useRef<HTMLElement[]>([]);
+
+  const updateWindowWidth = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
   const scrollTo = (sectionRef: React.RefObject<HTMLElement>) => {
     sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  // useEffect(() => {
-  //   if (window.location.hash) {
-  //     const target = document.querySelector(
-  //         window.location.hash
-  //     ) as HTMLElement;
-  //     if (target) {
-  //       window.scrollTo({
-  //         top: target.offsetTop,
-  //         behavior: "smooth",
-  //       });
-  //     }
-  //   }
-  // }, []);
-
-
-  //check display width
-  const [windowWidth, setWindowWidth] = useState<number>(0);
-
-  useEffect(() => {
-    const updateWindowWidth = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    updateWindowWidth();
-
-    window.addEventListener("resize", updateWindowWidth);
-
-    return () => {
-      window.removeEventListener("resize", updateWindowWidth);
-    };
-  }, []);
-
-  const isDesktop = windowWidth > 992;
-
-
-
-
-  // desktop(only) snap scroll
-  const sectionRefs = useRef<HTMLElement[]>([]);
-
-  const smoothScrollToSection = (e, sectionId) => {
+  const smoothScrollToSection = (e: React.MouseEvent, sectionId: string) => {
     e.preventDefault();
     const target = document.querySelector(sectionId);
     if (target) {
@@ -90,11 +57,6 @@ export default function Homepage() {
     }
   };
 
-
-  const updateWindowWidth = () => {
-    setWindowWidth(window.innerWidth);
-  };
-
   useEffect(() => {
     updateWindowWidth();
     window.addEventListener("resize", updateWindowWidth);
@@ -105,7 +67,7 @@ export default function Homepage() {
   }, []);
 
   useEffect(() => {
-    const handleScroll = (event) => {
+    const handleScroll = (event: WheelEvent) => {
       if (!isScrolling) {
         const scrollDirection = Math.sign(event.deltaY);
         const currentSectionIndex = sectionRefs.current.findIndex(
@@ -135,13 +97,13 @@ export default function Homepage() {
     };
   }, []);
 
-  const registerSectionRef = (ref) => {
+  const registerSectionRef = (ref: HTMLElement | null) => {
     if (ref && !sectionRefs.current.includes(ref)) {
       sectionRefs.current.push(ref);
     }
   };
 
-
+  const isDesktop = windowWidth > 992;
 
 
   const desktopContent =  (
