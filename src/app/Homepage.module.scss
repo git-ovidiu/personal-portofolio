@@ -91,6 +91,44 @@
 @media(min-width: 992px){
 .homepage {
 
+  position: relative;
+  overflow-y: auto;
+  overscroll-behavior-y: unset;
+  scroll-snap-type: unset;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+	display: none;
+  }
+
+
+  .about-container{
+	height: 100vh;
+	scroll-snap-align: unset;
+  }
+
+  .education{
+	height: 100vh;
+	scroll-snap-align: unset;
+	position: relative;
+  }
+  .work{
+	height: 100vh;
+	scroll-snap-align: unset;
+	position: relative;
+  }
+  .projects{
+	height: 100vh;
+	scroll-snap-align: unset;
+	position: relative;
+  }
+  .contact{
+	height: 100vh;
+	scroll-snap-align: unset;
+	position: relative;
+  }
+
+
   .homepage-shape {
 	img {
 	  position: absolute;
