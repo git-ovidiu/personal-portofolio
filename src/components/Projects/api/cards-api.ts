@@ -1,92 +1,10 @@
 import {AnimatedText, MediaImage, MediaVideo, SimpleDivider} from "@git-ovidiu/nextjs-component-library";
 import React from "react";
-import {MdOutlineLiveTv} from "react-icons/md"
+import {MdOutlineDesignServices, MdOutlineLiveTv} from "react-icons/md"
 import Image from "next/image"
-import {BiAtom} from "react-icons/bi"
+import {BiAtom, BiCoffeeTogo} from "react-icons/bi"
 
 const cards = [
-    // vibe interior
-  {
-    media: React.createElement(MediaImage, {
-      image: React.createElement(Image, {
-        alt: "Placeholder",
-        fill: true,
-        src: "https://camonysi.sirv.com/portofolio/Screenshot%202023-06-28%20at%2023.52.07.png"
-      }),
-      "image-border-radius": "20px",
-      "object-fit": "cover",
-      "padding-bottom-desktop": "50%",
-      "padding-bottom-mobile": "50%",
-      "padding-bottom-tablet": "50%",
-    }),
-    labels: [
-      {
-        text: "nextJs",
-        color: "white",
-        background: "#000",
-      },
-      {
-        text: "javascript",
-        color: "white",
-        background: "#E5CE18",
-      },
-      {
-        text: "scss",
-        color: "white",
-        background: "#B4497E",
-      },
-
-      // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
-    ],
-    title: React.createElement(AnimatedText, {
-      color: "black",
-      text: "Vibe Interior",
-      variant: "h3"
-    }),
-    divider: React.createElement(SimpleDivider, {
-      animate: true,
-      loop: true,
-      "animation-delay": "-0.2s",
-      "animation-duration": "1s",
-      "border-radius":"10px",
-      color: "black",
-      height: "4px",
-      width: "75px"
-    }),
-    description: "faucibus propriae homero suavitate sadipscing magnis faucibus gubergren propriae homero suavitate  ius sapien",
-    subtitle: "Libraries",
-    libs: [
-      {
-        text: "Framer Motion"
-      },
-      {
-        text: "Swiper"
-      },
-      {
-        text: "React Scroll Parallax"
-      },
-      {
-        text: "React Intersection Observer"
-      },
-      {
-        text: "LightGallery"
-      },
-      {
-        text: "Formspree"
-      },
-    ],
-
-    actions: [
-      {
-        text: "Live Website",
-        icon: React.createElement(MdOutlineLiveTv, { size: 20 }),
-        url: "https://www.vibe-interior.ro"
-      }
-    ]
-  },
-
-
-
 // nextjs component library
 
   {
@@ -174,9 +92,89 @@ const cards = [
     ],
     actions: [
       {
-        text: "Live Website",
+        text: "Hosted Storybook",
         icon: React.createElement(BiAtom, { size: 20 }),
         url: "https://git-ovidiu.github.io/nextjs-component-library/?path=/story/atoms-text-animated-text--animated-text-story"
+      }
+    ]
+  },
+
+  // vibe interior
+  {
+    media: React.createElement(MediaImage, {
+      image: React.createElement(Image, {
+        alt: "Placeholder",
+        fill: true,
+        src: "https://camonysi.sirv.com/portofolio/Screenshot%202023-06-28%20at%2023.52.07.png"
+      }),
+      "image-border-radius": "20px",
+      "object-fit": "cover",
+      "padding-bottom-desktop": "50%",
+      "padding-bottom-mobile": "50%",
+      "padding-bottom-tablet": "50%",
+    }),
+    labels: [
+      {
+        text: "nextJs",
+        color: "white",
+        background: "#000",
+      },
+      {
+        text: "javascript",
+        color: "white",
+        background: "#E5CE18",
+      },
+      {
+        text: "scss",
+        color: "white",
+        background: "#B4497E",
+      },
+
+      // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
+    ],
+    title: React.createElement(AnimatedText, {
+      color: "black",
+      text: "Vibe Interior",
+      variant: "h3"
+    }),
+    divider: React.createElement(SimpleDivider, {
+      animate: true,
+      loop: true,
+      "animation-delay": "-0.2s",
+      "animation-duration": "1s",
+      "border-radius":"10px",
+      color: "black",
+      height: "4px",
+      width: "75px"
+    }),
+    description: "faucibus propriae homero suavitate sadipscing magnis faucibus gubergren propriae homero suavitate  ius sapien",
+    subtitle: "Libraries",
+    libs: [
+      {
+        text: "Framer Motion"
+      },
+      {
+        text: "Swiper"
+      },
+      {
+        text: "React Scroll Parallax"
+      },
+      {
+        text: "React Intersection Observer"
+      },
+      {
+        text: "LightGallery"
+      },
+      {
+        text: "Formspree"
+      },
+    ],
+
+    actions: [
+      {
+        text: "Live Website (DEMO)",
+        icon: React.createElement(MdOutlineDesignServices, { size: 20 }),
+        url: "https://www.vibe-interior.ro"
       }
     ]
   },
@@ -265,8 +263,8 @@ const cards = [
     ],
     actions: [
       {
-        text: "Live Website",
-        icon: React.createElement(BiAtom, { size: 20 }),
+        text: "Live Website (in progress)",
+        icon: React.createElement(BiCoffeeTogo, { size: 20 }),
         url: "https://moo-free-brews.vercel.app/"
       }
     ]

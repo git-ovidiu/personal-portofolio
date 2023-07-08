@@ -70,7 +70,8 @@ export default function Homepage() {
 
 
   const mobileContent = (
-      <h1>cacat</h1>
+      <>
+        </>
       // <section className={styles["mobile"]}>
       // <div className={styles["about-container"]}>
       //     <div id="about">
@@ -292,8 +293,8 @@ export default function Homepage() {
                   <CustomGridRow vertical-alignment="center">
                     <CustomGridColumn
                         columns-equal-paddings
-                        lg={6}
-                        lg-offset={3}
+                        lg={8}
+                        lg-offset={2}
                         xs={12}
                         style={{zIndex: 123}}
                     >
@@ -305,8 +306,13 @@ export default function Homepage() {
                         <TitleAndDescription
                             text-align="center"
                             label={<Description color="red" text="About me"/>}
-                            title={<AnimatedText text="Hi, I'm Ovidiu, epicuri posidonium non natoque aenean repudiare" variant="h2"/>}
-                            description="Tation pertinacia pretium feugiat diam torquent qui oratio scripta offendit dicat unum montes brute referrentur"
+                            title={
+                            <>
+                              <AnimatedText text="Welcome to my portfolio!" variant="h2"/>
+                              <AnimatedText text="I'm Ovidiu, a dedicated web developer specializing in web design and frontend development." variant="h2"/>
+                            </>
+                            }
+                            description={<h6>{`I'm`} passionate about creating visually stunning and functional websites and I strive to craft seamless user experiences through innovative design and new frontend technologies.</h6>}
                             action={""}
                         />
                       </motion.div>

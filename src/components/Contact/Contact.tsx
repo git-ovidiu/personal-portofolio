@@ -17,26 +17,111 @@ import {
   Description,
   Divider,
   SimpleDivider,
+  TitleAndDescription,
 } from "@git-ovidiu/nextjs-component-library";
 import { AiFillLinkedin, AiOutlineDownload } from "react-icons/ai";
 
 import content from "./api/Content";
 import { SiMinutemailer } from "react-icons/si";
 import { RiMailSendFill } from "react-icons/ri";
+import { Outfit } from "next/font/google";
+import {BiArrowBack} from "react-icons/bi"
+
+const outfit = Outfit({ subsets: ["latin"] });
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xbjvrbyy");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <>
+
+
+        <motion.div
+            initial={{opacity: 0, y: "100%"}}
+            animate={{opacity: 1, y: 0}}
+            className={styles["email-sent-container"]}
+        >
+          <CustomWrapper
+              background-color-theme="primary"
+              border-radius="0px"
+              space-bottom="0"
+              custom-background-color={"black"}
+              space-top=" 0"
+              full-height
+          >
+            <CustomGridRow vertical-alignment="center">
+              <CustomGridColumn
+                  column-background-opacity="1"
+                  column-padding-bottom="unset"
+                  column-padding-top="unset"
+                  columns-equal-paddings
+                  lg={4}
+                  lg-offset={4}
+                  xs={12}
+              >
+                <TitleAndDescription
+                    action={""}
+                    label={<Description color="#416f5d" text="email delivery status:" />}
+                    text-align="left"
+                    title={
+                      <span>
+                      <AnimatedText
+                          color="white"
+                          text="Email has been sent! Thank you for reaching out to me!"
+                          variant="h4"
+                      />
+                    </span>
+                    }
+                    description={
+                      <>
+                        <Divider
+                            divider={
+                              <>
+                                <SimpleDivider
+                                    animate
+                                    animation-duration="2s"
+                                    border-radius="0"
+                                    color="#416f5d"
+                                    height="5px"
+                                    width="100%"
+                                />
+                              </>
+                            }
+                            position="left"
+                            width="100%"
+                        />
+                        <br/>
+                        <br/>
+                        <div className={styles["button-diapositive"]}>
+                          <ButtonLineDrawing
+                              icon={<BiArrowBack size={20} />}
+                              icon-position="left"
+                              line-effect="line-below"
+                              link-url="/"
+                              padding="xs"
+                              text="back Home"
+                          />
+                        </div>
+                      </>
+                    }
+                />
+              </CustomGridColumn>
+            </CustomGridRow>
+          </CustomWrapper>
+        </motion.div>
+      </>
+    );
   }
   return (
-    <div className={styles["o-contact"]}>
+    <div className={`${styles["o-contact"]} ${outfit.className}`}>
+
+
       <CustomWrapper
         full-height
         border-radius="0px"
         space-bottom="m"
         space-top="m"
-        custom-background-color={"rgba(200, 62, 87, 0.18)"}
+        custom-background-color={"white"}
       >
         <CustomGridRow vertical-alignment="center" reverse-breakpoint={"lg"}>
           <CustomGridColumn
@@ -55,34 +140,50 @@ export default function Contact() {
                     <SimpleDivider
                       animate
                       animation-duration="1s"
-                      border-radius="10px 0px 0px 10px"
-                      color="black"
+                      border-radius="30px 0 0 0"
+                      color="#000000"
                       height="5px"
                       width="100%"
                     />
                     <SimpleDivider
                       animate
                       animation-duration="1s"
-                      border-radius="0px"
-                      color="#383737"
+                      border-radius="0"
+                      color="#444444"
                       height="5px"
                       width="100%"
                     />
                     <SimpleDivider
                       animate
                       animation-duration="1s"
-                      border-radius="0px 10px 10px 0px"
-                      color="#525050"
+                      border-radius="0"
+                      color="#666666"
                       height="5px"
                       width="100%"
                     />
                     <SimpleDivider
-                        animate
-                        animation-duration="1s"
-                        border-radius="0px 10px 10px 0px"
-                        color="#757272"
-                        height="5px"
-                        width="100%"
+                      animate
+                      animation-duration="1s"
+                      border-radius="0"
+                      color="#888888"
+                      height="5px"
+                      width="100%"
+                    />
+                    <SimpleDivider
+                      animate
+                      animation-duration="1s"
+                      border-radius="0"
+                      color="#AAAAAA"
+                      height="5px"
+                      width="100%"
+                    />
+                    <SimpleDivider
+                      animate
+                      animation-duration="1s"
+                      border-radius="0 30px 0 0"
+                      color="#CCCCCC"
+                      height="5px"
+                      width="100%"
                     />
                   </>
                 }
@@ -117,14 +218,21 @@ export default function Contact() {
                 />
               </div>
 
-              <textarea id="message" name="message" required />
+              <div className={styles["message-container"]}>
+                <label htmlFor="Message">Message*</label>
+                <textarea id="message" name="message" required />
+              </div>
               <ValidationError
                 prefix="Message"
                 field="message"
                 errors={state.errors}
               />
 
-              <button type="submit" disabled={state.submitting} className={styles["action"]}>
+              <button
+                type="submit"
+                disabled={state.submitting}
+                className={styles["action"]}
+              >
                 <ButtonLineDrawing
                   icon={<RiMailSendFill size={20} />}
                   icon-position="right"
@@ -162,8 +270,10 @@ export default function Contact() {
                   <div className={styles["icon-and-text"]} key={index}>
                     {/*<AiFillLinkedin size={20}/>*/}
                     {/*<p>linkedin</p>*/}
-                    <p>{iconAndText.icon}</p>
-                    <p>{iconAndText.text}</p>
+                    <a href={iconAndText.href}>
+                      {iconAndText.icon}
+                      {iconAndText.text}
+                    </a>
                   </div>
                 ))}
               </div>

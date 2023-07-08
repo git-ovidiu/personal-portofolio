@@ -60,7 +60,7 @@ const EducationCards = [
 		],
 
 		title: "Codecool",
-		description: "description",
+		description: "At Codecool, I successfully completed a comprehensive frontend development course, acquiring expertise in HTML, CSS, JavaScript, Bootstrap, responsive design, and effective teamwork",
 
 		button: [
 			React.createElement(ButtonLineDrawing, {
@@ -104,7 +104,11 @@ const EducationCards = [
 		],
 
 		title: "Transilvania University of Brașov",
-		description: "master's degree etc SIIPA - sisteme informatice integrate pentru afaceri",
+
+		description: React.createElement(Description, {
+			color: "black",
+			text: "At the University Transylvania of Brasov, I successfully completed my Master's degree in Integrated Information Systems for Business. This program equipped me with a comprehensive understanding of e-commerce, marketing strategies, Java programming, and the utilization of Tableau Public for data visualization"
+		}),
 
 		button: [
 			React.createElement(ButtonLineDrawing, {
@@ -143,7 +147,7 @@ const EducationCards = [
 		],
 
 		title: "University of Bucharest",
-		description: "bachelor's degree etc LMA - limbi moderne aplicate (jeg ordinar)",
+		description: "At the University of Bucharest, I earned my Bachelor's degree in Applied Modern Languages. This program emphasized English and German language studies, along with coursework in economics. It provided me with a solid grasp of both languages and a practical understanding of economic principles",
 
 		button: [
 			React.createElement(ButtonLineDrawing, {

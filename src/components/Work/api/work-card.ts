@@ -1,5 +1,5 @@
 import React from "react"
-import {ButtonLineDrawing, Label} from "@git-ovidiu/nextjs-component-library"
+import {AnimatedText, ButtonLineDrawing, Label} from "@git-ovidiu/nextjs-component-library"
 import {CgLaptop} from "react-icons/cg"
 import {FaNetworkWired} from "react-icons/fa"
 
@@ -10,11 +10,10 @@ const workCard = {
 			color: "white",
 			text: "lit-element"
 		}),
-
 		React.createElement(Label, {
-			"background-color": "#2660E4",
+			"background-color": "#3399FF",
 			color: "white",
-			text: "css"
+			text: "atomic design"
 		}),
 		React.createElement(Label, {
 			"background-color": "#DCBF2F",
@@ -58,6 +57,11 @@ const workCard = {
 			text: "hubspot"
 		}),
 		React.createElement(Label, {
+			"background-color": "#2660E4",
+			color: "white",
+			text: "css"
+		}),
+		React.createElement(Label, {
 			"background-color": "#000000",
 			color: "white",
 			text: "figma"
@@ -88,8 +92,19 @@ const workCard = {
 			text: "gitpod"
 		})
 	],
-	title: " FrozenLogic (de facut cardul sticky)",
-	description: "foarte scurta descriere despre firma asta",
+	titles: [
+		React.createElement(AnimatedText, {
+			text: "Frozen",
+			color: "#1B1C3C",
+			variant: "h4"
+		}),
+		React.createElement(AnimatedText, {
+			text: "Logic",
+			color: "#A50260",
+			variant: "h4"
+		}),
+	],
+	description: "",
 	button: React.createElement(ButtonLineDrawing, {
 		"icon": React.createElement(FaNetworkWired, {
 			size: 20}),

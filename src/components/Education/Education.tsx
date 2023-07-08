@@ -38,19 +38,13 @@ export default function Education() {
           <CustomGridRow vertical-alignment="center">
             <CustomGridColumn lg={6} xs={12}>
               <TitleAndDescription
-                action={
-                  <ButtonSlide
-                    hover-effect="slide-right"
-                    padding="xs"
-                    text="button text"
-                  />
-                }
-                description="Tation pertinacia pretium feugiat diam torquent qui oratio scripta offendit dicat unum montes brute referrentur"
+                action={""}
+                description="With a solid foundation built upon completing a frontend course at Codecool, along with earning a Master's degree in Integrated Information Systems for Business from the University Transylvania of Brasov, and a Bachelor's degree in Applied Modern Languages from the University of Bucharest, I bring a comprehensive skill set to the table. My expertise encompasses web development, e-commerce strategies, proficiency in multiple languages, and a practical understanding of economic principles."
                 label={<Description color="red" text="Education" />}
                 text-align="center"
                 title={
                   <AnimatedText
-                    text="Epicuri posidonium non natoque aenean repudiare principes verterem eius potenti"
+                    text="Diverse Background in Web Development, E-commerce, Languages, and Economics"
                     variant="h4"
                   />
                 }

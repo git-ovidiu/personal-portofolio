@@ -1,101 +1,146 @@
 @use '../../styles/main.module' as *;
 
-.o-contact{
+@mixin inputFormat() {
+  padding: 15px;
+  background: #CCCCCC;
+  opacity: 0.4;
+  border: none;
+  border-radius: $border-radius-m;
+  font-size: calc($font-size-input / 1.2);
+  transition: all 0.5s;
+  &:focus {
+	//background: $color-black;
+	//color: $color-white;
+	opacity: 1;
+  }
+}
+
+.email-sent-container{
+  .button-diapositive{
+	@include  flex(row, center, center);
+	--a-button-line-drawing-text-color: white;
+  	--a-button-line-drawing-line-color: #{$primary-color};
+  	--a-button-line-drawing-background-color: transparent;
+  }
+}
+
+.o-contact {
   //height: 100vh;
 
-  .description{
-    margin-top: 12px;
+  .description {
+	margin-top: 12px;
   }
 
-  .divider-container{
-    width: 100%;
+  .divider-container {
+	width: 100%;
   }
 
-  .content{
-    .contact-with-icon{
-      margin-top: 32px;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
+  .content {
+	.contact-with-icon {
+	  margin-top: 32px;
+	  display: flex;
+	  gap: 24px;
+	  flex-direction: column;
+	  align-items: start;
 
-      .icon-and-text{
-        display: flex;
-        gap: 12px;
-        align-items: center;
+	  .icon-and-text {
+		a {
+		  display: flex;
+		  gap: 12px;
+		  align-items: center;
 
-        :first-child{
-          line-height: 0;
-        }
-      }
-    }
+
+		  :first-child {
+			line-height: 0;
+		  }
+		}
+	  }
+	}
   }
 
-  form{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    background: white;
-    border-radius: $border-radius-m;
-    box-shadow: $box-shadow-xxl;
+  form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	background: white;
+	border-radius: 0 0 $border-radius-m $border-radius-m;
+	box-shadow: $box-shadow-xxl;
 
-    .name-and-company{
-      display: flex;
-      width: 100%;
-      column-gap: 32px;
+	.name-and-company {
+	  display: flex;
+	  width: 100%;
+	  column-gap: 32px;
+	  flex-direction: column;
 
-    .name{
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      input{
-        width: 100%;
-      }
-    }
-    .company{
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      input{
-        width: 100%;
-      }
-    }
-    }
+	  .name {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
 
-    .email{
-      margin-top: 32px;
-      display: flex;
-      flex-direction: column;
-      input{
-        width: 100%;
-      }
-    }
+		input {
+		  width: 100%;
+		}
+	  }
 
-    textarea{
-      margin-top: 32px;
-      min-height: 100px;
-      min-width: 100%;
-      max-width: 100%;
-    }
+	  .company {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
 
-    input{
-      padding: 15px;
-      background: rgba(100, 100, 100, 0.18);
-      border: none;
-      border-radius: $border-radius-m;
-      font-size: calc($font-size-input / 1.2);
-    }
-    label{
-      padding: 0 0 12px 0;
-    }
+		input {
+		  width: 100%;
+		}
+	  }
+	}
 
-    .action{
-      margin: 32px auto 0 auto;
-    }
+	.email {
+	  margin-top: 32px;
+	  display: flex;
+	  flex-direction: column;
 
-    button{
-      border: none;
-      background: none;
-    }
+	  input {
+		width: 100%;
+	  }
+	}
+
+	input {
+	  @include inputFormat;
+	}
+
+	.message-container{
+	  margin-top: 32px;
+	}
+	textarea {
+	  @include inputFormat;
+	  margin-top: 12px;
+	  min-height: 100px;
+	  min-width: 100%;
+	  max-width: 100%;
+	}
+
+	label {
+	  padding: 0 0 12px 0;
+	}
+
+	.action {
+	  margin: 32px auto 0 auto;
+	}
+
+	button {
+	  border: none;
+	  background: none;
+	}
+  }
+}
+
+
+@media (min-width: 576px){
+  .o-contact{
+	form{
+	  .name-and-company{
+		flex-direction: row;
+	  }
+	}
   }
 }

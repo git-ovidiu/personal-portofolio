@@ -1,15 +1,54 @@
 
 
 .o-work{
+  position: relative;
+
+  .article-container{
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+
+	.title{
+	  line-height: 1.2important;
+	}
+
+	.divider{
+	  margin-bottom: 7px;
+	}
+
+	.small-article{
+	  display: flex;
+	  flex-direction: column;
+	  gap: 12px;
+	}
+  }
 
 
   .card-column{
 	position: sticky;
-	top: 150px;
+	top: 37px;
 	position: -webkit-sticky;
   }
 
   .card-container{
+	--m-card-buttons-margin-top: 10px;
+	.action-content{
+	  margin-left: -16px;
+	  margin: 0 auto;
+	}
+
+	.title-container{
+	  margin: 0 auto;
+	  text-align: center;
+	  margin-top: 32px;
+
+	  .combined-title{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	}
+
 
 	.card-image-container{
 	position: relative;

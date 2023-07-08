@@ -10,10 +10,10 @@ import {
   CustomGridColumn,
   CustomGridRow,
   CustomWrapper,
-  Description,
+  Description, Divider,
   Label,
   Logo,
-  MediaImage,
+  MediaImage, SimpleDivider,
   TitleAndDescription,
 } from "@git-ovidiu/nextjs-component-library";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -29,16 +29,16 @@ import "@splidejs/react-splide/css/sea-green";
 import "@splidejs/react-splide/css/core";
 import workCard from "./api/work-card";
 import article from "main/components/Work/api/article"
+import articles from "main/components/Work/api/article"
 
 export default function Work() {
   return (
     <div className={styles["o-work"]}>
       <CustomWrapper
         border-radius="0px"
-        space-bottom="0"
-        space-top="0"
+        space-bottom="m"
+        space-top="m"
         custom-background-color={"white"}
-        full-height
       >
         <CustomGridRow vertical-alignment="">
           <CustomGridColumn
@@ -48,7 +48,7 @@ export default function Work() {
             column-padding-bottom="unset"
             column-padding-top="unset"
             columns-equal-paddings
-            lg={4}
+            lg={5}
             xs={12}
           >
             <div className={styles["card-column"]}>
@@ -87,17 +87,29 @@ export default function Work() {
                       ))}
                     </>
                   }
-                  title={<AnimatedText text={workCard.title} variant="h5" />}
-                  description={
-                    <Description
-                      text={
-                        <>
-                          <p>{workCard.description}</p>
-                        </>
-                      }
+                  title={<div className={styles["title-container"]}>
+                    <Divider
+                        divider={<>
+                          <SimpleDivider animate loop animation-duration="1s" border-radius="10px" color="#AD005E" height="5px" width="100%"/>
+                        </>}
+                        position="right"
+                        width="100%"
                     />
-                  }
-                  buttons={<>{workCard.button}</>}
+                    <div className={styles["combined-title"]}>
+                      {workCard.titles?.map((title, index) => (
+                          <div key={index}>{title}</div>
+                      ))}
+                    </div>
+                    <Divider
+                        divider={<>
+                          <SimpleDivider animate loop animation-duration="1s" border-radius="10px" color="#151A36" height="5px" width="100%"/>
+                        </>}
+                        position="right"
+                        width="100%"
+                    />
+                </div>}
+                  description={""}
+                  buttons={<div className={styles["action-content"]}>{workCard.button}</div>}
                 />
               </div>
             </div>
@@ -109,25 +121,23 @@ export default function Work() {
             column-padding-bottom="unset"
             column-padding-top="unset"
             columns-equal-paddings
-            lg={7}
+            lg={6}
             lg-offset={1}
             xs={12}
           >
-            {article.first_title}
-            <br />
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
-              {article.first_description}
-            </motion.div>
-
-            <br />
-            <br />
-            <br />
-
-            {article.second_title}
-            <br />
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
-              {article.second_description}
-            </motion.div>
+            <div className={styles["article-container"]}>
+            {articles.map((article, index ) => (
+                <div className={styles["small-article"]} key={index}>
+                  <div className={styles.title}>
+                    {article.title}
+                  </div>
+                  <div className={styles["divider"]}>
+                    {article.divider}
+                  </div>
+                  {article.description}
+                </div>
+            ))}
+            </div>
           </CustomGridColumn>
         </CustomGridRow>
       </CustomWrapper>
