@@ -2,6 +2,7 @@ import {AnimatedText, MediaImage, MediaVideo, SimpleDivider} from "@git-ovidiu/n
 import React from "react";
 import {MdOutlineLiveTv} from "react-icons/md"
 import Image from "next/image"
+import {BiAtom} from "react-icons/bi"
 
 const cards = [
     // vibe interior
@@ -97,7 +98,7 @@ const cards = [
       }),
       "image-border-radius": "20px",
       "object-fit": "cover",
-      "padding-bottom-desktop": "50%",
+      "padding-bottom-desktop": "40%",
       "padding-bottom-mobile": "50%",
       "padding-bottom-tablet": "50%",
     }),
@@ -170,6 +171,13 @@ const cards = [
       {
         text: "Formspree"
       },
+    ],
+    actions: [
+      {
+        text: "Live Website",
+        icon: React.createElement(BiAtom, { size: 20 }),
+        url: "https://git-ovidiu.github.io/nextjs-component-library/?path=/story/atoms-text-animated-text--animated-text-story"
+      }
     ]
   },
 
@@ -254,6 +262,13 @@ const cards = [
       {
         text: "Formspree"
       },
+    ],
+    actions: [
+      {
+        text: "Live Website",
+        icon: React.createElement(BiAtom, { size: 20 }),
+        url: "https://moo-free-brews.vercel.app/"
+      }
     ]
   },
 ];

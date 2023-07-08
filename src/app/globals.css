@@ -13,6 +13,7 @@
 body{
     overflow-x: hidden;
     max-width: 100%;
+    width: 100%;
     position: relative;
     height: 100%;
 }
@@ -60,6 +61,11 @@ body{
     fill: black;
 }
 
+.splide{
+    padding: 20px!important;
+
+}
+
 .splide .splide__pagination__page{
     border-radius: 50%;
     width: 7px;
@@ -81,10 +87,22 @@ body{
     background: black;
 }
 
-.splide .splide__arrow {
+.splide .splide__arrow--prev {
+    margin-left: -20px!important;
+}
+.splide .splide__arrow--next {
+    margin-right: -20px!important;
 }
 .splide .splide__arrow :hover:not(:disabled) {
     opacity: .9;
     fill: black;
 }
 /*// splide*/
+
+
+
+@media (min-width: 992px){
+    .splide{
+        padding: 0 3rem!important;
+    }
+}

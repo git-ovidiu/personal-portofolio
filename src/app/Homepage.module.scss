@@ -26,22 +26,22 @@
   }
 
   //.education{
-	//min-height: 100vh;
+  //min-height: 100vh;
   //}
   //.work{
-	//min-height: 100vh;
+  //min-height: 100vh;
   //}
   //.projects{
-	//min-height: 100vh;
+  //min-height: 100vh;
   //}
   //.contact{
-	//min-height: 100vh;
+  //min-height: 100vh;
   //}
 
 
   &::before {
 	content: '';
-  height: 100vh;
+	height: 100vh;
 	width: 100%;
 	background: white;
 	filter: blur(20px);
@@ -49,12 +49,12 @@
   }
 
   .m-listing-logos{
-	  }
+  }
 
 
   .homepage-shape {
 	filter: blur(40px);
-	  z-index: 0;
+	z-index: 0;
 
 	img {
 	  animation: scale 5s infinite linear;
@@ -144,6 +144,7 @@
   .homepage-shape {
 	filter: blur(40px);
 	z-index: 0;
+	display: none;
 
 	img {
 	  animation: scale 5s infinite linear;

@@ -51,7 +51,7 @@ export default function Work() {
             lg={4}
             xs={12}
           >
-            <div className={styles["card-column"]} >
+            <div className={styles["card-column"]}>
               <div className={styles["card-container"]}>
                 <Card
                   image={
@@ -67,28 +67,37 @@ export default function Work() {
                   }
                   labels={
                     <>
-                    <p>skills: </p>
-                    {workCard.labels?.map((label, labelIndex) =>(
-                        <Label
-                            key={labelIndex}
-                            background-color={label.background}
-                            color={label.color}
-                            text={label.text}
-                        />
-                    ))}
+                      <p>skills: </p>
+                      {workCard.labels?.map((label, labelIndex) => (
+                        <motion.div
+                          key={labelIndex}
+                          initial={{
+                            opacity: 0,
+                            x: 100,
+                          }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          viewport={{ once: true }}
+                          transition={{
+                            duration: 0.3,
+                            delay: labelIndex * 0.2,
+                          }}
+                        >
+                          {label}
+                        </motion.div>
+                      ))}
                     </>
                   }
                   title={<AnimatedText text={workCard.title} variant="h5" />}
                   description={
                     <Description
-                        text={
-                          <>
-                            <p>{workCard.description}</p>
-                          </>
-                        }
+                      text={
+                        <>
+                          <p>{workCard.description}</p>
+                        </>
+                      }
                     />
                   }
-                  buttons={"na na"}
+                  buttons={<>{workCard.button}</>}
                 />
               </div>
             </div>
@@ -105,27 +114,20 @@ export default function Work() {
             xs={12}
           >
             {article.first_title}
-            <br/>
-            <motion.div
-              initial={{opacity: 0}}
-              whileInView={{opacity: 1}}
-            >
+            <br />
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
               {article.first_description}
             </motion.div>
 
-            <br/>
-            <br/>
-            <br/>
+            <br />
+            <br />
+            <br />
 
             {article.second_title}
-            <br/>
-            <motion.div
-                initial={{opacity: 0}}
-                whileInView={{opacity: 1}}
-            >
+            <br />
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
               {article.second_description}
             </motion.div>
-
           </CustomGridColumn>
         </CustomGridRow>
       </CustomWrapper>

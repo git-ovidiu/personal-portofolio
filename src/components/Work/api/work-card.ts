@@ -1,54 +1,105 @@
+import React from "react"
+import {ButtonLineDrawing, Label} from "@git-ovidiu/nextjs-component-library"
+import {CgLaptop} from "react-icons/cg"
+import {FaNetworkWired} from "react-icons/fa"
 
 const workCard = {
 	labels: [
-		{
-			text: "lit-elements",
+		React.createElement(Label, {
+			"background-color": "#272F93",
 			color: "white",
-			background: "#2F4DF6",
-		},
-		{
-			text: "hubspot",
-			background: "#EB4027",
-			color: "white"
-		},
-		{
-			text: "typescript",
+			text: "lit-element"
+		}),
+
+		React.createElement(Label, {
+			"background-color": "#2660E4",
 			color: "white",
-			background: "#0D65C0",
-		},
-		{
-			text: "scss",
+			text: "css"
+		}),
+		React.createElement(Label, {
+			"background-color": "#DCBF2F",
 			color: "white",
-			background: "#B4497E",
-		},
-		{
-			text: "storybook",
+			text: "javascript"
+		}),
+		React.createElement(Label, {
+			"background-color": "#8311F2",
 			color: "white",
-			background: "#F2276E",
-		},
-		{
-			text: "figma",
+			text: "bootstrap"
+		}),
+		React.createElement(Label, {
+			"background-color": "#27B4B5",
 			color: "white",
-			background: "#1D1D1D",
-		},
-		{
-			text: "jira",
+			text: "responsive design"
+		}),
+		React.createElement(Label, {
+			"background-color": "#DD7A94",
 			color: "white",
-			background: "",
-		},
-		{
-			text: "git",
+			text: "teamwork"
+		}),
+
+		React.createElement(Label, {
+			"background-color": "#2F74C0",
 			color: "white",
-			background: "#E84E32",
-		},
-		{
-			text: "gitlab",
+			text: "typescript"
+		}),
+		React.createElement(Label, {
+			"background-color": "#E56028",
 			color: "white",
-			background: "#F56924",
-		},
+			text: "html"
+		}),
+		React.createElement(Label, {
+			"background-color": "#C76495",
+			color: "white",
+			text: "scss"
+		}),
+		React.createElement(Label, {
+			"background-color": "#F75933",
+			color: "white",
+			text: "hubspot"
+		}),
+		React.createElement(Label, {
+			"background-color": "#000000",
+			color: "white",
+			text: "figma"
+		}),
+		React.createElement(Label, {
+			"background-color": "#1D74EC",
+			color: "white",
+			text: "jira"
+		}),
+		React.createElement(Label, {
+			"background-color": "#E44D31",
+			color: "white",
+			text: "git"
+		}),
+		React.createElement(Label, {
+			"background-color": "#000000",
+			color: "white",
+			text: "github"
+		}),
+		React.createElement(Label, {
+			"background-color": "#F56924",
+			color: "white",
+			text: "gitlab"
+		}),
+		React.createElement(Label, {
+			"background-color": "#F4A34C",
+			color: "white",
+			text: "gitpod"
+		})
 	],
 	title: " FrozenLogic (de facut cardul sticky)",
-	description: "vix ex vidisse tempor nullam tempor tibique reformidans minim ornatus utroque. "
+	description: "foarte scurta descriere despre firma asta",
+	button: React.createElement(ButtonLineDrawing, {
+		"icon": React.createElement(FaNetworkWired, {
+			size: 20}),
+		"icon-position": "right",
+		"line-effect": "line-below",
+		"link-url": "https://www.frozenlogic.net/",
+		"open-in-new-tab": true,
+		"padding": "xs",
+		"text": "Frozenlogic Website",
+	})
 }
 
 
