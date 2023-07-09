@@ -17,6 +17,7 @@ const {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./Avatar.module.scss";
+import {label_color, primary_color} from "main/components/Settings/FramerMotion"
 
 const shapeVariantCustom = {
   initial: { opacity: 0, height: 0 },
@@ -41,6 +42,7 @@ export default function Avatar() {
         border-radius="0px"
         space-bottom="0"
         space-top="m"
+        custom-background-color={"white"}
         container-fluid
       >
         <CustomGridRow vertical-alignment="center">
@@ -58,6 +60,7 @@ export default function Avatar() {
             >
               <MediaImage
                 image-border-radius={"50%"}
+                style={{border: "2px solid #29648a", borderRadius: "50%"}}
                 image={
                   <div className={styles["avatar-container"]}>
                     <Image
@@ -81,7 +84,7 @@ export default function Avatar() {
                   animation-delay="0s"
                   animation-duration="3s"
                   border-radius="0px"
-                  color="#000"
+                  color={primary_color}
                   height="2px"
                   loop
                   width="100%"
@@ -97,7 +100,7 @@ export default function Avatar() {
                         animate-vertical
                         animation-duration="1s"
                         animation-delay={"0.5s"}
-                        color="#000"
+                        color={primary_color}
                         height="100px"
                         loop
                         width="2px"
@@ -117,7 +120,7 @@ export default function Avatar() {
                   animation-delay="0s"
                   animation-duration="3s"
                   border-radius="0px"
-                  color="#000"
+                  color={primary_color}
                   height="2px"
                   loop
                   width="100%"

@@ -30,6 +30,7 @@ import "@splidejs/react-splide/css/core";
 import workCard from "./api/work-card";
 import article from "main/components/Work/api/article"
 import articles from "main/components/Work/api/article"
+import {delay, duration_fast, duration_slow} from "main/components/Settings/FramerMotion"
 
 export default function Work() {
   return (
@@ -52,7 +53,12 @@ export default function Work() {
             xs={12}
           >
             <div className={styles["card-column"]}>
-              <div className={styles["card-container"]}>
+              <motion.div className={styles["card-container"]}
+                initial={{opacity: 0, x: -100}}
+                whileInView={{opacity: 1, x: 0}}
+                viewport={{once: true}}
+                transition={{duration: duration_fast, delay: delay}}
+              >
                 <Card
                   image={
                     <div className={styles["card-image-container"]}>
@@ -111,7 +117,7 @@ export default function Work() {
                   description={""}
                   buttons={<div className={styles["action-content"]}>{workCard.button}</div>}
                 />
-              </div>
+              </motion.div>
             </div>
           </CustomGridColumn>
           <CustomGridColumn
@@ -127,7 +133,12 @@ export default function Work() {
           >
             <div className={styles["article-container"]}>
             {articles.map((article, index ) => (
-                <div className={styles["small-article"]} key={index}>
+                <motion.div className={styles["small-article"]} key={index}
+                    initial={{opacity: 0, x: 100}}
+                    whileInView={{opacity: 1, x: 0}}
+                    viewport={{once: true}}
+                    transition={{duration: duration_fast}}
+                >
                   <div className={styles.title}>
                     {article.title}
                   </div>
@@ -135,7 +146,7 @@ export default function Work() {
                     {article.divider}
                   </div>
                   {article.description}
-                </div>
+                </motion.div>
             ))}
             </div>
           </CustomGridColumn>

@@ -1,4 +1,4 @@
-
+@use '../../styles/main.module' as *;
 .m-avatar {
   position: relative;
 
@@ -46,10 +46,8 @@
 	height: 150px;
 	  z-index: 2;
 		border-radius: 50%;
-		border: 2px solid black;
 		filter: grayscale(100%);
 		transition: all 0.37s;
-
 		&:hover {
 		  filter: none;
 
@@ -57,8 +55,6 @@
 	  }
 	}
 
-	.image-container {
-	}
 
 	.divider {
 	  width: 100%;
@@ -67,19 +63,19 @@
 	  z-index: 1;
 
 	  &.horizontal-divider-left {
-		left: -100px;
+		left: -50%;
 		top: 75px;
 	  }
 
 	  &.horizontal-divider-right {
-		right: -100px;
+		right: -50%;
 		top: 75px;
 		transform: scaleX(-1);
 
 	  }
 
 	  &.vertical-divider {
-		top: -150px;
+		top: -100%;
 		right: 50%;
 		left: 50%;
 	  }
@@ -88,4 +84,21 @@
 
   }
 
+}
+
+@media (min-width: 576px){
+	.m-avatar{
+	  .avatar-image{
+		.divider{
+		  &.horizontal-divider-left{
+			left: 100%;
+			width: 100vw;
+		  }
+		  &.horizontal-divider-right{
+			right: 100%;
+			width: 100vw;
+		  }
+		}
+	  }
+	}
 }

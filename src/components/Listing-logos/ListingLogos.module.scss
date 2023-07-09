@@ -16,6 +16,8 @@
 	overflow:hidden;
 	position: relative;
 	width: auto;
+	display: flex;
+	align-items: center;
 
 	.slide-track {
 	  animation: scroll $animationSpeed linear infinite;

@@ -1,7 +1,7 @@
 @import '../styles/Global-Settings/Paddings.css';
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: transparent;
@@ -12,7 +12,7 @@
     font-family: 'Outfit', sans-serif;
 }
 
-body{
+body {
     overflow-x: hidden;
     max-width: 100%;
     width: 100%;
@@ -20,7 +20,7 @@ body{
     height: 100%;
 }
 
-*::selection{
+*::selection {
     background: rgba(236, 206, 139, 0.49);
 }
 
@@ -28,11 +28,11 @@ body{
 /*    background: transparent;*/
 /*}*/
 
-*:focus{
+*:focus {
     outline: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
     font-size: inherit;
@@ -40,71 +40,112 @@ a{
     line-height: inherit;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
-body{
+body {
     background: white;
 }
 
 
-.white{
-    color: white!important;
+.white {
+    color: white !important;
 }
 
-.black{
-    color: black!important;
+.black {
+    color: black !important;
 }
 
 
 /*splide*/
-.splide .splide__arrow svg{
+.splide .splide__arrow svg {
     fill: black;
 }
 
-.splide{
-    padding: 20px!important;
+.splide {
+    padding: 20px !important;
 
 }
 
-.splide .splide__pagination__page{
+.splide .splide__pagination__page {
     border-radius: 50%;
     width: 7px;
     height: 7px;
     background: grey;
 }
 
-.splide .splide__arrow svg :hover{
-    fill: red;
-}
+/*.splide .splide__arrow svg :hover {*/
+/*    fill: red;*/
+/*}*/
 
-.splide .splide__pagination__page.is-active{
+.splide .splide__pagination__page.is-active {
     border-radius: 50%;
     width: 7px;
     height: 7px;
     background: black;
 }
-.splide .splide__pagination__page:hover{
+
+.splide .splide__pagination__page:hover {
     background: black;
 }
 
 .splide .splide__arrow--prev {
-    margin-left: -20px!important;
+    margin-left: -20px !important;
 }
+
 .splide .splide__arrow--next {
-    margin-right: -20px!important;
+    margin-right: -20px !important;
 }
+
 .splide .splide__arrow :hover:not(:disabled) {
     opacity: .9;
     fill: black;
 }
+
 /*// splide*/
 
 
+.o-projects-global .splide {
+    padding: 0 !important;
+}
 
-@media (min-width: 992px){
-    .splide{
-        padding: 0 3rem!important;
+.o-education-global .splide .splide__pagination__page.is-active {
+    background: white;
+}
+
+.o-education-global .splide .splide__pagination__page {
+    background: white;
+}
+.o-education-global .splide .splide__arrow svg {
+    fill: white;
+}
+.o-education-global .splide .splide__arrow :hover:not(:disabled) {
+    opacity: .9;
+    fill: white;
+}
+
+
+.o-projects-global .splide .splide__pagination__page {
+    background: white;
+}
+
+/*.splide .splide__arrow svg :hover {*/
+/*    fill: red;*/
+/*}*/
+
+.o-projects-global .splide .splide__pagination__page.is-active {
+    background: white;
+}
+
+.o-projects-global .splide .splide__pagination__page:hover {
+    background: white;
+}
+
+
+
+@media (min-width: 992px) {
+    .splide {
+        padding: 0 3rem !important;
     }
 }

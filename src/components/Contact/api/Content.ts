@@ -5,7 +5,7 @@ import { BsTelephonePlusFill } from "react-icons/bs";
 
 const content = {
   title: "Contact me!",
-  description: "description",
+  description: "Let's collaborate to bring your unique ideas to life with captivating websites. Together, we'll create an impactful online presence. Contact me today and let's get started on achieving your digital goals!",
   iconAndTexts: [
     {
       href: "https://www.linkedin.com/in/bunghez-ovidiu-eduard/",

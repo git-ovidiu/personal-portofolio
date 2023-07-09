@@ -19,7 +19,7 @@
   .button-diapositive{
 	@include  flex(row, center, center);
 	--a-button-line-drawing-text-color: white;
-  	--a-button-line-drawing-line-color: #{$primary-color};
+  	--a-button-line-drawing-line-color: #{$accent-color};
   	--a-button-line-drawing-background-color: transparent;
   }
 }

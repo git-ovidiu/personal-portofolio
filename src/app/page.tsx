@@ -19,6 +19,7 @@ import {
   Description, TitleAndDescription,
 } from "@git-ovidiu/nextjs-component-library";
 import styles from "./Homepage.module.scss";
+import {delay, duration_fast, label_color} from "main/components/Settings/FramerMotion"
 
 //navigation jump-to-section
 // const smoothScrollToSection = (e: React.MouseEvent, sectionId: string) => {
@@ -287,8 +288,8 @@ export default function Homepage() {
                 <CustomWrapper
                     border-radius="0px"
                     space-top="0"
-                    space-bottom="m"
-                    custom-background-color={"transparent"}
+                    space-bottom="0"
+                    custom-background-color={"white"}
                 >
                   <CustomGridRow vertical-alignment="center">
                     <CustomGridColumn
@@ -302,17 +303,25 @@ export default function Homepage() {
                           initial={{ opacity: 0, y: 50 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: 0.2 }}
+                          className={styles["text-content-container"]}
                       >
+                        <div className={styles["first-shape"]}>
+                            <Image src={"https://camonysi.sirv.com/portofolio/homepage-shape-primary-color.svg"} alt={"Placeholder"} layout={"responsive"} width={500} height={500}/>
+                        </div>
                         <TitleAndDescription
                             text-align="center"
-                            label={<Description color="red" text="About me"/>}
+                            label={<Description color={label_color} text="About me"/>}
                             title={
                             <>
                               <AnimatedText text="Welcome to my portfolio!" variant="h2"/>
                               <AnimatedText text="I'm Ovidiu, a dedicated web developer specializing in web design and frontend development." variant="h2"/>
                             </>
                             }
-                            description={<h6>{`I'm`} passionate about creating visually stunning and functional websites and I strive to craft seamless user experiences through innovative design and new frontend technologies.</h6>}
+                            description={<motion.h6
+                                initial={{opacity: 0, y: 100}}
+                                animate={{opacity: 1, y: 0}}
+                                transition={{duration: duration_fast, delay: delay}}
+                            >{`I'm`} passionate about creating visually stunning and functional websites and I strive to craft seamless user experiences through innovative design and new frontend technologies.</motion.h6>}
                             action={""}
                         />
                       </motion.div>
@@ -355,7 +364,7 @@ export default function Homepage() {
 
                 <CustomWrapper
                     border-radius="0px"
-                    space-top="xxl"
+                    space-top="xl"
                     space-bottom="m"
                     custom-background-color={"white"}
                 >

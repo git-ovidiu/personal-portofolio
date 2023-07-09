@@ -19,6 +19,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AiOutlineDownload } from "react-icons/ai";
 import EducationCard from "main/components/Education/api/Education-card"
 import EducationCards from "main/components/Education/api/Education-card"
+import {delay, duration_fast, duration_slow, label_color} from "main/components/Settings/FramerMotion"
 // import '@splidejs/react-splide/css';
 // import '@splidejs/react-splide/css/skyblue';
 // import '@splidejs/react-splide/css/sea-green';
@@ -26,32 +27,52 @@ import EducationCards from "main/components/Education/api/Education-card"
 
 export default function Education() {
   return (
+      <section className="o-education-global">
     <div className={styles["o-education"]}>
       <section className={styles["o-listing-highlights"]}>
         <CustomWrapper
           border-radius="0px"
           space-top="0"
           space-bottom="0"
-          custom-background-color={"#f0e5c7"}
+          // custom-background-color={"#7395ae"}
+          custom-background-color={"#29648a"}
           full-height
         >
           <CustomGridRow vertical-alignment="center">
             <CustomGridColumn lg={6} xs={12}>
+              <motion.div
+              initial={{opacity: 0, x: -100}}
+              whileInView={{opacity: 1, x: 0}}
+              viewport={{once: true}}
+              transition={{duration: duration_fast, delay: delay}}
+              >
               <TitleAndDescription
                 action={""}
-                description="With a solid foundation built upon completing a frontend course at Codecool, along with earning a Master's degree in Integrated Information Systems for Business from the University Transylvania of Brasov, and a Bachelor's degree in Applied Modern Languages from the University of Bucharest, I bring a comprehensive skill set to the table. My expertise encompasses web development, e-commerce strategies, proficiency in multiple languages, and a practical understanding of economic principles."
-                label={<Description color="red" text="Education" />}
+                description={
+                <>
+                <Description color={"white"} text={"With a solid foundation built upon completing a frontend course at Codecool, along with earning a Master's degree in Integrated Information Systems for Business from the University Transylvania of Brasov, and a Bachelor's degree in Applied Modern Languages from the University of Bucharest, I bring a comprehensive skill set to the table. My expertise encompasses web development, e-commerce strategies, proficiency in multiple languages, and a practical understanding of economic principles."}/>
+                </>
+                }
+                label={<Description color={label_color} text="Education" />}
                 text-align="center"
                 title={
                   <AnimatedText
                     text="Diverse Background in Web Development, E-commerce, Languages, and Economics"
                     variant="h4"
+                    color={"white"}
                   />
                 }
               />
+              </motion.div>
             </CustomGridColumn>
 
             <CustomGridColumn lg={6} xs={12}>
+              <motion.div
+              initial={{opacity: 0, x: 100}}
+              whileInView={{opacity: 1, x: 0}}
+              transition={{duration: duration_fast, delay: delay}}
+              viewport={{once: true}}
+              >
               <Splide
                 aria-label="My Favorite Images"
                 // style={{padding: "20px"}}
@@ -70,6 +91,11 @@ export default function Education() {
               >
                 {EducationCards.map((card, index) =>(
                     <SplideSlide key={index}>
+                      <motion.div
+                          initial={{opacity: 0, y: 100}}
+                          whileInView={{opacity: 1, y: 0}}
+                          transition={{duration: duration_fast}}
+                      >
                       <Card
                           is-overlapped
                           // image-height-mobile={"50px"}
@@ -123,13 +149,16 @@ export default function Education() {
                             </>
                           }
                       />
+                      </motion.div>
                     </SplideSlide>
                 ))}
               </Splide>
+              </motion.div>
             </CustomGridColumn>
           </CustomGridRow>
         </CustomWrapper>
       </section>
     </div>
+      </section>
   );
 }

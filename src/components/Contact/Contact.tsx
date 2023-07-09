@@ -26,6 +26,7 @@ import { SiMinutemailer } from "react-icons/si";
 import { RiMailSendFill } from "react-icons/ri";
 import { Outfit } from "next/font/google";
 import {BiArrowBack} from "react-icons/bi"
+import {label_color} from "main/components/Settings/FramerMotion"
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -61,7 +62,7 @@ export default function Contact() {
               >
                 <TitleAndDescription
                     action={""}
-                    label={<Description color="#416f5d" text="email delivery status:" />}
+                    label={<Description color={label_color} text="email delivery status:" />}
                     text-align="left"
                     title={
                       <span>
@@ -81,7 +82,7 @@ export default function Contact() {
                                     animate
                                     animation-duration="2s"
                                     border-radius="0"
-                                    color="#416f5d"
+                                    color={label_color}
                                     height="5px"
                                     width="100%"
                                 />
@@ -94,7 +95,7 @@ export default function Contact() {
                         <br/>
                         <div className={styles["button-diapositive"]}>
                           <ButtonLineDrawing
-                              icon={<BiArrowBack size={20} />}
+                              icon={<BiArrowBack size={20} color={label_color} />}
                               icon-position="left"
                               line-effect="line-below"
                               link-url="/"
@@ -141,7 +142,7 @@ export default function Contact() {
                       animate
                       animation-duration="1s"
                       border-radius="30px 0 0 0"
-                      color="#000000"
+                      color="#FA8072"
                       height="5px"
                       width="100%"
                     />
@@ -149,7 +150,7 @@ export default function Contact() {
                       animate
                       animation-duration="1s"
                       border-radius="0"
-                      color="#444444"
+                      color="#FFA07A"
                       height="5px"
                       width="100%"
                     />
@@ -157,7 +158,7 @@ export default function Contact() {
                       animate
                       animation-duration="1s"
                       border-radius="0"
-                      color="#666666"
+                      color="#FFDAB9"
                       height="5px"
                       width="100%"
                     />
@@ -165,15 +166,7 @@ export default function Contact() {
                       animate
                       animation-duration="1s"
                       border-radius="0"
-                      color="#888888"
-                      height="5px"
-                      width="100%"
-                    />
-                    <SimpleDivider
-                      animate
-                      animation-duration="1s"
-                      border-radius="0"
-                      color="#AAAAAA"
+                      color="#FFE7D6"
                       height="5px"
                       width="100%"
                     />
@@ -181,7 +174,7 @@ export default function Contact() {
                       animate
                       animation-duration="1s"
                       border-radius="0 30px 0 0"
-                      color="#CCCCCC"
+                      color="#FFF2E8"
                       height="5px"
                       width="100%"
                     />
@@ -258,11 +251,26 @@ export default function Contact() {
                 color={"black"}
                 variant={"h2"}
               />
+              <Divider
+                  divider={
+                    <>
+                      <SimpleDivider
+                          animate
+                          animation-duration="1s"
+                          border-radius="10px"
+                          color="#FA8072"
+                          height="5px"
+                          width="64px"
+                      />
+                    </>
+                  }
+                  position="left"
+                  width="100%"
+              />
               <div className={styles["description"]}>
                 <Description
                   text={<p>{content.description}</p>}
                   color={"black"}
-                  italic
                 />
               </div>
               <div className={styles["contact-with-icon"]}>
