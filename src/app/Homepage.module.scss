@@ -1,5 +1,6 @@
 
-.desktop{
+.o-homepage{
+  overflow: hidden;
   //width: 100%;
   //z-index: 20;
   //position: relative;
@@ -21,7 +22,7 @@
 
 
   .about-container{
-	min-height: 100vh;
+	//min-height: 100vh;
 	//scroll-snap-align: start;
 	//position: relative;
 
@@ -61,8 +62,8 @@
 	  z-index: -5;
 	  filter: blur(30px);
 	  transform: rotate(90deg);
-	  right: -370px;
-	  bottom: -50px;
+	  right: 0;
+	  bottom: 0;
 	  opacity: 0.7;
 	}
   }
@@ -95,92 +96,16 @@
   }
 }
 
-
-.mobile{
-  //width: 100%;
-  //z-index: 20;
-  //position: relative;
-  //overflow: hidden;
-  //height: 100%;
-
-  position: relative;
-  overflow-y: auto;
-  overscroll-behavior-y: contain;
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-  width: 100%;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
-	display: none;
-  }
-
-
-  .about-container{
-	height: 100vh;
-	scroll-snap-align: center;
-	position: relative;
-  }
-
-  .education{
-	height: 100vh;
-	scroll-snap-align: center;
-	position: relative;
-  }
-  .work{
-	height: 100vh;
-	scroll-snap-align: center;
-	position: relative;
-  }
-  .projects{
-	height: 100vh;
-	scroll-snap-align: center;
-	position: relative;
-  }
-  .contact{
-	height: 100vh;
-	scroll-snap-align: center;
-	position: relative;
-  }
-
-  &::before {
-	content: '';
-	height: 100vh;
-	width: 100%;
-	background: white;
-	filter: blur(20px);
-	position: absolute;
-  }
-
-  .m-listing-logos{
-  }
-
-
-  .homepage-shape {
-	filter: blur(40px);
-	z-index: 0;
-	display: none;
-
-	img {
-	  animation: scale 5s infinite linear;
-	  z-index: -22;
-	  opacity: 0.6;
-	  position: absolute;
-	  margin-left: 0px;
-	  margin-top: -170px;
-
-
-	  @keyframes scale {
-		0% {
-		  transform: scale(0.5);
-		}
-		50% {
-		  transform: scale(0.65);
-		}
-		100% {
-		  transform: scale(0.5);
+@media (min-width: 992px){
+  .o-homepage{
+	.text-content-container{
+	  .first-shape{
+		.first-shape{
+		  right: -370px;
+		  bottom: -50px;
 		}
 	  }
 	}
   }
 }
+

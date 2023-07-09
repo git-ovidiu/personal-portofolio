@@ -94,21 +94,21 @@ export default function Work() {
                     </>
                   }
                   title={<div className={styles["title-container"]}>
-                    <Divider
-                        divider={<>
-                          <SimpleDivider animate loop animation-duration="1s" border-radius="10px" color="#AD005E" height="5px" width="100%"/>
-                        </>}
-                        position="right"
-                        width="100%"
-                    />
                     <div className={styles["combined-title"]}>
                       {workCard.titles?.map((title, index) => (
                           <div key={index}>{title}</div>
                       ))}
                     </div>
+                    {/*<Divider*/}
+                    {/*    divider={<>*/}
+                    {/*      <SimpleDivider animate loop animation-duration="1s" border-radius="10px" color="#151A36" height="5px" width="100%"/>*/}
+                    {/*    </>}*/}
+                    {/*    position="right"*/}
+                    {/*    width="100%"*/}
+                    {/*/>*/}
                     <Divider
                         divider={<>
-                          <SimpleDivider animate loop animation-duration="1s" border-radius="10px" color="#151A36" height="5px" width="100%"/>
+                          <SimpleDivider animate loop animation-duration="1s" border-radius="10px" color="#AD005E" height="5px" width="100%"/>
                         </>}
                         position="right"
                         width="100%"

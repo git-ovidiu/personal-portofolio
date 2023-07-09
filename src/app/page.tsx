@@ -246,7 +246,7 @@ export default function Homepage() {
   )
 
       return (
-          <section className={styles["desktop"]}>
+          <section className={styles["o-homepage"]}>
             <div className={styles["about-container"]}>
               <div id="about" className={styles["about"]}>
                 <Avatar />
@@ -365,7 +365,7 @@ export default function Homepage() {
                 <CustomWrapper
                     border-radius="0px"
                     space-top="xl"
-                    space-bottom="m"
+                    space-bottom="xl"
                     custom-background-color={"white"}
                 >
                   <CustomGridRow vertical-alignment="center">

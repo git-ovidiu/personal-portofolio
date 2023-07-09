@@ -32,8 +32,8 @@ export default function Education() {
       <section className={styles["o-listing-highlights"]}>
         <CustomWrapper
           border-radius="0px"
-          space-top="0"
-          space-bottom="0"
+          space-top="xl"
+          space-bottom="xl"
           // custom-background-color={"#7395ae"}
           custom-background-color={"#29648a"}
           full-height
