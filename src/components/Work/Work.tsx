@@ -137,6 +137,7 @@ export default function Work() {
                 <motion.div className={styles["small-article"]} key={index}
                     initial={{opacity: 0, y: 150}}
                     whileInView={{opacity: 1, y: 0}}
+                    viewport={{once: true}}
                     transition={{duration: duration_fast}}
                 >
                   <div className={styles.title}>

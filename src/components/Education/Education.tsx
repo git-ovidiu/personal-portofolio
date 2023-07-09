@@ -68,8 +68,8 @@ export default function Education() {
 
             <CustomGridColumn lg={6} xs={12}>
               <motion.div
-              initial={{opacity: 0, x: 100}}
-              whileInView={{opacity: 1, x: 0}}
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
               transition={{duration: duration_fast, delay: delay}}
               viewport={{once: true}}
               >
