@@ -42,6 +42,11 @@ const cards = [
         color: "white",
         background: "#B4497E",
       },
+      {
+        text: "framer-motion",
+        color: "white",
+        background: "#433982",
+      },
 
       // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
     ],
@@ -65,9 +70,6 @@ const cards = [
     subtitle: "Libraries",
     libs: [
       {
-        text: "Framer Motion",
-      },
-      {
         text: "Swiper",
       },
       {
@@ -88,7 +90,7 @@ const cards = [
       {
         text: "Live Website (DEMO)",
         icon: React.createElement(MdOutlineDesignServices, { size: 20 }),
-        url: "https://www.vibe-interior.ro",
+        url: "https://after-deco.vercel.app/",
       },
     ],
   },
@@ -131,11 +133,6 @@ const cards = [
         background: "#F99E2E",
       },
       {
-        text: "framer-motion",
-        color: "white",
-        background: "#433982",
-      },
-      {
         text: "storybook",
         color: "white",
         background: "#F2276E",
@@ -161,15 +158,6 @@ const cards = [
       "This project is a React component library built in Next.js, divided into atoms, molecules, organisms, and a custom style guide. The library provides a collection of reusable components that facilitate rapid and scalable web interface development. With a modular design and integrated custom Bootstrap, this project offers a cohesive and user-friendly styling guide.",
     subtitle: "Other Libraries",
     libs: [
-      {
-        text: "Rollup",
-      },
-      {
-        text: "Swiper",
-      },
-      {
-        text: "Framer Motion",
-      },
       {
         text: "Splide",
       },
@@ -252,12 +240,6 @@ const cards = [
     subtitle: "Other Libraries",
     libs: [
       {
-        text: "Rollup",
-      },
-      {
-        text: "Swiper",
-      },
-      {
         text: "Framer Motion",
       },
       {
@@ -265,9 +247,6 @@ const cards = [
       },
       {
         text: "React Icons",
-      },
-      {
-        text: "Formspree",
       },
     ],
     actions: [

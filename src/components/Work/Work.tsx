@@ -66,7 +66,8 @@ export default function Work() {
                         alt="Placeholder"
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        src="https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/2a64f27f7f9ae4ed5f3981f66f278739%20(1)%20(1).png"
+                        // src="https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/2a64f27f7f9ae4ed5f3981f66f278739%20(1)%20(1).png"
+                        src={"https://camonysi.sirv.com/portofolio/frozenlogic-logo%20(1).png"}
                         style={{ objectFit: "contain" }}
                       />
                     </div>
