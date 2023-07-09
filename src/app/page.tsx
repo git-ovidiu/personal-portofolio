@@ -38,12 +38,12 @@ export default function Homepage() {
 
 
       return (
-          <motion.section className={styles["o-homepage"]}
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            transition={{duration: 0.5}}
-          >
-            <div className={styles["about-container"]}>
+          <section className={styles["o-homepage"]}>
+            <motion.div className={styles["about-container"]}
+                initial={{opacity: 0, y: 100}}
+                animate={{opacity: 1, y: 0}}
+                transition={{duration: 0.5}}
+            >
               <div id="about" className={styles["about"]}>
                 <Avatar />
 
@@ -153,7 +153,7 @@ export default function Homepage() {
                   </CustomGridRow>
                 </CustomWrapper>
               </div>
-            </div>
+            </motion.div>
 
             <div id="education" className={styles["education"]}>
               <Education />
@@ -169,7 +169,7 @@ export default function Homepage() {
             <div id="contact" className={styles["contact"]}>
               <Contact />
             </div>
-          </motion.section>
+          </section>
       );
 
 }

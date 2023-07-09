@@ -9,6 +9,7 @@ const articles = [
 			variant: "h4"
 		}),
 		divider: React.createElement(Divider, {
+			"position": "center",
 			divider: React.createElement(SimpleDivider, {
 				"animate": true,
 				"loop": true,
@@ -31,6 +32,7 @@ const articles = [
 			variant: "h4"
 		}),
 		divider: React.createElement(Divider, {
+			"position": "center",
 			divider: React.createElement(SimpleDivider, {
 				"animate": true,
 				"loop": true,
@@ -53,6 +55,7 @@ const articles = [
 			variant: "h4"
 		}),
 		divider: React.createElement(Divider, {
+			"position": "center",
 			divider: React.createElement(SimpleDivider, {
 				"animate": true,
 				"loop": true,
@@ -75,6 +78,7 @@ const articles = [
 			variant: "h4"
 		}),
 		divider: React.createElement(Divider, {
+			"position": "center",
 			divider: React.createElement(SimpleDivider, {
 				"animate": true,
 				"loop": true,
@@ -97,6 +101,7 @@ const articles = [
 			variant: "h4"
 		}),
 		divider: React.createElement(Divider, {
+			"position": "center",
 			divider: React.createElement(SimpleDivider, {
 				"animate": true,
 				"loop": true,
@@ -119,6 +124,7 @@ const articles = [
 			variant: "h4"
 		}),
 		divider: React.createElement(Divider, {
+			"position": "center",
 			divider: React.createElement(SimpleDivider, {
 				"animate": true,
 				"loop": true,

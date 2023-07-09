@@ -110,7 +110,7 @@ export default function Work() {
                         divider={<>
                           <SimpleDivider animate loop animation-duration="1s" border-radius="10px" color="#AD005E" height="5px" width="100%"/>
                         </>}
-                        position="right"
+                        position="center"
                         width="100%"
                     />
                 </div>}

@@ -26,7 +26,7 @@ import { SiMinutemailer } from "react-icons/si";
 import { RiMailSendFill } from "react-icons/ri";
 import { Outfit } from "next/font/google";
 import {BiArrowBack} from "react-icons/bi"
-import {label_color} from "main/components/Settings/FramerMotion"
+import {duration_fast, label_color} from "main/components/Settings/FramerMotion"
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -134,6 +134,12 @@ export default function Contact() {
             lg-offset={1}
             xs={12}
           >
+            <motion.div
+                initial={{opacity: 0, y: -100}}
+                animate={{opacity: 1, y: 0}}
+                viewport={{once: false}}
+                transition={{duration: duration_fast}}
+            >
             <div className={styles["divider-container"]}>
               <Divider
                 divider={
@@ -184,6 +190,7 @@ export default function Contact() {
                 width="100%"
               />
             </div>
+
             <form onSubmit={handleSubmit}>
               <div className={styles["name-and-company"]}>
                 {/*name*/}
@@ -235,6 +242,7 @@ export default function Contact() {
                 />
               </button>
             </form>
+            </motion.div>
           </CustomGridColumn>
 
           <CustomGridColumn
@@ -245,7 +253,11 @@ export default function Contact() {
             lg={4}
             xs={12}
           >
-            <div className={styles["content"]}>
+            <motion.div className={styles["content"]}
+                  initial={{opacity: 0, x: -100}}
+                  animate={{opacity: 1, x: 0}}
+                  transition={{duration: duration_fast}}
+            >
               <AnimatedText
                 text={content.title}
                 color={"black"}
@@ -285,7 +297,7 @@ export default function Contact() {
                   </div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </CustomGridColumn>
         </CustomGridRow>
       </CustomWrapper>
