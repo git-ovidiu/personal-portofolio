@@ -1,15 +1,8 @@
 "use client"
 
-import React, {Component, ReactElement} from "react";
-import {
-	MediaImage,
-	SimpleDivider,
-	Divider,
-} from "@git-ovidiu/nextjs-component-library"
+import React, {ReactElement} from "react";
 import {motion} from "framer-motion";
-import Image from "next/image"
 import styles from "./Navbar.module.scss";
-import Link from "next/link"
 import {duration_fast} from "main/components/Settings/FramerMotion"
 
 export interface NavbarProps {

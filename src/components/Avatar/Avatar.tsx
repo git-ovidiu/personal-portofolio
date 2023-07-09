@@ -27,17 +27,6 @@ const shapeVariantCustom = {
 export default function Avatar() {
   return (
     <div className={styles["m-avatar"]}>
-      {/*<div className={styles["top-shapes"]}>*/}
-      {/*	<div className={styles["shape"]}></div>*/}
-      {/*	<motion.div*/}
-      {/*		className={`${styles["shape"]} ${styles["second-shape"]}`}*/}
-      {/*		variants={shapeVariantCustom}*/}
-      {/*		initial="initial"*/}
-      {/*		animate="animate"*/}
-      {/*	></motion.div>*/}
-      {/*	<div className={styles["shape"]}></div>*/}
-      {/*</div>*/}
-
       <CustomWrapper
         border-radius="0px"
         space-bottom="0"

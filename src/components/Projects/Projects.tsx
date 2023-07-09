@@ -10,7 +10,6 @@ import {
 	CustomWrapper,
 	InteractivePanel,
 	Label,
-	MediaImage,
 } from "@git-ovidiu/nextjs-component-library";
 import "@splidejs/react-splide/css";
 import "@splidejs/react-splide/css/skyblue";
@@ -19,7 +18,6 @@ import "@splidejs/react-splide/css/core";
 
 import cards from "./api/cards-api";
 import buttons from "main/components/Projects/api/buttons-api";
-import {bool} from "prop-types"
 
 export default function Projects() {
 	return (
@@ -44,15 +42,6 @@ export default function Projects() {
 								animate={{opacity: 1, x: 0}}
 								transition={{delay: 0.5}}
 							>
-								{/*<Image*/}
-								{/*  src={*/}
-								{/*    "https://camonysi.sirv.com/NextJS%20Component%20Library/blob-haikei.svg"*/}
-								{/*  }*/}
-								{/*  alt={"Placeholder"}*/}
-								{/*  width={850}*/}
-								{/*  height={850}*/}
-								{/*  style={{ borderRadius: "500px" }}*/}
-								{/*/>*/}
 							</motion.div>
 						</div>
 						<InteractivePanel

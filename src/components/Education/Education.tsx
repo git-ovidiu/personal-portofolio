@@ -4,20 +4,15 @@ import Image from "next/image";
 import styles from "./Education.module.scss";
 import {
   AnimatedText,
-  ButtonLineDrawing,
-  ButtonSlide,
   Card,
   CustomGridColumn,
   CustomGridRow,
   CustomWrapper,
   Description,
-  Label,
   MediaImage,
   TitleAndDescription,
 } from "@git-ovidiu/nextjs-component-library";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { AiOutlineDownload } from "react-icons/ai";
-import EducationCard from "main/components/Education/api/Education-card"
 import EducationCards from "main/components/Education/api/Education-card"
 import {delay, duration_fast, duration_slow, label_color} from "main/components/Settings/FramerMotion"
 // import '@splidejs/react-splide/css';

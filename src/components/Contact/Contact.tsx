@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import styles from "./Contact.module.scss";
 import { useForm, ValidationError } from "@formspree/react";
 
@@ -19,7 +18,6 @@ import {
   SimpleDivider,
   TitleAndDescription,
 } from "@git-ovidiu/nextjs-component-library";
-import { AiFillLinkedin, AiOutlineDownload } from "react-icons/ai";
 
 import content from "./api/Content";
 import { SiMinutemailer } from "react-icons/si";

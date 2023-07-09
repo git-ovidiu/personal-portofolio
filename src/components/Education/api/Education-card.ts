@@ -6,11 +6,6 @@ import {CgLaptop} from "react-icons/cg"
 import {FaUniversity} from "react-icons/fa"
 
 const EducationCards = [
-	// {
-	// 	text: "Vibe Interior",
-	// 	icon: React.createElement(MdOutlineArchitecture, { size: 20 })
-	// },
-
 
 	// CodeCool
 	{

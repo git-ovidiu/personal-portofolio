@@ -142,25 +142,5 @@ const articles = [
 	},
 ]
 
-// const article = {
-// 	first_title: React.createElement(
-// 		AnimatedText, {
-// 			color: "black",
-// 			text: "Teamwork and Deadline Management",
-// 			variant: "h4"
-// 		}
-// 	),
-// 	first_description: "At FrozenLogic, I have learned the value of teamwork and effective collaboration. Working closely with my colleagues, I have honed my ability to respect deadlines and ensure timely project delivery.",
-//
-// 	second_title: React.createElement(
-// 		AnimatedText, {
-// 			color: "black",
-// 			text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, corporis atque doloremque omnis!",
-// 			variant: "h4"
-// 		}
-// 	),
-// 	second_description: "pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin noster ornare dolore senserit dicat alienum inani splendide iaculis pericula deserunt ridens senectus melius laoreet his malorum elitr et proin ",
-// }
-
 
 export default articles;

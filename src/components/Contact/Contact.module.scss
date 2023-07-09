@@ -9,8 +9,6 @@
   font-size: calc($font-size-input / 1.2);
   transition: all 0.5s;
   &:focus {
-	//background: $color-black;
-	//color: $color-white;
 	opacity: 1;
   }
 }

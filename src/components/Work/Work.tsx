@@ -1,36 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./Work.module.scss";
 import {
-  AnimatedText,
-  ButtonLineDrawing,
-  ButtonSlide,
   Card,
   CustomGridColumn,
   CustomGridRow,
   CustomWrapper,
-  Description, Divider,
-  Label,
-  Logo,
-  MediaImage, SimpleDivider,
-  TitleAndDescription,
+  Divider,
+  SimpleDivider,
 } from "@git-ovidiu/nextjs-component-library";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { AiOutlineDownload } from "react-icons/ai";
-// Default theme
 import "@splidejs/react-splide/css";
-
-// or other themes
 import "@splidejs/react-splide/css/skyblue";
 import "@splidejs/react-splide/css/sea-green";
-
-// or only core styles
 import "@splidejs/react-splide/css/core";
 import workCard from "./api/work-card";
-import article from "main/components/Work/api/article"
 import articles from "main/components/Work/api/article"
-import {delay, duration_fast, duration_slow} from "main/components/Settings/FramerMotion"
+import {delay, duration_fast} from "main/components/Settings/FramerMotion"
 
 export default function Work() {
   return (
@@ -66,7 +52,6 @@ export default function Work() {
                         alt="Placeholder"
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        // src="https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/2a64f27f7f9ae4ed5f3981f66f278739%20(1)%20(1).png"
                         src={"https://camonysi.sirv.com/portofolio/frozenlogic-logo%20(1).png"}
                         style={{ objectFit: "contain" }}
                       />
@@ -100,13 +85,6 @@ export default function Work() {
                           <div key={index}>{title}</div>
                       ))}
                     </div>
-                    {/*<Divider*/}
-                    {/*    divider={<>*/}
-                    {/*      <SimpleDivider animate loop animation-duration="1s" border-radius="10px" color="#151A36" height="5px" width="100%"/>*/}
-                    {/*    </>}*/}
-                    {/*    position="right"*/}
-                    {/*    width="100%"*/}
-                    {/*/>*/}
                     <Divider
                         divider={<>
                           <SimpleDivider animate loop animation-duration="1s" border-radius="10px" color="#AD005E" height="5px" width="100%"/>

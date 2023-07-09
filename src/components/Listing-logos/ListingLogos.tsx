@@ -1,11 +1,9 @@
 "use client";
 
-import React, { Component } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./ListingLogos.module.scss";
-import { Logo } from "@git-ovidiu/nextjs-component-library";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import {duration_fast} from "../Settings/FramerMotion";
 
 export default function ListingLogos() {

@@ -26,20 +26,6 @@ const content = {
       text: "0733950116",
     },
   ],
-  // iconAndTexts: [
-  //  {
-  // 	 icon: React.createElement(AiFillLinkedin, { size: 20, color: `black` }),
-  // 	 text: "LinkedIn"
-  //  },
-  //  {
-  // 	 icon: React.createElement(SiGmail, { size: 20, color: `black` }),
-  // 	 text: "Mail"
-  //  },
-  //  {
-  // 	 icon: React.createElement(BsTelephonePlusFill, { size: 20, color: `black` }),
-  // 	 text: "+40733950116"
-  //  }
-  // ]
 };
 
 export default content;
