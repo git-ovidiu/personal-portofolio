@@ -102,7 +102,7 @@ export default function Homepage() {
                           className={styles["text-content-container"]}
                       >
                         <div className={styles["first-shape"]}>
-                            <Image src={"https://camonysi.sirv.com/portofolio/homepage-shape-primary-color.svg"} alt={"Placeholder"} layout={"responsive"} width={500} height={500}/>
+                            <Image draggable={false} src={"https://camonysi.sirv.com/portofolio/homepage-shape-primary-color.svg"} alt={"Placeholder"} layout={"responsive"} width={500} height={500}/>
                         </div>
                         <TitleAndDescription
                             text-align="center"

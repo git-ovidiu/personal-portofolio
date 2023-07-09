@@ -12,77 +12,75 @@ export default function ListingLogos() {
   const logos = [
     {
       imageUrl:
-        "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/js.png",
+        "https://camonysi.sirv.com/portofolio/js.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/storybook.png",
+          "https://camonysi.sirv.com/portofolio/storybook.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/lit.png",
+          "https://camonysi.sirv.com/portofolio/lit.png",
+    },
+    {
+      imageUrl:
+          "https://camonysi.sirv.com/portofolio/sass.png",
+    },
+    {
+      imageUrl:
+          "https://camonysi.sirv.com/portofolio/React.png",
+    },
+    {
+      imageUrl:
+          "https://camonysi.sirv.com/portofolio/git.png",
     },
     {
       imageUrl: "https://camonysi.sirv.com/portofolio/Nextjs-logo.png",
     },
-
     {
       imageUrl:
-          "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/hubspot.png",
+          "https://camonysi.sirv.com/portofolio/ts.png",
     },
     {
       imageUrl:
-        "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/sass.png",
-    },
-    {
-      imageUrl:
-          "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/git.png",
-    },
-    {
-      imageUrl:
-        "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/ts.png",
-    },
-    {
-      imageUrl:
-          "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/React.png",
+          "https://camonysi.sirv.com/portofolio/hubspot.png",
     },
 
 
     {
       imageUrl:
-          "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/js.png",
+          "https://camonysi.sirv.com/portofolio/js.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/storybook.png",
+          "https://camonysi.sirv.com/portofolio/storybook.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/lit.png",
+          "https://camonysi.sirv.com/portofolio/lit.png",
+    },
+    {
+      imageUrl:
+          "https://camonysi.sirv.com/portofolio/sass.png",
+    },
+    {
+      imageUrl:
+          "https://camonysi.sirv.com/portofolio/React.png",
+    },
+    {
+      imageUrl:
+          "https://camonysi.sirv.com/portofolio/git.png",
     },
     {
       imageUrl: "https://camonysi.sirv.com/portofolio/Nextjs-logo.png",
     },
-
     {
       imageUrl:
-          "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/hubspot.png",
+          "https://camonysi.sirv.com/portofolio/ts.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/sass.png",
-    },
-    {
-      imageUrl:
-          "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/git.png",
-    },
-    {
-      imageUrl:
-          "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/ts.png",
-    },
-    {
-      imageUrl:
-          "https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/React.png",
+          "https://camonysi.sirv.com/portofolio/hubspot.png",
     },
   ];
 
@@ -97,7 +95,7 @@ export default function ListingLogos() {
           {logos.map((logo, index) => (
             <div className={styles["slide"]} key={index}>
               <picture>
-                <Image src={logo.imageUrl} alt="Logo Placeholder" fill />
+                <Image draggable={false} src={logo.imageUrl} alt="Logo Placeholder" fill />
               </picture>
             </div>
           ))}

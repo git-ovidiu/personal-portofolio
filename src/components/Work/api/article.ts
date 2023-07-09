@@ -11,7 +11,7 @@ const articles = [
 		divider: React.createElement(Divider, {
 			divider: React.createElement(SimpleDivider, {
 				"animate": true,
-				"loop": false,
+				"loop": true,
 				"animation-duration": "1s",
 				"border-radius": "10px",
 				"color": "#3399FF",
@@ -33,7 +33,7 @@ const articles = [
 		divider: React.createElement(Divider, {
 			divider: React.createElement(SimpleDivider, {
 				"animate": true,
-				"loop": false,
+				"loop": true,
 				"animation-duration": "1s",
 				"border-radius": "10px",
 				"color": "#00CC66",
@@ -55,7 +55,7 @@ const articles = [
 		divider: React.createElement(Divider, {
 			divider: React.createElement(SimpleDivider, {
 				"animate": true,
-				"loop": false,
+				"loop": true,
 				"animation-duration": "1s",
 				"border-radius": "10px",
 				"color": "#8A4D76",
@@ -77,7 +77,7 @@ const articles = [
 		divider: React.createElement(Divider, {
 			divider: React.createElement(SimpleDivider, {
 				"animate": true,
-				"loop": false,
+				"loop": true,
 				"animation-duration": "1s",
 				"border-radius": "10px",
 				"color": "#808080",
@@ -99,7 +99,7 @@ const articles = [
 		divider: React.createElement(Divider, {
 			divider: React.createElement(SimpleDivider, {
 				"animate": true,
-				"loop": false,
+				"loop": true,
 				"animation-duration": "1s",
 				"border-radius": "10px",
 				"color": "#FFA500",
@@ -121,7 +121,7 @@ const articles = [
 		divider: React.createElement(Divider, {
 			divider: React.createElement(SimpleDivider, {
 				"animate": true,
-				"loop": false,
+				"loop": true,
 				"animation-duration": "1s",
 				"border-radius": "10px",
 				"color": "#001F3F",

@@ -36,6 +36,8 @@
 
 		img{
 		object-fit: contain;
+		user-drag: none;
+
 
 		  filter: grayscale(100%);
 		  transition: filter 0.3s;
