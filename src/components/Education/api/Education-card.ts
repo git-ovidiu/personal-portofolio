@@ -55,7 +55,7 @@ const EducationCards = [
 		],
 
 		title: "Codecool",
-		description: "At Codecool, I successfully completed a comprehensive frontend development course, acquiring expertise in HTML, CSS, JavaScript, Bootstrap, responsive design, and effective teamwork",
+		description: "By successfully concluding a comprehensive frontend development course at Codecool, I acquired expertise in HTML, CSS, JavaScript, Bootstrap, responsive design and the ability to collaborate seamlessly within a team dynamic.",
 
 		button: [
 			React.createElement(ButtonLineDrawing, {
@@ -102,7 +102,7 @@ const EducationCards = [
 
 		description: React.createElement(Description, {
 			color: "black",
-			text: "At the University Transylvania of Brasov, I successfully completed my Master's degree in Integrated Information Systems for Business. This program equipped me with a comprehensive understanding of e-commerce, marketing strategies, Java programming, and the utilization of Tableau Public for data visualization"
+			text: "I successfully attained my Master's degree in Integrated Information Systems for Business from the University Transylvania of Brasov. This program equipped me with a thorough understanding of e-commerce, marketing strategies, Java programming and the application of Tableau Public for effective data visualization."
 		}),
 
 		button: [
@@ -142,7 +142,7 @@ const EducationCards = [
 		],
 
 		title: "University of Bucharest",
-		description: "At the University of Bucharest, I earned my Bachelor's degree in Applied Modern Languages. This program emphasized English and German language studies, along with coursework in economics. It provided me with a solid grasp of both languages and a practical understanding of economic principles",
+		description: "At the University of Bucharest, I successfully completed my Bachelor's degree in Applied Modern Languages with an emphasis on in-depth studies of the English and German languages. This program not only provided me with comprehensive language training but also included coursework in economics, which allowed me to gain a practical understanding of fundamental economic principles while further strengthening my proficiency in both languages.",
 
 		button: [
 			React.createElement(ButtonLineDrawing, {

@@ -45,7 +45,7 @@ export default function Education() {
                 action={""}
                 description={
                 <>
-                <Description color={"white"} text={"With a solid foundation built upon completing a frontend course at Codecool, along with earning a Master's degree in Integrated Information Systems for Business from the University Transylvania of Brasov, and a Bachelor's degree in Applied Modern Languages from the University of Bucharest, I bring a comprehensive skill set to the table. My expertise encompasses web development, e-commerce strategies, proficiency in multiple languages, and a practical understanding of economic principles."}/>
+                <Description color={"white"} text={"Through hard work and determination, I successfully completed a frontend course at Codecool and combined with the invaluable insights gained from obtaining a Master's degree in Integrated Information Systems for Business from the University Transylvania of Brasov and a Bachelor's degree in Applied Modern Languages from the University of Bucharest, I bring forth a comprehensive skill set that spans across multiple dimensions in this domain."}/>
                 </>
                 }
                 label={<Description color={label_color} text="Education" />}

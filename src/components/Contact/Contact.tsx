@@ -66,7 +66,7 @@ export default function Contact() {
                       <span>
                       <AnimatedText
                           color="white"
-                          text="Email has been sent! Thank you for reaching out to me!"
+                          text="Your email has been sent! Thank you for reaching out to me!"
                           variant="h4"
                       />
                     </span>

@@ -22,7 +22,7 @@ const articles = [
 		}),
 		description: React.createElement(Description, {
 			color: "black",
-			text: "Implementing atomic design principles has improved the way we approached projects. By breaking down the project into atoms, molecules, and organisms, we achieve enhanced maintainability and scalability. I have gained hands-on experience in creating the entire organism from atoms and molecules that I previously developed. This systematic approach allows for greater reusability, consistency, and ease of maintenance. It fosters collaboration within the team and ensures efficient development and code management. The application of atomic design principles has proven to be instrumental in delivering scalable and flexible solutions for our clients."
+			text: "Implementing the principles of atomic design has revolutionized our project approach, enabling us to achieve remarkable enhancements. By deconstructing projects into atoms, molecules, and organisms, we have witnessed significant improvements in maintainability and scalability. I have gained hands-on expertise in assembling complete organisms using the atoms and molecules I previously created. This methodical approach fosters reusability, consistency, and simplified maintenance. It promotes seamless collaboration within our team and ensures efficient development and code management. The application of atomic design principles has proven indispensable in delivering adaptable and versatile solutions to our clients."
 		})
 	},
 	{
@@ -45,7 +45,7 @@ const articles = [
 		}),
 		description: React.createElement(Description, {
 			color: "black",
-			text: "At FrozenLogic, I have learned the value of teamwork and effective collaboration. Working closely with my colleagues, I have honed my ability to respect deadlines and ensure timely project delivery. Through collaborative efforts, we leverage our collective skills and expertise to overcome challenges and achieve exceptional results. I have successfully completed modules for HubSpot, expanding my expertise in marketing automation and customer relationship management. This allows me to contribute to integrated solutions that align with clients' goals and drive business success."
+			text: "During my time at FrozenLogic, I have come to appreciate the significance of teamwork and have played an active role in cultivating effective collaboration. Working closely alongside my colleagues, I have refined my ability to meet deadlines and ensure the timely delivery of projects. Through collaborative endeavors, we leverage our collective skills and expertise to overcome challenges and achieve remarkable results. Additionally, I have successfully completed various modules for HubSpot, expanding my knowledge in marketing automation and customer relationship management. As a result, I am well-equipped to contribute to the creation of cohesive solutions that align with our clients objectives and drive business success."
 		})
 	},
 	{
@@ -68,7 +68,7 @@ const articles = [
 		}),
 		description: React.createElement(Description, {
 			color: "black",
-			text: "Organizing and prioritizing tasks is crucial in achieving project success. Through the use of Jira, I have developed skills in task management, ensuring that each task is carefully organized and executed. I leverage the power of Jira to create comprehensive project boards, set milestones, and allocate resources efficiently. Additionally, I have utilized GitPod to streamline my development workflow, enhancing efficiency and facilitating seamless collaboration within the team. This integrated approach empowers me to efficiently manage tasks, stay on top of deadlines, and maintain a high level of productivity."
+			text: "The ability to effectively organize and prioritize tasks is paramount for achieving success in any project. With the use of Jira, I create comprehensive project boards, establish milestones, and optimize resource allocation for efficient project execution. Additionally, I have utilized GitPod to streamline my development workflow, enhancing efficiency and facilitating seamless collaboration within the team. This integrated approach allows me to efficiently manage tasks, stay on top of deadlines, and maintain a high level of productivity."
 		})
 	},
 	{
@@ -114,7 +114,7 @@ const articles = [
 		}),
 		description: React.createElement(Description, {
 			color: "black",
-			text: "Working in a fast-paced environment has taught me the importance of adaptability and problem-solving. I have developed a versatile skill set that allows me to navigate challenges and find innovative solutions. I leverage my knowledge of front-end technologies, including lit-elements, TypeScript, JavaScript, SCSS, CSS, and HTML, to overcome obstacles and deliver high-quality projects. With a deep understanding of responsive design and Bootstrap, I ensure that the websites I create are not only visually appealing but also optimized for various devices and screen sizes. This adaptability and problem-solving mindset enable me to consistently deliver exceptional results that exceed client expectations."
+			text: "Working in a fast-paced environment has taught me the importance of adaptability and problem-solving. I utilize my knowledge of front-end technologies, including lit-elements, TypeScript, JavaScript, SCSS, CSS, and HTML to overcome challenges and deliver projects of the highest quality. With a deep understanding of responsive design and Bootstrap, I ensure that the websites I create are not only visually appealing but also optimized for various devices and screen sizes. This adaptability and problem-solving mindset enable me to consistently deliver exceptional results that exceed client expectations."
 		})
 	},
 	{
@@ -137,10 +137,12 @@ const articles = [
 		}),
 		description: React.createElement(Description, {
 			color: "black",
-			text: "Throughout my journey at FrozenLogic, I have embraced professionalism as a core value. Clear communication, active collaboration, and a commitment to continuous growth have defined my approach to web development. I am dedicated to staying updated with the latest industry trends, exploring emerging technologies, and expanding my skill set. This drive for continuous learning has enabled me to deliver cutting-edge websites that incorporate the latest practices and technologies. Additionally, I actively seek feedback from clients and team members to refine my skills and enhance my professional growth. By maintaining a high level of professionalism, I foster strong working relationships, build trust, and ensure the successful execution of projects."
+			text: "At FrozenLogic, I prioritize professionalism through clear communication, active collaboration, and a commitment to continuous growth. I stay updated with industry trends, embrace emerging technologies, and seek feedback to refine my skills. This ensures strong relationships, trust, and successful project execution."
 		})
 	},
 ]
 
 
 export default articles;
+
+
