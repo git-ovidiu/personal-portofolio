@@ -226,11 +226,6 @@ const cards = [
         background: "#B4497E",
       },
       {
-        text: "nx",
-        color: "white",
-        background: "#012F55",
-      },
-      {
         text: "framer-motion",
         color: "white",
         background: "#433982",

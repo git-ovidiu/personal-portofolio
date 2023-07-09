@@ -88,6 +88,7 @@
 
 @media (min-width: 576px){
 	.m-avatar{
+		  overflow: hidden;
 	  .avatar-image{
 		.divider{
 		  &.horizontal-divider-left{

@@ -3,6 +3,8 @@
 
 .m-listing-logos{
 
+  margin-top: 100px;
+
   $animationSpeed: 40s;
 
   @keyframes scroll {
@@ -56,6 +58,7 @@
 
 @media (min-width: 768px){
   .m-listing-logos{
+	margin-top: unset;
 	.slider{
 		.slide{
 		  width: 250px;

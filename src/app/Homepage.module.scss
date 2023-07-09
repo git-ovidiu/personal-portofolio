@@ -24,7 +24,7 @@
 
 
   .about-container{
-	//min-height: 100vh;
+	min-height: 100vh;
 	//scroll-snap-align: start;
 	//position: relative;
 
@@ -101,14 +101,12 @@
 @media (min-width: 992px){
   .o-homepage{
 	.about-container{
-	  height: 100vh;
+	  //height: 100vh;
 	}
 	.text-content-container{
 	  .first-shape{
-		.first-shape{
 		  right: -370px;
 		  bottom: -50px;
-		}
 	  }
 	}
   }
