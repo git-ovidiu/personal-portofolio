@@ -99,17 +99,17 @@ const cards = [
   // nextjs component library
   {
     shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
-    media: React.createElement(MediaVideo, {
-      loop: true,
-      muted: true,
+    media: React.createElement(MediaImage, {
+      image: React.createElement(Image, {
+        alt: "Placeholder",
+        fill: true,
+        src: "https://camonysi.sirv.com/NextJS%20Component%20Library/react-component-library-2.jpg"
+      }),
+      "image-border-radius": "20px",
       "object-fit": "cover",
-      "auto-play": true,
-      "show-controls": false,
-      video:
-        "https://camonysi.sirv.com/portofolio/Screen%20Recording%202023-07-09%20at%2018.17.49.mov",
-      "video-fullscreen": true,
-      "video-border-radius": "30px",
-      "remove-controls": true,
+      "padding-bottom-desktop": "40%",
+      "padding-bottom-mobile": "50%",
+      "padding-bottom-tablet": "50%",
     }),
     labels: [
       {
@@ -180,17 +180,17 @@ const cards = [
   //Moo Free Brews
   {
     shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
-    media: React.createElement(MediaVideo, {
-      loop: true,
-      muted: true,
+    media: React.createElement(MediaImage, {
+      image: React.createElement(Image, {
+        alt: "Placeholder",
+        fill: true,
+        src: "https://camonysi.sirv.com/portofolio/Screenshot%202023-07-03%20at%2022.41.02.png"
+      }),
+      "image-border-radius": "20px",
       "object-fit": "cover",
-      "auto-play": true,
-      "show-controls": false,
-      video:
-        "https://camonysi.sirv.com/portofolio/Screen%20Recording%202023-07-09%20at%2018.29.29.mov",
-      "video-fullscreen": true,
-      "video-border-radius": "30px",
-      "remove-controls": true,
+      "padding-bottom-desktop": "40%",
+      "padding-bottom-mobile": "50%",
+      "padding-bottom-tablet": "50%",
     }),
     labels: [
       {

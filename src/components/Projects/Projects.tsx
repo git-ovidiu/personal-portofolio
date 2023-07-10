@@ -18,17 +18,12 @@ import "@splidejs/react-splide/css/core";
 
 import cards from "./api/cards-api";
 import buttons from "main/components/Projects/api/buttons-api";
-import {delay, duration_fast} from "main/components/Settings/FramerMotion"
+import {delay, delay_mid, duration_fast, duration_slow} from "main/components/Settings/FramerMotion"
 
 export default function Projects() {
 	return (
 		<div className="o-projects-global">
-			<motion.div
-				className={styles["o-projects"]}
-				initial={{opacity: 0}}
-				whileInView={{opacity: 1}}
-				transition={{duration: 1, delay: delay}}
-			>
+			<div className={styles["o-projects"]}>
 				<CustomWrapper
 					border-radius="0px"
 					custom-background-color="#29648a"
@@ -63,10 +58,10 @@ export default function Projects() {
 							card={cards.map((card, index) => (
 								<motion.div
 									key={index}
-									animate={{opacity: 0, y: 100}}
+									initial={{opacity: 0, y: 100}}
 									whileInView={{opacity: 1, y: 0}}
+									transition={{duration: duration_fast, delay: delay_mid}}
 									viewport={{once: false}}
-									transition={{duration: duration_fast}}
 									className={styles["card-container"]}
 								>
 									<Card
@@ -82,7 +77,15 @@ export default function Projects() {
 										}
 
 										is-overlapped
-										image={card.media}
+										image={
+										<motion.div
+											initial={{opacity: 0, y: -200}}
+											whileInView={{opacity: 1, y: 0}}
+											transition={{duration: duration_slow, delay: delay_mid}}
+										>
+											{card.media}
+										</motion.div>
+										}
 										labels={
 											<>
 												{card.labels.map((label, labelIndex) => (
@@ -153,7 +156,7 @@ export default function Projects() {
 						/>
 					</CustomGridRow>
 				</CustomWrapper>
-			</motion.div>
+			</div>
 		</div>
 	);
 }

@@ -24,7 +24,7 @@ import { SiMinutemailer } from "react-icons/si";
 import { RiMailSendFill } from "react-icons/ri";
 import { Outfit } from "next/font/google";
 import {BiArrowBack} from "react-icons/bi"
-import {duration_fast, label_color} from "main/components/Settings/FramerMotion"
+import {delay, delay_slow, duration_fast, duration_slow, label_color} from "main/components/Settings/FramerMotion"
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -37,7 +37,9 @@ export default function Contact() {
 
         <motion.div
             initial={{opacity: 0, y: "100%"}}
-            animate={{opacity: 1, y: 0}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{duration: duration_slow}}
             className={styles["email-sent-container"]}
         >
           <CustomWrapper
@@ -133,10 +135,9 @@ export default function Contact() {
             xs={12}
           >
             <motion.div
-                initial={{opacity: 0, y: -100}}
-                animate={{opacity: 1, y: 0}}
-                viewport={{once: false}}
-                transition={{duration: duration_fast}}
+                initial={{opacity: 0, y: -200}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{duration: duration_fast, delay: delay}}
             >
             <div className={styles["divider-container"]}>
               <Divider
@@ -253,8 +254,8 @@ export default function Contact() {
           >
             <motion.div className={styles["content"]}
                   initial={{opacity: 0, x: -100}}
-                  animate={{opacity: 1, x: 0}}
-                  transition={{duration: duration_fast}}
+                  whileInView={{opacity: 1, x: 0}}
+                  transition={{duration: duration_fast, delay: delay}}
             >
               <AnimatedText
                 text={content.title}
