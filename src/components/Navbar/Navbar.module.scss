@@ -5,12 +5,12 @@
   display: none;
   top: 0;
   right: 0;
-  height: 50px;
+  height: 20px;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-@media (min-width: 992px){
+@media (min-width: 1028px){
 .m-navbar{
   position: fixed;
   right: unset;
@@ -24,7 +24,7 @@
   z-index: 23;
   gap: 50px;
   bottom: 20px;
-  padding: 20px;
+  padding: 0 0 0 10px;
 
   a{
     writing-mode: vertical-rl;
