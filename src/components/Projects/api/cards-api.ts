@@ -66,7 +66,7 @@ const cards = [
       width: "75px",
     }),
     description:
-        "The Vibe Interior website is a project created for a friend who owns an interior design company. Designed to showcase their portfolio and services, this website embodies the essence of their brand and reflects their expertise in creating captivating interior spaces. While the website is still under development, it promises to deliver a visually stunning and immersive online experience that will captivate visitors and provide them with a glimpse into the world of Vibe Interior's innovative design solutions.",
+        "The Vibe Interior website is an ongoing project dedicated to promoting a friend's interior design company. Its purpose is to display their impressive portfolio and range of services, encapsulating the very essence of their brand and showcasing their expertise in crafting captivating interior spaces. Currently in the development stage, the website aims to offer a visually captivating online experience, enticing visitors to explore and providing them with a sneak peek into the realm of Vibe Interior's imaginative design solutions.",
     subtitle: "Libraries",
     libs: [
       {
@@ -155,7 +155,7 @@ const cards = [
       width: "75px",
     }),
     description:
-      "This project is a React component library built in Next.js, divided into atoms, molecules, organisms, and a custom style guide. The library provides a collection of reusable components that facilitate rapid and scalable web interface development. With a modular design and integrated custom Bootstrap, this project offers a cohesive and user-friendly styling guide.",
+      "This project represents a React component library developed using Next.js, which is organized into distinct sections such as atoms, molecules, organisms, and a custom style guide. The purpose of this library is to offer a comprehensive set of reusable components that streamline the process of creating web interfaces quickly and efficiently. With a modular architecture and the integration of a customized Bootstrap framework, this project presents a unified and intuitive styling guide that enhances the user experience.",
     subtitle: "Other Libraries",
     libs: [
       {
@@ -236,7 +236,7 @@ const cards = [
       width: "75px",
     }),
     description:
-      "MooFree Brews is a website created for a specialty café that exclusively focuses on vegan products and beverages while adopting an environmentally friendly approach to coffee sourcing. The café is committed to providing an authentic experience where the coffee harvesting process adheres to sustainability standards and everyone is treated with respect. ",
+      "MooFree Brews is a website created for a specialty coffee shop that exclusively focuses on vegan products and beverages while embracing an environmentally conscious approach to sourcing. This coffee shop is devoted to delivering an authentic experience, ensuring that the coffee harvesting process aligns with sustainability standards, guaranteeing each cup is crafted with ethical practices. Additionally, MooFree Brews is committed to building an inclusive environment where everyone is treated with respect and care.",
     subtitle: "Other Libraries",
     libs: [
       {
