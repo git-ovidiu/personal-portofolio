@@ -37,14 +37,6 @@ export default function Projects() {
 					full-height
 				>
 					<CustomGridRow vertical-alignment="center">
-						<div className={styles["shape"]}>
-							<motion.div
-								initial={{opacity: 0, x: 200}}
-								animate={{opacity: 1, x: 0}}
-								transition={{delay: 0.5}}
-							>
-							</motion.div>
-						</div>
 						<InteractivePanel
 							button={buttons.map((button, index) => (
 								<motion.div key={index}

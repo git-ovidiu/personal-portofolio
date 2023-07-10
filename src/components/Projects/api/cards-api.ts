@@ -13,7 +13,7 @@ const cards = [
 
   // vibe interior
   {
-    shape: "https://camonysi.sirv.com/portofolio/card-blue-shape.svg",
+    shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
     media: React.createElement(MediaVideo, {
       loop: true,
       muted: true,
@@ -98,7 +98,7 @@ const cards = [
 
   // nextjs component library
   {
-    shape: "https://camonysi.sirv.com/portofolio/card-blue-shape.svg",
+    shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
     media: React.createElement(MediaVideo, {
       loop: true,
       muted: true,
@@ -179,7 +179,7 @@ const cards = [
 
   //Moo Free Brews
   {
-    shape: "https://camonysi.sirv.com/portofolio/card-blue-shape.svg",
+    shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
     media: React.createElement(MediaVideo, {
       loop: true,
       muted: true,

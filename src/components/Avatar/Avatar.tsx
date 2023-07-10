@@ -17,7 +17,7 @@ const {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./Avatar.module.scss";
-import {label_color, primary_color} from "main/components/Settings/FramerMotion"
+import {delay, duration_fast, label_color, primary_color} from "main/components/Settings/FramerMotion"
 
 const shapeVariantCustom = {
   initial: { opacity: 0, height: 0 },
@@ -44,8 +44,9 @@ export default function Avatar() {
           >
             <motion.div
               className={styles["avatar-image"]}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{duration: duration_fast, delay: delay}}
             >
               <MediaImage
                 image-border-radius={"50%"}

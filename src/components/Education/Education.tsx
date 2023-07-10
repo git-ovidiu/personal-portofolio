@@ -14,7 +14,14 @@ import {
 } from "@git-ovidiu/nextjs-component-library";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import EducationCards from "main/components/Education/api/Education-card"
-import {delay, duration_fast, duration_slow, label_color} from "main/components/Settings/FramerMotion"
+import {
+  delay,
+  delay_mid,
+  delay_slow,
+  duration_fast,
+  duration_slow,
+  label_color
+} from "main/components/Settings/FramerMotion"
 // import '@splidejs/react-splide/css';
 // import '@splidejs/react-splide/css/skyblue';
 // import '@splidejs/react-splide/css/sea-green';
@@ -89,7 +96,7 @@ export default function Education() {
                       <motion.div
                           initial={{opacity: 0, y: 100}}
                           whileInView={{opacity: 1, y: 0}}
-                          transition={{duration: duration_fast}}
+                          transition={{duration: duration_fast, delay: delay_mid}}
                       >
                       <Card
                           is-overlapped
@@ -97,7 +104,11 @@ export default function Education() {
                           // image-height-tablet={"250px"}
                           // image-height-desktop={"250px"}
                           image={
-                            <div className={styles["card-image"]}>
+                            <motion.div className={styles["card-image"]}
+                                initial={{opacity: 0, y: -200}}
+                                whileInView={{opacity: 1, y: 0}}
+                                transition={{duration: duration_slow, delay: delay_mid}}
+                            >
                               <MediaImage
                                   image={
                                     <Image
@@ -113,7 +124,7 @@ export default function Education() {
                                   padding-bottom-tablet="100%"
                                   padding-bottom-desktop="56%"
                               />
-                            </div>
+                            </motion.div>
                           }
                           labels={
                             <>
