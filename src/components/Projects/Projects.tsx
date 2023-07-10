@@ -65,6 +65,9 @@ export default function Projects() {
 									className={styles["card-container"]}
 								>
 									<Card
+										// image-height-mobile="300px"
+										// image-height-tablet="300px"
+										// image-height-desktop="300px"
 
 										shape={
 											<motion.div className={styles["card-shape"]}
@@ -79,7 +82,7 @@ export default function Projects() {
 										is-overlapped
 										image={
 										<motion.div
-											initial={{opacity: 0, y: -200}}
+											initial={{opacity: 0, y: 200}}
 											whileInView={{opacity: 1, y: 0}}
 											transition={{duration: duration_slow, delay: delay_mid}}
 										>
