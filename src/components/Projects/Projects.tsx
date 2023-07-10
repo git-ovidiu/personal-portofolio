@@ -18,6 +18,7 @@ import "@splidejs/react-splide/css/core";
 
 import cards from "./api/cards-api";
 import buttons from "main/components/Projects/api/buttons-api";
+import {delay, duration_fast} from "main/components/Settings/FramerMotion"
 
 export default function Projects() {
 	return (
@@ -26,7 +27,7 @@ export default function Projects() {
 				className={styles["o-projects"]}
 				initial={{opacity: 0}}
 				whileInView={{opacity: 1}}
-				transition={{duration: 1}}
+				transition={{duration: 1, delay: delay}}
 			>
 				<CustomWrapper
 					border-radius="0px"
@@ -46,22 +47,34 @@ export default function Projects() {
 						</div>
 						<InteractivePanel
 							button={buttons.map((button, index) => (
+								<motion.div key={index}
+								initial={{
+									opacity: 0,
+									x: 100,
+								}}
+								whileInView={{ opacity: 1, x: 0 }}
+								viewport={{ once: false }}
+								transition={{
+									duration: 0.3,
+									delay: index * 0.2,
+								}}
+								>
 								<ButtonSlideSecond
-									key={index}
 									hover_effect="tertiary"
 									icon={button.icon}
 									iconPosition="right"
 									padding="s"
 									text={button.text}
 								/>
+								</motion.div>
 							))}
 							card={cards.map((card, index) => (
 								<motion.div
 									key={index}
-									animate={{scale: 0.9}}
-									whileInView={{scale: 1}}
+									animate={{opacity: 0, y: 100}}
+									whileInView={{opacity: 1, y: 0}}
 									viewport={{once: false}}
-									transition={{duration: 0.5}}
+									transition={{duration: duration_fast}}
 									className={styles["card-container"]}
 								>
 									<Card

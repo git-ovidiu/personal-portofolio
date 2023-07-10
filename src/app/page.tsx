@@ -18,7 +18,7 @@ import {
   Description, TitleAndDescription,
 } from "@git-ovidiu/nextjs-component-library";
 import styles from "./Homepage.module.scss";
-import {delay, duration_fast, label_color} from "main/components/Settings/FramerMotion"
+import {delay, delay_slow, duration_fast, label_color} from "main/components/Settings/FramerMotion"
 
 
 export default function Homepage() {
@@ -37,7 +37,11 @@ export default function Homepage() {
 
 
       return (
-          <section className={styles["o-homepage"]}>
+          <motion.section className={styles["o-homepage"]}
+              initial={{opacity: 0, y: 100}}
+              animate={{opacity: 1, y: 0}}
+              transition={{duration: duration_fast}}
+          >
             <motion.div className={styles["about-container"]}
                 initial={{opacity: 0, y: 100}}
                 animate={{opacity: 1, y: 0}}
@@ -97,7 +101,7 @@ export default function Homepage() {
                       <motion.div
                           initial={{ opacity: 0, y: 50 }}
                           animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 0.2 }}
+                          transition={{ duration: duration_fast }}
                           className={styles["text-content-container"]}
                       >
                         <div className={styles["first-shape"]}>
@@ -115,7 +119,7 @@ export default function Homepage() {
                             description={<motion.h6
                                 initial={{opacity: 0, y: 100}}
                                 animate={{opacity: 1, y: 0}}
-                                transition={{duration: duration_fast, delay: delay}}
+                                transition={{duration: duration_fast}}
                             >{`I'm`} passionate about creating visually stunning and functional websites and I strive to craft seamless user experiences through innovative design and new frontend technologies.</motion.h6>}
                             action={""}
                         />
@@ -168,7 +172,7 @@ export default function Homepage() {
             <div id="contact" className={styles["contact"]}>
               <Contact />
             </div>
-          </section>
+          </motion.section>
       );
 
 }
