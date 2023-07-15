@@ -57,7 +57,7 @@ export default function Avatar() {
                       alt="Placeholder"
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      src="https://camonysi.sirv.com/NextJS%20Component%20Library/portofolio/profile-pic.jpeg"
+                      src="https://camonysi.sirv.com/portofolio/profile-pic.jpeg"
                     />
                   </div>
                 }
