@@ -9,7 +9,7 @@ const EducationCards = [
 
 	// CodeCool
 	{
-		image: "https://camonysi.sirv.com/portofolio/22045681851.png",
+		image: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128134/CV%20PICS/education/22045681851_pwxxzd.png",
 
 		labels: [
 			React.createElement(Label, {
@@ -73,7 +73,7 @@ const EducationCards = [
 
 	// Brasov
 	{
-		image: "https://camonysi.sirv.com/portofolio/New%20Project%20(1).png",
+		image: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128134/CV%20PICS/education/univ-bv_zrbmwq.jpg",
 
 		labels: [
 			React.createElement(Label, {
@@ -121,7 +121,7 @@ const EducationCards = [
 
 	// Bucuresti
 	{
-		image: "https://camonysi.sirv.com/portofolio/New%20Project.png",
+		image: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128134/CV%20PICS/education/New_Project_yciwc0.png",
 
 		labels: [
 			React.createElement(Label, {

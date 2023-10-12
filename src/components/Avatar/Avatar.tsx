@@ -57,7 +57,7 @@ export default function Avatar() {
                       alt="Placeholder"
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      src="https://camonysi.sirv.com/portofolio/profile-pic.jpeg"
+                      src="https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128133/CV%20PICS/avatar/profile-pic_kuthoq.jpg"
                     />
                   </div>
                 }

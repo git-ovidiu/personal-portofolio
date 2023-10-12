@@ -10,75 +10,75 @@ export default function ListingLogos() {
   const logos = [
     {
       imageUrl:
-        "https://camonysi.sirv.com/portofolio/js.png",
+        "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128135/CV%20PICS/Listing%20Logos/js_er4l36.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/storybook.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128135/CV%20PICS/Listing%20Logos/storybook_gymnto.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/lit.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128135/CV%20PICS/Listing%20Logos/lit_ganauw.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/sass.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128135/CV%20PICS/Listing%20Logos/sass_oanlj4.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/React.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128136/CV%20PICS/Listing%20Logos/React_lk9xai.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/git.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128134/CV%20PICS/Listing%20Logos/git_jh5if0.png",
     },
     {
       imageUrl: "https://camonysi.sirv.com/portofolio/Nextjs-logo.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/ts.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128134/CV%20PICS/Listing%20Logos/ts_zflqk1.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/hubspot.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128135/CV%20PICS/Listing%20Logos/hubspot_patywj.png",
     },
 
 
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/js.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128135/CV%20PICS/Listing%20Logos/js_er4l36.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/storybook.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128135/CV%20PICS/Listing%20Logos/storybook_gymnto.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/lit.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128135/CV%20PICS/Listing%20Logos/lit_ganauw.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/sass.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128135/CV%20PICS/Listing%20Logos/sass_oanlj4.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/React.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128136/CV%20PICS/Listing%20Logos/React_lk9xai.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/git.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128134/CV%20PICS/Listing%20Logos/git_jh5if0.png",
     },
     {
       imageUrl: "https://camonysi.sirv.com/portofolio/Nextjs-logo.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/ts.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128134/CV%20PICS/Listing%20Logos/ts_zflqk1.png",
     },
     {
       imageUrl:
-          "https://camonysi.sirv.com/portofolio/hubspot.png",
+          "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128135/CV%20PICS/Listing%20Logos/hubspot_patywj.png",
     },
   ];
 

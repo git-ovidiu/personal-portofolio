@@ -52,7 +52,7 @@ export default function Work() {
                         alt="Placeholder"
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        src={"https://camonysi.sirv.com/portofolio/frozenlogic-logo%20(1).png"}
+                        src={"https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128134/CV%20PICS/work/frozenlogic-logo_1_hgq4bs.png"}
                         style={{ objectFit: "contain" }}
                       />
                     </div>
