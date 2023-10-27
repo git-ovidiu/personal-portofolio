@@ -33,7 +33,7 @@ export default function ListingLogos() {
           "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128134/CV%20PICS/Listing%20Logos/git_jh5if0.png",
     },
     {
-      imageUrl: "https://camonysi.sirv.com/portofolio/Nextjs-logo.png",
+      imageUrl: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128135/CV%20PICS/Listing%20Logos/lit_ganauw.png",
     },
     {
       imageUrl:
@@ -70,7 +70,7 @@ export default function ListingLogos() {
           "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128134/CV%20PICS/Listing%20Logos/git_jh5if0.png",
     },
     {
-      imageUrl: "https://camonysi.sirv.com/portofolio/Nextjs-logo.png",
+      imageUrl: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128135/CV%20PICS/Listing%20Logos/lit_ganauw.png",
     },
     {
       imageUrl:
