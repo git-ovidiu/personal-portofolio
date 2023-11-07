@@ -10,11 +10,11 @@ const buttons = [
   {
     text: "Component Library",
     icon: React.createElement(SiAtom, { size: 20 })
-  },
-  {
-    text: "Moo-Free Brews",
-    icon: React.createElement(MdOutlineCoffeeMaker, { size: 20 })
   }
+  // {
+  //   text: "Moo-Free Brews",
+  //   icon: React.createElement(MdOutlineCoffeeMaker, { size: 20 })
+  // }
   // Add more card objects as needed
 ];
 

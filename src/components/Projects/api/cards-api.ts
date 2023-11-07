@@ -66,7 +66,7 @@ const cards = [
       width: "75px",
     }),
     description:
-        "The Vibe Interior website is an ongoing project dedicated to promoting a friend's interior design company. Its purpose is to display their impressive portfolio and range of services, encapsulating the very essence of their brand and showcasing their expertise in crafting captivating interior spaces. Currently in the development stage, the website aims to offer a visually captivating online experience, enticing visitors to explore and providing them with a sneak peek into the realm of Vibe Interior's imaginative design solutions.",
+        "The Vibe Interior website is a project dedicated to promoting an interior design company. Its purpose is to display their impressive portfolio and range of services, encapsulating the very essence of their brand and showcasing their expertise in crafting captivating interior spaces. Currently in the development stage, the website aims to offer a visually captivating online experience, enticing visitors to explore and providing them with a sneak peek into the realm of Vibe Interior's imaginative design solutions.",
     subtitle: "Libraries",
     libs: [
       {
@@ -178,84 +178,84 @@ const cards = [
   },
 
   //Moo Free Brews
-  {
-    shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
-    media: React.createElement(MediaImage, {
-      image: React.createElement(Image, {
-        alt: "Placeholder",
-        fill: true,
-        src: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128707/CV%20PICS/projects/Screenshot_2023-07-03_at_22.41.02_nase43.png"
-      }),
-      "image-border-radius": "20px",
-      "object-fit": "cover",
-      "padding-bottom-desktop": "40%",
-      "padding-bottom-mobile": "50%",
-      "padding-bottom-tablet": "50%",
-    }),
-    labels: [
-      {
-        text: "nextJs",
-        color: "white",
-        background: "#000",
-      },
-      {
-        text: "nx",
-        color: "white",
-        background: "#012F55",
-      },
-      {
-        text: "typescript",
-        color: "white",
-        background: "#0D65C0",
-      },
-      {
-        text: "scss",
-        color: "white",
-        background: "#B4497E",
-      },
-      {
-        text: "framer-motion",
-        color: "white",
-        background: "#433982",
-      },
-      // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
-    ],
-    title: React.createElement(AnimatedText, {
-      color: "black",
-      text: "MooFree Brews",
-      variant: "h3",
-    }),
-    divider: React.createElement(SimpleDivider, {
-      animate: true,
-      loop: true,
-      "animation-delay": "-0.05s",
-      "animation-duration": "1s",
-      "border-radius": "10px",
-      color: "black",
-      height: "4px",
-      width: "75px",
-    }),
-    description:
-      "MooFree Brews is a website created for a specialty coffee shop that exclusively focuses on vegan products and beverages while embracing an environmentally conscious approach to sourcing. This coffee shop is devoted to delivering an authentic experience, ensuring that the coffee harvesting process aligns with sustainability standards, guaranteeing each cup is crafted with ethical practices. Additionally, MooFree Brews is committed to building an inclusive environment where everyone is treated with respect and care.",
-    subtitle: "Other Libraries",
-    libs: [
-      {
-        text: "Framer Motion",
-      },
-      {
-        text: "Splide",
-      },
-      {
-        text: "React Icons",
-      },
-    ],
-    actions: [
-      {
-        text: "Live Website (in progress)",
-        icon: React.createElement(BiCoffeeTogo, { size: 20 }),
-        url: "https://moo-free-brews.vercel.app/",
-      },
-    ],
-  },
+  // {
+  //   shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
+  //   media: React.createElement(MediaImage, {
+  //     image: React.createElement(Image, {
+  //       alt: "Placeholder",
+  //       fill: true,
+  //       src: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128707/CV%20PICS/projects/Screenshot_2023-07-03_at_22.41.02_nase43.png"
+  //     }),
+  //     "image-border-radius": "20px",
+  //     "object-fit": "cover",
+  //     "padding-bottom-desktop": "40%",
+  //     "padding-bottom-mobile": "50%",
+  //     "padding-bottom-tablet": "50%",
+  //   }),
+  //   labels: [
+  //     {
+  //       text: "nextJs",
+  //       color: "white",
+  //       background: "#000",
+  //     },
+  //     {
+  //       text: "nx",
+  //       color: "white",
+  //       background: "#012F55",
+  //     },
+  //     {
+  //       text: "typescript",
+  //       color: "white",
+  //       background: "#0D65C0",
+  //     },
+  //     {
+  //       text: "scss",
+  //       color: "white",
+  //       background: "#B4497E",
+  //     },
+  //     {
+  //       text: "framer-motion",
+  //       color: "white",
+  //       background: "#433982",
+  //     },
+  //     // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
+  //   ],
+  //   title: React.createElement(AnimatedText, {
+  //     color: "black",
+  //     text: "MooFree Brews",
+  //     variant: "h3",
+  //   }),
+  //   divider: React.createElement(SimpleDivider, {
+  //     animate: true,
+  //     loop: true,
+  //     "animation-delay": "-0.05s",
+  //     "animation-duration": "1s",
+  //     "border-radius": "10px",
+  //     color: "black",
+  //     height: "4px",
+  //     width: "75px",
+  //   }),
+  //   description:
+  //     "MooFree Brews is a website created for a specialty coffee shop that exclusively focuses on vegan products and beverages while embracing an environmentally conscious approach to sourcing. This coffee shop is devoted to delivering an authentic experience, ensuring that the coffee harvesting process aligns with sustainability standards, guaranteeing each cup is crafted with ethical practices. Additionally, MooFree Brews is committed to building an inclusive environment where everyone is treated with respect and care.",
+  //   subtitle: "Other Libraries",
+  //   libs: [
+  //     {
+  //       text: "Framer Motion",
+  //     },
+  //     {
+  //       text: "Splide",
+  //     },
+  //     {
+  //       text: "React Icons",
+  //     },
+  //   ],
+  //   actions: [
+  //     {
+  //       text: "Live Website (in progress)",
+  //       icon: React.createElement(BiCoffeeTogo, { size: 20 }),
+  //       url: "https://moo-free-brews.vercel.app/",
+  //     },
+  //   ],
+  // },
 ];
 export default cards;
