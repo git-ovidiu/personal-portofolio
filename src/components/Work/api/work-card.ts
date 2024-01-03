@@ -1,7 +1,5 @@
 import React from "react"
-import {AnimatedText, ButtonLineDrawing, Label} from "@git-ovidiu/nextjs-component-library"
-import {CgLaptop} from "react-icons/cg"
-import {FaNetworkWired} from "react-icons/fa"
+import {AnimatedText,  Label} from "@git-ovidiu/nextjs-component-library"
 
 const workCard = {
 	labels: [

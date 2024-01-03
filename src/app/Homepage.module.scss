@@ -1,24 +1,7 @@
 
 .o-homepage{
-  //overflow-y: hidden;
-  //width: 100%;
-  //z-index: 20;
-  //position: relative;
-  //overflow: hidden;
-  //height: 100%;
-  //overflow: hidden;
-
   max-width: 100%;
 
-  //position: relative;
-  //overflow-y: auto;
-  //overscroll-behavior-y: contain;
-  //scroll-snap-type: y mandatory;
-  ////height: 100vh;
-  //width: 100%;
-  //-ms-overflow-style: none;
-  //scrollbar-width: none;
-  //overflow: hidden;
   &::-webkit-scrollbar {
 	display: none;
   }
@@ -26,24 +9,7 @@
 
   .about-container{
 	min-height: 100vh;
-	//scroll-snap-align: start;
-	//position: relative;
-
   }
-
-  //.education{
-  //min-height: 100vh;
-  //}
-  //.work{
-  //min-height: 100vh;
-  //}
-  //.projects{
-  //min-height: 100vh;
-  //}
-  //.contact{
-  //min-height: 100vh;
-  //}
-
 
   &::before {
 	content: '';
@@ -62,11 +28,12 @@
 	.first-shape{
 	  position: absolute;
 	  width: 100%;
-	  height: 100%;
+	  height: 80%;
 	  z-index: -5;
 	  filter: blur(30px);
 	  transform: rotate(90deg);
 	  right: 0;
+	  top: -50px;
 	  bottom: 0;
 	  opacity: 0.37;
 	}

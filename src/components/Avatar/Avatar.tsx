@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Component } from "react";
+import React from "react";
 import * as NextComponents from "@git-ovidiu/nextjs-component-library"
 
 const {
@@ -17,12 +17,7 @@ const {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./Avatar.module.scss";
-import {delay, duration_fast, label_color, primary_color} from "main/components/Settings/FramerMotion"
-
-const shapeVariantCustom = {
-  initial: { opacity: 0, height: 0 },
-  animate: { opacity: 1, height: "80%" },
-};
+import {delay, duration_fast, primary_color} from "main/components/Settings/FramerMotion"
 
 export default function Avatar() {
   return (

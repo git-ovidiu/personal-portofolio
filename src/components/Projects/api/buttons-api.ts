@@ -1,4 +1,4 @@
-import {MdOutlineArchitecture, MdOutlineCoffeeMaker} from "react-icons/md";
+import {MdOutlineArchitecture} from "react-icons/md";
 import React from "react";
 import {SiAtom} from "react-icons/si"
 import { FaProjectDiagram } from "react-icons/fa";
@@ -31,11 +31,6 @@ const buttons = [
     text: "Component Library",
     icon: React.createElement(SiAtom, { size: 20 })
   }
-  // {
-  //   text: "Moo-Free Brews",
-  //   icon: React.createElement(MdOutlineCoffeeMaker, { size: 20 })
-  // }
-  // Add more card objects as needed
 ];
 
 export default buttons;

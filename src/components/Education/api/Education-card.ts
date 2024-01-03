@@ -1,6 +1,4 @@
-import {MdOutlineArchitecture, MdOutlineCoffeeMaker} from "react-icons/md";
 import React from "react";
-import {SiAtom} from "react-icons/si"
 import {ButtonLineDrawing, Description, Label} from "@git-ovidiu/nextjs-component-library"
 import {CgLaptop} from "react-icons/cg"
 import {FaUniversity} from "react-icons/fa"
@@ -95,7 +93,7 @@ const EducationCards = [
 		],
 
 		title: "Responsive Design - freeCodeCamp",
-		description: "ceva text despre cursul asta",
+		description: "Certified in Responsive Web Design through FreeCodeCamp, equipped with the skills to create dynamic and user-friendly websites.",
 
 		button: [
 			React.createElement(ButtonLineDrawing, {
@@ -124,7 +122,7 @@ const EducationCards = [
 		],
 
 		title: "JavaScript Algorithms and Data Structures",
-		description: "ceva text despre cursul asta",
+		description: "Completed FreeCodeCamp's JavaScript Algorithms and Data Structures course, gaining a good grasp of coding concepts. Can solve problems and use efficient data structures, bringing a practical understanding of algorithms to web development projects.",
 
 		button: [
 			React.createElement(ButtonLineDrawing, {

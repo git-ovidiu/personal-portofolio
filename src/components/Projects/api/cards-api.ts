@@ -1,19 +1,16 @@
 import {
   AnimatedText,
   MediaImage,
-  MediaVideo,
-  SimpleDivider,
 } from "@git-ovidiu/nextjs-component-library";
 import React from "react";
-import { MdOutlineDesignServices, MdOutlineLiveTv } from "react-icons/md";
+import { MdOutlineDesignServices } from "react-icons/md";
 import Image from "next/image";
-import { BiAtom, BiCoffeeTogo } from "react-icons/bi";
+import { BiAtom } from "react-icons/bi";
 
 const cards = [
 
   // cegeka
   {
-    // shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
     media: React.createElement(MediaImage, {
       image: React.createElement(Image, {
         alt: "Placeholder",
@@ -64,16 +61,7 @@ const cards = [
       text: "Cegeka",
       variant: "h3",
     }),
-    divider: React.createElement(SimpleDivider, {
-      animate: true,
-      loop: true,
-      "animation-delay": "-0.05s",
-      "animation-duration": "1s",
-      "border-radius": "10px",
-      color: "black",
-      height: "4px",
-      width: "75px",
-    }),
+    description: "Collaborated with Cegeka, a leading European IT firm, to develop a dynamic website. Cegeka excels in providing innovative IT solutions, including consulting, software development, and cutting-edge cloud services across diverse industries.",
     actions: [
       {
         text: "Cegeka Website",
@@ -85,7 +73,6 @@ const cards = [
 
   // woodwing
   {
-    // shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
     media: React.createElement(MediaImage, {
       image: React.createElement(Image, {
         alt: "Placeholder",
@@ -129,13 +116,13 @@ const cards = [
         color: "white",
         background: "#8311F2",
       },
-      // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
     ],
     title: React.createElement(AnimatedText, {
       color: "black",
       text: "Woodwing",
       variant: "h3",
     }),
+    description: "Collaborated with WoodWing, a prominent global software company, to develop a website. WoodWing specializes in multichannel publishing and digital asset management solutions, empowering efficient content creation and seamless collaboration across platforms.",
     actions: [
       {
         text: "Woodwing Website",
@@ -147,7 +134,6 @@ const cards = [
 
   // stratech
   {
-    // shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
     media: React.createElement(MediaImage, {
       image: React.createElement(Image, {
         alt: "Placeholder",
@@ -191,13 +177,13 @@ const cards = [
         color: "white",
         background: "#8311F2",
       },
-      // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
     ],
     title: React.createElement(AnimatedText, {
       color: "black",
       text: "Stratech",
       variant: "h3",
     }),
+    description: "Collaborated on the website development for Stratech, a company revolutionizing import and export processes. Their software and expertise streamline operations for businesses, enhancing efficiency and simplifying logistics",
     actions: [
       {
         text: "Stratech Website",
@@ -209,7 +195,6 @@ const cards = [
 
   // OGZ
   {
-    // shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
     media: React.createElement(MediaImage, {
       image: React.createElement(Image, {
         alt: "Placeholder",
@@ -260,6 +245,7 @@ const cards = [
       text: "OGZ",
       variant: "h3",
     }),
+    description: "Contributed to the development for Onderwijsbeurs, an educational fair facilitating connections between students and educational institutions. Showcasing diverse educational opportunities and career paths, fostering a dynamic platform for learning exploration.",
     actions: [
       {
         text: "OGZ Website",
@@ -271,7 +257,6 @@ const cards = [
 
   // vibe interior
   {
-    // shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
     media: React.createElement(MediaImage, {
       image: React.createElement(Image, {
         alt: "Placeholder",
@@ -306,7 +291,6 @@ const cards = [
         background: "#433982",
       },
 
-      // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
     ],
     title: React.createElement(AnimatedText, {
       color: "black",
@@ -343,7 +327,6 @@ const cards = [
 
   // nextjs component library
   {
-    // shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
     media: React.createElement(MediaImage, {
       image: React.createElement(Image, {
         alt: "Placeholder",
@@ -389,19 +372,7 @@ const cards = [
       text: "Nextjs Component Library",
       variant: "h3",
     }),
-    divider: React.createElement(SimpleDivider, {
-      animate: true,
-      loop: true,
-      "animation-delay": "-0.05s",
-      "animation-duration": "1s",
-      "border-radius": "10px",
-      color: "black",
-      height: "4px",
-      width: "75px",
-    }),
-    // description:
-    //     "This project represents a React component library developed using Next.js, which is organized into distinct sections such as atoms, molecules, organisms, and a custom style guide. The purpose of this library is to offer a comprehensive set of reusable components that streamline the process of creating web interfaces quickly and efficiently. With a modular architecture and the integration of a customized Bootstrap framework, this project presents a unified and intuitive styling guide that enhances the user experience.",
-    description: "This is where all the atoms/molecules/organism of this portfolio was created. I use these custom components throughout my entire website.",
+    description: "This is where all the atoms/molecules/organism of this portfolio were created. I use these custom components throughout my entire website.",
     subtitle: "Other Libraries",
     libs: [
       {

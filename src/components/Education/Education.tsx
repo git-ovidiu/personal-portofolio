@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./Education.module.scss";
@@ -17,15 +17,10 @@ import EducationCards from "main/components/Education/api/Education-card"
 import {
   delay,
   delay_mid,
-  delay_slow,
   duration_fast,
   duration_slow,
   label_color
 } from "main/components/Settings/FramerMotion"
-// import '@splidejs/react-splide/css';
-// import '@splidejs/react-splide/css/skyblue';
-// import '@splidejs/react-splide/css/sea-green';
-// import '@splidejs/react-splide/css/core';
 
 export default function Education() {
   return (
@@ -36,8 +31,6 @@ export default function Education() {
           border-radius="0px"
           space-top="xl"
           space-bottom="xl"
-          // custom-background-color={"#7395ae"}
-          // custom-background-color={"#29648a"}
           custom-background-color={"black"}
           full-height
         >
@@ -101,9 +94,6 @@ export default function Education() {
                       >
                       <Card
                           is-overlapped
-                          // image-height-mobile={"50px"}
-                          // image-height-tablet={"250px"}
-                          // image-height-desktop={"250px"}
                           image={
                             <motion.div className={styles["card-image"]}
                                 initial={{opacity: 0, y: -200}}

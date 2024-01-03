@@ -18,7 +18,7 @@ import {
   Description, TitleAndDescription,
 } from "@git-ovidiu/nextjs-component-library";
 import styles from "./Homepage.module.scss";
-import {delay, delay_slow, duration_fast, label_color} from "main/components/Settings/FramerMotion"
+import {duration_fast, label_color} from "main/components/Settings/FramerMotion"
 
 
 export default function Homepage() {

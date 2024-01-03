@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import styles from "./Projects.module.scss";
 import {
   ButtonLineDrawing,
@@ -19,7 +18,6 @@ import "@splidejs/react-splide/css/core";
 import cards from "./api/cards-api";
 import buttons from "main/components/Projects/api/buttons-api";
 import {
-  delay,
   delay_mid,
   duration_fast,
   duration_slow,
@@ -31,7 +29,6 @@ export default function Projects() {
       <div className={styles["o-projects"]}>
         <CustomWrapper
           border-radius="0px"
-          // custom-background-color="#29648a"
           custom-background-color="black"
           space-bottom="m"
           space-top="m"
@@ -72,10 +69,6 @@ export default function Projects() {
                   className={styles["card-container"]}
                 >
                   <Card
-                    // image-height-mobile="300px"
-                    // image-height-tablet="300px"
-                    // image-height-desktop="300px"
-
                     is-overlapped
                     image={
                       <motion.div

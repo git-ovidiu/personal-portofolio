@@ -20,11 +20,10 @@ import {
 } from "@git-ovidiu/nextjs-component-library";
 
 import content from "./api/Content";
-import { SiMinutemailer } from "react-icons/si";
 import { RiMailSendFill } from "react-icons/ri";
 import { Outfit } from "next/font/google";
 import {BiArrowBack} from "react-icons/bi"
-import {delay, delay_slow, duration_fast, duration_slow, label_color} from "main/components/Settings/FramerMotion"
+import {delay, duration_fast, duration_slow, label_color} from "main/components/Settings/FramerMotion"
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -287,8 +286,6 @@ export default function Contact() {
               <div className={styles["contact-with-icon"]}>
                 {content.iconAndTexts?.map((iconAndText, index) => (
                   <div className={styles["icon-and-text"]} key={index}>
-                    {/*<AiFillLinkedin size={20}/>*/}
-                    {/*<p>linkedin</p>*/}
                     <a href={iconAndText.href}>
                       {iconAndText.icon}
                       {iconAndText.text}
