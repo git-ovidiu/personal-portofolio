@@ -37,7 +37,8 @@ export default function Education() {
           space-top="xl"
           space-bottom="xl"
           // custom-background-color={"#7395ae"}
-          custom-background-color={"#29648a"}
+          // custom-background-color={"#29648a"}
+          custom-background-color={"black"}
           full-height
         >
           <CustomGridRow vertical-alignment="center">
@@ -59,7 +60,7 @@ export default function Education() {
                 text-align="center"
                 title={
                   <AnimatedText
-                    text="Diverse Background in Web Development, E-commerce, Languages, and Economics"
+                    text="Diverse Background in Web Development, E-commerce, and Economics"
                     variant="h4"
                     color={"white"}
                   />
@@ -122,7 +123,7 @@ export default function Education() {
                                   object-fit="contain"
                                   padding-bottom-mobile="200px"
                                   padding-bottom-tablet="100%"
-                                  padding-bottom-desktop="56%"
+                                  padding-bottom-desktop="65%"
                               />
                             </motion.div>
                           }

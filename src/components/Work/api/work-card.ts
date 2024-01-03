@@ -104,17 +104,7 @@ const workCard = {
 			variant: "h4"
 		}),
 	],
-	description: "",
-	button: React.createElement(ButtonLineDrawing, {
-		"icon": React.createElement(FaNetworkWired, {
-			size: 20}),
-		"icon-position": "right",
-		"line-effect": "line-below",
-		"link-url": "https://www.frozenlogic.net/",
-		"open-in-new-tab": true,
-		"padding": "xs",
-		"text": "Frozenlogic Website",
-	})
+	description: ""
 }
 
 

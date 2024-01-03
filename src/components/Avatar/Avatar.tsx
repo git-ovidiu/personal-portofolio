@@ -50,7 +50,7 @@ export default function Avatar() {
             >
               <MediaImage
                 image-border-radius={"50%"}
-                style={{border: "2px solid #29648a", borderRadius: "50%"}}
+                style={{border: "2px solid black", borderRadius: "50%"}}
                 image={
                   <div className={styles["avatar-container"]}>
                     <Image

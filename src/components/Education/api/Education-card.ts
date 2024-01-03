@@ -4,9 +4,10 @@ import {SiAtom} from "react-icons/si"
 import {ButtonLineDrawing, Description, Label} from "@git-ovidiu/nextjs-component-library"
 import {CgLaptop} from "react-icons/cg"
 import {FaUniversity} from "react-icons/fa"
+import { FaFreeCodeCamp } from "react-icons/fa";
+
 
 const EducationCards = [
-
 	// CodeCool
 	{
 		image: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128134/CV%20PICS/education/22045681851_pwxxzd.png",
@@ -70,6 +71,75 @@ const EducationCards = [
 			})
 		]
 	},
+
+	// Responsive Design
+	{
+		image: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704307113/Screenshot_2024-01-03_at_20.38.19_uica0t.png",
+
+		labels: [
+			React.createElement(Label, {
+				"background-color": "#E56028",
+				color: "white",
+				text: "html"
+			}),
+			React.createElement(Label, {
+				"background-color": "#2660E4",
+				color: "white",
+				text: "css"
+			}),
+			React.createElement(Label, {
+				"background-color": "#27B4B5",
+				color: "white",
+				text: "responsive design"
+			}),
+		],
+
+		title: "Responsive Design - freeCodeCamp",
+		description: "ceva text despre cursul asta",
+
+		button: [
+			React.createElement(ButtonLineDrawing, {
+				"icon": React.createElement(FaFreeCodeCamp, {
+					size: 20}),
+				"icon-position": "right",
+				"line-effect": "line-below",
+				"link-url": "https://www.freecodecamp.org/certification/ovidiu37/responsive-web-design",
+				"open-in-new-tab": true,
+				"padding": "xs",
+				"text": "Certification",
+			})
+		]
+	},
+
+	// Javascript
+	{
+		image: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704307266/Screenshot_2024-01-03_at_20.40.52_wmbgfc.png",
+
+		labels: [
+			React.createElement(Label, {
+				"background-color": "#DCBF2F",
+				color: "white",
+				text: "javascript"
+			}),
+		],
+
+		title: "JavaScript Algorithms and Data Structures",
+		description: "ceva text despre cursul asta",
+
+		button: [
+			React.createElement(ButtonLineDrawing, {
+				"icon": React.createElement(FaFreeCodeCamp, {
+					size: 20}),
+				"icon-position": "right",
+				"line-effect": "line-below",
+				"link-url": "https://www.freecodecamp.org/certification/ovidiu37/javascript-algorithms-and-data-structures",
+				"open-in-new-tab": true,
+				"padding": "xs",
+				"text": "Certification",
+			})
+		]
+	},
+
 
 	// Brasov
 	{

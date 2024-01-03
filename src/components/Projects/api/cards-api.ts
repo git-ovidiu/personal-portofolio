@@ -11,9 +11,267 @@ import { BiAtom, BiCoffeeTogo } from "react-icons/bi";
 
 const cards = [
 
+  // cegeka
+  {
+    // shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
+    media: React.createElement(MediaImage, {
+      image: React.createElement(Image, {
+        alt: "Placeholder",
+        fill: true,
+        src: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704284059/Screenshot_2024-01-03_at_14.13.42_g658zz.png"
+      }),
+      "image-border-radius": "20px",
+      "object-fit": "cover",
+      "padding-bottom-desktop": "45%",
+      "padding-bottom-mobile": "50%",
+      "padding-bottom-tablet": "50%",
+    }),
+    labels: [
+      {
+        text: "lit-element",
+        color: "white",
+        background: "#283198",
+      },
+      {
+        text: "typescript",
+        color: "white",
+        background: "#0D65C0",
+      },
+      {
+        text: "hubspot",
+        color: "white",
+        background: "#FF5C36",
+      },
+      {
+        text: "scss",
+        color: "white",
+        background: "#B4497E",
+      },
+      {
+        text: "html",
+        color: "white",
+        background: "#E96328",
+      },
+      {
+        text: "bootstrap",
+        color: "white",
+        background: "#8311F2",
+      },
+      // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
+    ],
+    title: React.createElement(AnimatedText, {
+      color: "black",
+      text: "Cegeka",
+      variant: "h3",
+    }),
+    divider: React.createElement(SimpleDivider, {
+      animate: true,
+      loop: true,
+      "animation-delay": "-0.05s",
+      "animation-duration": "1s",
+      "border-radius": "10px",
+      color: "black",
+      height: "4px",
+      width: "75px",
+    }),
+    actions: [
+      {
+        text: "Cegeka Website",
+        icon: React.createElement(BiAtom, { size: 20 }),
+        url: "https://www.cegeka.com/",
+      },
+    ],
+  },
+
+  // woodwing
+  {
+    // shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
+    media: React.createElement(MediaImage, {
+      image: React.createElement(Image, {
+        alt: "Placeholder",
+        fill: true,
+        src: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704284886/Screenshot_2024-01-03_at_14.27.34_umuka3.png"
+      }),
+      "image-border-radius": "20px",
+      "object-fit": "cover",
+      "padding-bottom-desktop": "55%",
+      "padding-bottom-mobile": "50%",
+      "padding-bottom-tablet": "50%",
+    }),
+    labels: [
+      {
+        text: "lit-element",
+        color: "white",
+        background: "#283198",
+      },
+      {
+        text: "typescript",
+        color: "white",
+        background: "#0D65C0",
+      },
+      {
+        text: "hubspot",
+        color: "white",
+        background: "#FF5C36",
+      },
+      {
+        text: "scss",
+        color: "white",
+        background: "#B4497E",
+      },
+      {
+        text: "html",
+        color: "white",
+        background: "#E96328",
+      },
+      {
+        text: "bootstrap",
+        color: "white",
+        background: "#8311F2",
+      },
+      // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
+    ],
+    title: React.createElement(AnimatedText, {
+      color: "black",
+      text: "Woodwing",
+      variant: "h3",
+    }),
+    actions: [
+      {
+        text: "Woodwing Website",
+        icon: React.createElement(BiAtom, { size: 20 }),
+        url: "https://www.woodwing.com",
+      },
+    ],
+  },
+
+  // stratech
+  {
+    // shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
+    media: React.createElement(MediaImage, {
+      image: React.createElement(Image, {
+        alt: "Placeholder",
+        fill: true,
+        src: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704285366/Screenshot_2024-01-03_at_14.35.43_kzwurl.png"
+      }),
+      "image-border-radius": "20px",
+      "object-fit": "cover",
+      "padding-bottom-desktop": "50%",
+      "padding-bottom-mobile": "50%",
+      "padding-bottom-tablet": "50%",
+    }),
+    labels: [
+      {
+        text: "lit-element",
+        color: "white",
+        background: "#283198",
+      },
+      {
+        text: "typescript",
+        color: "white",
+        background: "#0D65C0",
+      },
+      {
+        text: "hubspot",
+        color: "white",
+        background: "#FF5C36",
+      },
+      {
+        text: "scss",
+        color: "white",
+        background: "#B4497E",
+      },
+      {
+        text: "html",
+        color: "white",
+        background: "#E96328",
+      },
+      {
+        text: "bootstrap",
+        color: "white",
+        background: "#8311F2",
+      },
+      // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
+    ],
+    title: React.createElement(AnimatedText, {
+      color: "black",
+      text: "Stratech",
+      variant: "h3",
+    }),
+    actions: [
+      {
+        text: "Stratech Website",
+        icon: React.createElement(BiAtom, { size: 20 }),
+        url: "https://www.stratech.nl",
+      },
+    ],
+  },
+
+  // OGZ
+  {
+    // shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
+    media: React.createElement(MediaImage, {
+      image: React.createElement(Image, {
+        alt: "Placeholder",
+        fill: true,
+        src: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704288034/Screenshot_2024-01-03_at_15.19.34_exmknk.png"
+      }),
+      "image-border-radius": "20px",
+      "object-fit": "cover",
+      "padding-bottom-desktop": "50%",
+      "padding-bottom-mobile": "50%",
+      "padding-bottom-tablet": "50%",
+    }),
+    labels: [
+      {
+        text: "lit-element",
+        color: "white",
+        background: "#283198",
+      },
+      {
+        text: "typescript",
+        color: "white",
+        background: "#0D65C0",
+      },
+      {
+        text: "hubspot",
+        color: "white",
+        background: "#FF5C36",
+      },
+      {
+        text: "scss",
+        color: "white",
+        background: "#B4497E",
+      },
+      {
+        text: "html",
+        color: "white",
+        background: "#E96328",
+      },
+      {
+        text: "bootstrap",
+        color: "white",
+        background: "#8311F2",
+      },
+      // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
+    ],
+    title: React.createElement(AnimatedText, {
+      color: "black",
+      text: "OGZ",
+      variant: "h3",
+    }),
+    actions: [
+      {
+        text: "OGZ Website",
+        icon: React.createElement(BiAtom, { size: 20 }),
+        url: "https://www.onderwijsbeurs.nl",
+      },
+    ],
+  },
+
   // vibe interior
   {
-    shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
+    // shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
     media: React.createElement(MediaImage, {
       image: React.createElement(Image, {
         alt: "Placeholder",
@@ -55,18 +313,6 @@ const cards = [
       text: "Vibe Interior",
       variant: "h3",
     }),
-    divider: React.createElement(SimpleDivider, {
-      animate: true,
-      loop: true,
-      "animation-delay": "-0.2s",
-      "animation-duration": "1s",
-      "border-radius": "10px",
-      color: "black",
-      height: "4px",
-      width: "75px",
-    }),
-    description:
-        "The Vibe Interior website is a project dedicated to promoting an interior design company. Its purpose is to display their impressive portfolio and range of services, encapsulating the very essence of their brand and showcasing their expertise in crafting captivating interior spaces. Currently in the development stage, the website aims to offer a visually captivating online experience, enticing visitors to explore and providing them with a sneak peek into the realm of Vibe Interior's imaginative design solutions.",
     subtitle: "Libraries",
     libs: [
       {
@@ -95,10 +341,9 @@ const cards = [
     ],
   },
 
-
   // nextjs component library
   {
-    shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
+    // shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
     media: React.createElement(MediaImage, {
       image: React.createElement(Image, {
         alt: "Placeholder",
@@ -154,8 +399,9 @@ const cards = [
       height: "4px",
       width: "75px",
     }),
-    description:
-      "This project represents a React component library developed using Next.js, which is organized into distinct sections such as atoms, molecules, organisms, and a custom style guide. The purpose of this library is to offer a comprehensive set of reusable components that streamline the process of creating web interfaces quickly and efficiently. With a modular architecture and the integration of a customized Bootstrap framework, this project presents a unified and intuitive styling guide that enhances the user experience.",
+    // description:
+    //     "This project represents a React component library developed using Next.js, which is organized into distinct sections such as atoms, molecules, organisms, and a custom style guide. The purpose of this library is to offer a comprehensive set of reusable components that streamline the process of creating web interfaces quickly and efficiently. With a modular architecture and the integration of a customized Bootstrap framework, this project presents a unified and intuitive styling guide that enhances the user experience.",
+    description: "This is where all the atoms/molecules/organism of this portfolio was created. I use these custom components throughout my entire website.",
     subtitle: "Other Libraries",
     libs: [
       {
@@ -177,85 +423,6 @@ const cards = [
     ],
   },
 
-  //Moo Free Brews
-  // {
-  //   shape: "https://camonysi.sirv.com/portofolio/vibe-interior-card-shape.svg",
-  //   media: React.createElement(MediaImage, {
-  //     image: React.createElement(Image, {
-  //       alt: "Placeholder",
-  //       fill: true,
-  //       src: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128707/CV%20PICS/projects/Screenshot_2023-07-03_at_22.41.02_nase43.png"
-  //     }),
-  //     "image-border-radius": "20px",
-  //     "object-fit": "cover",
-  //     "padding-bottom-desktop": "40%",
-  //     "padding-bottom-mobile": "50%",
-  //     "padding-bottom-tablet": "50%",
-  //   }),
-  //   labels: [
-  //     {
-  //       text: "nextJs",
-  //       color: "white",
-  //       background: "#000",
-  //     },
-  //     {
-  //       text: "nx",
-  //       color: "white",
-  //       background: "#012F55",
-  //     },
-  //     {
-  //       text: "typescript",
-  //       color: "white",
-  //       background: "#0D65C0",
-  //     },
-  //     {
-  //       text: "scss",
-  //       color: "white",
-  //       background: "#B4497E",
-  //     },
-  //     {
-  //       text: "framer-motion",
-  //       color: "white",
-  //       background: "#433982",
-  //     },
-  //     // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
-  //   ],
-  //   title: React.createElement(AnimatedText, {
-  //     color: "black",
-  //     text: "MooFree Brews",
-  //     variant: "h3",
-  //   }),
-  //   divider: React.createElement(SimpleDivider, {
-  //     animate: true,
-  //     loop: true,
-  //     "animation-delay": "-0.05s",
-  //     "animation-duration": "1s",
-  //     "border-radius": "10px",
-  //     color: "black",
-  //     height: "4px",
-  //     width: "75px",
-  //   }),
-  //   description:
-  //     "MooFree Brews is a website created for a specialty coffee shop that exclusively focuses on vegan products and beverages while embracing an environmentally conscious approach to sourcing. This coffee shop is devoted to delivering an authentic experience, ensuring that the coffee harvesting process aligns with sustainability standards, guaranteeing each cup is crafted with ethical practices. Additionally, MooFree Brews is committed to building an inclusive environment where everyone is treated with respect and care.",
-  //   subtitle: "Other Libraries",
-  //   libs: [
-  //     {
-  //       text: "Framer Motion",
-  //     },
-  //     {
-  //       text: "Splide",
-  //     },
-  //     {
-  //       text: "React Icons",
-  //     },
-  //   ],
-  //   actions: [
-  //     {
-  //       text: "Live Website (in progress)",
-  //       icon: React.createElement(BiCoffeeTogo, { size: 20 }),
-  //       url: "https://moo-free-brews.vercel.app/",
-  //     },
-  //   ],
-  // },
+
 ];
 export default cards;

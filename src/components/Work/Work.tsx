@@ -94,7 +94,6 @@ export default function Work() {
                     />
                 </div>}
                   description={""}
-                  buttons={<div className={styles["action-content"]}>{workCard.button}</div>}
                 />
               </motion.div>
             </div>

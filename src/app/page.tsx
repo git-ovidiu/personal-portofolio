@@ -105,7 +105,7 @@ export default function Homepage() {
                           className={styles["text-content-container"]}
                       >
                         <div className={styles["first-shape"]}>
-                            <Image draggable={false} src={"https://camonysi.sirv.com/portofolio/homepage-shape-primary-color.svg"} alt={"Placeholder"} layout={"responsive"} width={500} height={500}/>
+                            <Image draggable={false} src={"https://res.cloudinary.com/dfddk8jjr/image/upload/v1704321746/CV%20PICS/sbqqkhr64gxosjcopvya.svg"} alt={"Placeholder"} layout={"fill"}/>
                         </div>
                         <TitleAndDescription
                             text-align="center"
@@ -113,7 +113,7 @@ export default function Homepage() {
                             title={
                             <>
                               <AnimatedText text="Welcome to my portfolio!" variant="h2"/>
-                              <AnimatedText text="I'm Ovidiu, a dedicated web developer specializing in web design and frontend development." variant="h2"/>
+                              <AnimatedText text="I'm Ovidiu, a dedicated frontend developer specializing in web design and web development." variant="h2"/>
                             </>
                             }
                             description={<motion.h6

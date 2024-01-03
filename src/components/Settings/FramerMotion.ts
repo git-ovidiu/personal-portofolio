@@ -8,4 +8,4 @@ export const delay_slow= 1;
 
 //colors
 export const label_color = "salmon"
-export const primary_color = "#29648a"
+export const primary_color = "black"
