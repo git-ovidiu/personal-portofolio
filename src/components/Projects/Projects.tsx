@@ -113,7 +113,6 @@ export default function Projects() {
                         transition={{ duration: 0.5 }}
                       >
                         <div className={styles["title"]}>{card.title}</div>
-                        <div className={styles.divider}>{card.divider}</div>
                         {card.description ? <p>{card.description}</p> : ""}
                         {card.subtitle ? (
                           <>
