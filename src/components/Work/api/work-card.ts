@@ -92,7 +92,7 @@ const workCard = {
 	],
 	titles: [
 		React.createElement(AnimatedText, {
-			text: "Frozen",
+			text: "Currently working at Frozen",
 			color: "#1B1C3C",
 			variant: "h4"
 		}),

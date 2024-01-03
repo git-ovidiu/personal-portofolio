@@ -59,7 +59,8 @@ export default function Work() {
                   }
                   labels={
                     <>
-                      <p>skills: </p>
+                      {/*<h4>Currently working at FrozenLogic</h4>*/}
+                      <p>acquired skills: </p>
                       {workCard.labels?.map((label, labelIndex) => (
                         <motion.div
                           key={labelIndex}
