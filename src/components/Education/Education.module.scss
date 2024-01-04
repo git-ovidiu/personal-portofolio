@@ -3,4 +3,10 @@
   --m-card-overlapped-side-distance-mobile: 20px;
   --m-card-overlapped-side-distance-tablet: 40px;
   --m-card-overlapped-side-distance-desktop: 60px;
+
+  .card-image{
+    img{
+      border: 1px solid white;
+    }
+  }
 }

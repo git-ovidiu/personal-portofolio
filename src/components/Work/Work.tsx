@@ -40,8 +40,8 @@ export default function Work() {
           >
             <div className={styles["card-column"]}>
               <motion.div className={styles["card-container"]}
-                initial={{opacity: 0, x: -100}}
-                whileInView={{opacity: 1, x: 0}}
+                initial={{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
                 viewport={{once: true}}
                 transition={{duration: duration_fast, delay: delay}}
               >
@@ -63,18 +63,7 @@ export default function Work() {
                       <p>acquired skills: </p>
                       {workCard.labels?.map((label, labelIndex) => (
                         <motion.div
-                          key={labelIndex}
-                          initial={{
-                            opacity: 0,
-                            x: 100,
-                          }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          viewport={{ once: true }}
-                          transition={{
-                            duration: 0.3,
-                            delay: labelIndex * 0.2,
-                          }}
-                        >
+                          key={labelIndex}>
                           {label}
                         </motion.div>
                       ))}
@@ -113,7 +102,7 @@ export default function Work() {
             <div className={styles["article-container"]}>
             {articles.map((article, index ) => (
                 <motion.div className={styles["small-article"]} key={index}
-                    initial={{opacity: 0, y: 150}}
+                    initial={{opacity: 0, y: 100}}
                     whileInView={{opacity: 1, y: 0}}
                     viewport={{once: true}}
                     transition={{duration: duration_fast}}
