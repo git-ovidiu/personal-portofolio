@@ -44,7 +44,7 @@ export default function Projects() {
                     x: 100,
                   }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: false }}
+                  viewport={{ once: true }}
                   transition={{
                     duration: 0.3,
                     delay: index * 0.2,
@@ -64,8 +64,8 @@ export default function Projects() {
                   key={index}
                   initial={{ opacity: 0, y: 100 }}
                   whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
                   transition={{ duration: duration_fast, delay: delay_mid }}
-                  viewport={{ once: false }}
                   className={styles["card-container"]}
                 >
                   <Card
@@ -74,6 +74,7 @@ export default function Projects() {
                       <motion.div
                         initial={{ opacity: 0, y: 200 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
                         transition={{
                           duration: duration_slow,
                           delay: delay_mid,

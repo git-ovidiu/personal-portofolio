@@ -26,14 +26,25 @@
   bottom: 20px;
   padding: 0 0 0 10px;
 
-  a{
+  a {
     writing-mode: vertical-rl;
     transition: all 1s;
     transform: rotate(180deg);
     font-weight: 800;
     font-size: 20px;
     cursor: pointer;
-    color: #29648a;
+    color: black;
+    //text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff;
+    //outline: 5px dotted white;
+    //-webkit-text-stroke-width: 2px;
+    //-webkit-text-stroke-color: white;
+
+    text-shadow:
+            2px 0 white,
+            0 -2px white,
+            -2px 0 white,
+            0 2px white;
   }
+
 }
 }
