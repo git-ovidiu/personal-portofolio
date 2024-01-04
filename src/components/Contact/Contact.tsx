@@ -35,8 +35,8 @@ export default function Contact() {
 
 
         <motion.div
-            initial={{opacity: 0, y: "100%"}}
-            whileInView={{opacity: 1, y: 0}}
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
             viewport={{once: true}}
             transition={{duration: duration_slow}}
             className={styles["email-sent-container"]}
@@ -134,8 +134,9 @@ export default function Contact() {
             xs={12}
           >
             <motion.div
-                initial={{opacity: 0, y: -200}}
-                whileInView={{opacity: 1, y: 0}}
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                viewport={{once: true}}
                 transition={{duration: duration_fast, delay: delay}}
             >
             <div className={styles["divider-container"]}>
@@ -252,8 +253,9 @@ export default function Contact() {
             xs={12}
           >
             <motion.div className={styles["content"]}
-                  initial={{opacity: 0, x: -100}}
-                  whileInView={{opacity: 1, x: 0}}
+                  initial={{opacity: 0}}
+                  whileInView={{opacity: 1}}
+                  viewport={{once: true}}
                   transition={{duration: duration_fast, delay: delay}}
             >
               <AnimatedText
