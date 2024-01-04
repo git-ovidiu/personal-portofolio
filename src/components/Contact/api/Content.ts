@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 import { BsTelephonePlusFill } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 
 const content = {
   title: "Contact me!",
@@ -11,6 +12,11 @@ const content = {
       href: "https://www.linkedin.com/in/bunghez-ovidiu-eduard/",
       icon: React.createElement(AiFillLinkedin, { size: 20, color: `black` }),
       text: "LinkedIn",
+    },
+    {
+      href: "https://github.com/git-ovidiu",
+      icon: React.createElement(FaGithub, { size: 20, color: `black` }),
+      text: "Github",
     },
     {
       href: "mailto:ovidiueduard@gmail.com",

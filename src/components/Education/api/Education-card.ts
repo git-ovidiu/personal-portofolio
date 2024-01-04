@@ -72,7 +72,7 @@ const EducationCards = [
 
 	// Responsive Design
 	{
-		image: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704307113/Screenshot_2024-01-03_at_20.38.19_uica0t.png",
+		image: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704381293/Screenshot_2024-01-04_at_17.14.22_umckdi.png",
 
 		labels: [
 			React.createElement(Label, {
@@ -111,7 +111,7 @@ const EducationCards = [
 
 	// Javascript
 	{
-		image: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704307266/Screenshot_2024-01-03_at_20.40.52_wmbgfc.png",
+		image: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704381163/Screenshot_2024-01-04_at_17.10.48_rjnea0.png",
 
 		labels: [
 			React.createElement(Label, {

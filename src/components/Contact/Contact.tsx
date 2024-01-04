@@ -286,7 +286,7 @@ export default function Contact() {
               <div className={styles["contact-with-icon"]}>
                 {content.iconAndTexts?.map((iconAndText, index) => (
                   <div className={styles["icon-and-text"]} key={index}>
-                    <a href={iconAndText.href}>
+                    <a href={iconAndText.href} target="_blank">
                       {iconAndText.icon}
                       {iconAndText.text}
                     </a>
