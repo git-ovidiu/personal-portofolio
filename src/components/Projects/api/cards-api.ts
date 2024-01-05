@@ -9,67 +9,6 @@ import { BiAtom } from "react-icons/bi";
 
 const cards = [
 
-  // cegeka
-  {
-    media: React.createElement(MediaImage, {
-      image: React.createElement(Image, {
-        alt: "Placeholder",
-        fill: true,
-        src: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704284059/Screenshot_2024-01-03_at_14.13.42_g658zz.png"
-      }),
-      "image-border-radius": "20px",
-      "object-fit": "cover",
-      "padding-bottom-desktop": "45%",
-      "padding-bottom-mobile": "50%",
-      "padding-bottom-tablet": "50%",
-    }),
-    labels: [
-      {
-        text: "lit-element",
-        color: "white",
-        background: "#283198",
-      },
-      {
-        text: "typescript",
-        color: "white",
-        background: "#0D65C0",
-      },
-      {
-        text: "hubspot",
-        color: "white",
-        background: "#FF5C36",
-      },
-      {
-        text: "scss",
-        color: "white",
-        background: "#B4497E",
-      },
-      {
-        text: "html",
-        color: "white",
-        background: "#E96328",
-      },
-      {
-        text: "bootstrap",
-        color: "white",
-        background: "#8311F2",
-      },
-      // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
-    ],
-    title: React.createElement(AnimatedText, {
-      color: "black",
-      text: "Cegeka",
-      variant: "h3",
-    }),
-    description: "Collaborated with Cegeka, a leading European IT firm, to develop a dynamic website. Cegeka excels in providing innovative IT solutions, including consulting, software development, and cutting-edge cloud services across diverse industries.",
-    actions: [
-      {
-        text: "Cegeka Website",
-        icon: React.createElement(BiAtom, { size: 20 }),
-        url: "https://www.cegeka.com/",
-      },
-    ],
-  },
 
   // woodwing
   {
@@ -132,17 +71,17 @@ const cards = [
     ],
   },
 
-  // stratech
+  // cegeka
   {
     media: React.createElement(MediaImage, {
       image: React.createElement(Image, {
         alt: "Placeholder",
         fill: true,
-        src: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704285366/Screenshot_2024-01-03_at_14.35.43_kzwurl.png"
+        src: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704284059/Screenshot_2024-01-03_at_14.13.42_g658zz.png"
       }),
       "image-border-radius": "20px",
       "object-fit": "cover",
-      "padding-bottom-desktop": "50%",
+      "padding-bottom-desktop": "45%",
       "padding-bottom-mobile": "50%",
       "padding-bottom-tablet": "50%",
     }),
@@ -177,18 +116,19 @@ const cards = [
         color: "white",
         background: "#8311F2",
       },
+      // jsx / nextjs  / framer motion / parallax / lightgallery / react-intersection-observer / react-scroll-parallax / swiper
     ],
     title: React.createElement(AnimatedText, {
       color: "black",
-      text: "Stratech",
+      text: "Cegeka",
       variant: "h3",
     }),
-    description: "Collaborated on the website development for Stratech, a company revolutionizing import and export processes. Their software and expertise streamline operations for businesses, enhancing efficiency and simplifying logistics",
+    description: "Collaborated with Cegeka, a leading European IT firm, to develop a dynamic website. Cegeka excels in providing innovative IT solutions, including consulting, software development, and cutting-edge cloud services across diverse industries.",
     actions: [
       {
-        text: "Stratech Website",
+        text: "Cegeka Website",
         icon: React.createElement(BiAtom, { size: 20 }),
-        url: "https://www.stratech.nl",
+        url: "https://www.cegeka.com/",
       },
     ],
   },
@@ -255,6 +195,67 @@ const cards = [
     ],
   },
 
+  // stratech
+  {
+    media: React.createElement(MediaImage, {
+      image: React.createElement(Image, {
+        alt: "Placeholder",
+        fill: true,
+        src: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1704285366/Screenshot_2024-01-03_at_14.35.43_kzwurl.png"
+      }),
+      "image-border-radius": "20px",
+      "object-fit": "cover",
+      "padding-bottom-desktop": "50%",
+      "padding-bottom-mobile": "50%",
+      "padding-bottom-tablet": "50%",
+    }),
+    labels: [
+      {
+        text: "lit-element",
+        color: "white",
+        background: "#283198",
+      },
+      {
+        text: "typescript",
+        color: "white",
+        background: "#0D65C0",
+      },
+      {
+        text: "hubspot",
+        color: "white",
+        background: "#FF5C36",
+      },
+      {
+        text: "scss",
+        color: "white",
+        background: "#B4497E",
+      },
+      {
+        text: "html",
+        color: "white",
+        background: "#E96328",
+      },
+      {
+        text: "bootstrap",
+        color: "white",
+        background: "#8311F2",
+      },
+    ],
+    title: React.createElement(AnimatedText, {
+      color: "black",
+      text: "Stratech",
+      variant: "h3",
+    }),
+    description: "Collaborated on the website development for Stratech, a company revolutionizing import and export processes. Their software and expertise streamline operations for businesses, enhancing efficiency and simplifying logistics",
+    actions: [
+      {
+        text: "Stratech Website",
+        icon: React.createElement(BiAtom, { size: 20 }),
+        url: "https://www.stratech.nl",
+      },
+    ],
+  },
+
   // vibe interior
   {
     media: React.createElement(MediaImage, {
@@ -310,9 +311,6 @@ const cards = [
       },
       {
         text: "LightGallery",
-      },
-      {
-        text: "Formspree",
       },
     ],
 

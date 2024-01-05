@@ -2,13 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Projects.module.scss";
 import {
-  ButtonLineDrawing,
-  ButtonSlideSecond,
-  Card,
-  CustomGridRow,
-  CustomWrapper,
-  InteractivePanel,
-  Label,
+    AnimatedText,
+    ButtonLineDrawing,
+    ButtonSlideSecond,
+    Card,
+    CustomGridRow,
+    CustomWrapper,
+    InteractivePanel,
+    Label, SimpleDivider, TitleAndDescription,
 } from "@git-ovidiu/nextjs-component-library";
 import "@splidejs/react-splide/css";
 import "@splidejs/react-splide/css/skyblue";
@@ -35,6 +36,29 @@ export default function Projects() {
           full-height
         >
           <CustomGridRow vertical-alignment="center">
+
+              <TitleAndDescription
+                  text-align="center"
+                  // label={<Description color={label_color} text="Work"/>}
+                  title={
+                      <>
+                          <AnimatedText text="Projects" variant="h2" color={"white"}/>
+                          <div className={styles["simple-divider"]}>
+                          <SimpleDivider
+                              animate
+                              animation-duration="1s"
+                              border-radius="10px"
+                              color="#FA8072"
+                              height="5px"
+                              width="64px"
+                          />
+                          </div>
+                      </>
+                  }
+                  description={""}
+                  action={""}
+              />
+
             <InteractivePanel
               button={buttons.map((button, index) => (
                 <motion.div

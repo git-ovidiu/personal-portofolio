@@ -8,20 +8,20 @@ import { FaCampground } from "react-icons/fa";
 
 const buttons = [
   {
-    text: "Cegeka",
-    icon: React.createElement(FaProjectDiagram, { size: 20 })
-  },
-  {
     text: "Woodwing",
     icon: React.createElement(GiDeadWood, { size: 20 })
   },
   {
-    text: "Stratech",
-    icon: React.createElement(MdMultilineChart, { size: 20 })
+    text: "Cegeka",
+    icon: React.createElement(FaProjectDiagram, { size: 20 })
   },
   {
     text: "OGZ",
     icon: React.createElement(FaCampground, { size: 20 })
+  },
+  {
+    text: "Stratech",
+    icon: React.createElement(MdMultilineChart, { size: 20 })
   },
   {
     text: "Vibe Interior",
