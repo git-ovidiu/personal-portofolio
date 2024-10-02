@@ -6,6 +6,40 @@ import { FaFreeCodeCamp } from "react-icons/fa";
 
 
 const EducationCards = [
+	//junior network
+	{
+		image: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1727800827/New_Project_1.png",
+
+		labels: [
+			React.createElement(Label, {
+				"background-color": "#E56028",
+				color: "white",
+				text: "aici sa pun"
+			}),
+			React.createElement(Label, {
+				"background-color": "#E56028",
+				color: "white",
+				text: "label-uri"
+			}),
+		],
+
+		title: "currently learning for ccna",
+		description: "sa pun informatii de umplturura aici, dar nu prea multe",
+
+		button: [
+			React.createElement(ButtonLineDrawing, {
+				"icon": React.createElement(CgLaptop, {
+					size: 20}),
+				"icon-position": "right",
+				"line-effect": "line-below",
+				"link-url": "https://codecool.com/en/",
+				"open-in-new-tab": true,
+				"padding": "xs",
+				"text": "aici pot sa pun ceva poiect de packet tracer",
+			})
+		]
+	},
+
 	// CodeCool
 	{
 		image: "https://res.cloudinary.com/dfddk8jjr/image/upload/v1697128134/CV%20PICS/education/22045681851_pwxxzd.png",
@@ -137,7 +171,6 @@ const EducationCards = [
 			})
 		]
 	},
-
 
 	// Brasov
 	{

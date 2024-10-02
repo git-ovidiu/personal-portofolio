@@ -10,24 +10,24 @@ const content = {
   iconAndTexts: [
     {
       href: "https://www.linkedin.com/in/bunghez-ovidiu-eduard/",
-      icon: React.createElement(AiFillLinkedin, { size: 20, color: `black` }),
+      icon: React.createElement(AiFillLinkedin, { size: 20, color: `white` }),
       text: "LinkedIn",
     },
     {
       href: "https://github.com/git-ovidiu",
-      icon: React.createElement(FaGithub, { size: 20, color: `black` }),
+      icon: React.createElement(FaGithub, { size: 20, color: `white` }),
       text: "Github",
     },
     {
       href: "mailto:ovidiueduard@gmail.com",
-      icon: React.createElement(SiGmail, { size: 20, color: `black` }),
+      icon: React.createElement(SiGmail, { size: 20, color: `white` }),
       text: "Mail",
     },
     {
       href: "tel:+40733950116",
       icon: React.createElement(BsTelephonePlusFill, {
         size: 20,
-        color: `black`,
+        color: `white`,
       }),
       text: "0733950116",
     },

@@ -107,7 +107,7 @@ const articles = [
 				"loop": false,
 				"animation-duration": "1s",
 				"border-radius": "10px",
-				"color": "#001F3F",
+				"color": "#ffffff",
 				"height": "5px",
 				"width": "100%",
 			})

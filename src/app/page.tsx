@@ -15,10 +15,12 @@ import {
   CustomGridRow,
   CustomGridColumn,
   AnimatedText,
-  Description, TitleAndDescription,
+  Description, TitleAndDescription, SimpleDivider,
 } from "@git-ovidiu/nextjs-component-library";
 import styles from "./Homepage.module.scss";
-import {duration_fast, label_color} from "main/components/Settings/FramerMotion"
+import {duration_fast, accent_color} from "main/components/Settings/FramerMotion"
+import Work_Update from "main/components/Work/work-update"
+import React from "react"
 
 
 export default function Homepage() {
@@ -38,17 +40,17 @@ export default function Homepage() {
 
       return (
           <motion.section className={styles["o-homepage"]}
-              initial={{opacity: 0, y: 100}}
-              animate={{opacity: 1, y: 0}}
-              transition={{duration: duration_fast}}
+                          initial={{opacity: 0, y: 100}}
+                          animate={{opacity: 1, y: 0}}
+                          transition={{duration: duration_fast}}
           >
             <motion.div className={styles["about-container"]}
-                initial={{opacity: 0, y: 100}}
-                animate={{opacity: 1, y: 0}}
-                transition={{duration: 0.5}}
+                        initial={{opacity: 0, y: 100}}
+                        animate={{opacity: 1, y: 0}}
+                        transition={{duration: 0.5}}
             >
               <div id="about" className={styles["about"]}>
-                <Avatar />
+                <Avatar/>
 
                 <Navbar
                     link={
@@ -99,28 +101,34 @@ export default function Homepage() {
                         style={{zIndex: 123}}
                     >
                       <motion.div
-                          initial={{ opacity: 0, y: 50 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: duration_fast }}
+                          initial={{opacity: 0, y: 50}}
+                          animate={{opacity: 1, y: 0}}
+                          transition={{duration: duration_fast}}
                           className={styles["text-content-container"]}
                       >
                         <div className={styles["first-shape"]}>
-                            <Image draggable={false} src={"https://res.cloudinary.com/dfddk8jjr/image/upload/v1704321746/CV%20PICS/sbqqkhr64gxosjcopvya.svg"} alt={"Placeholder"} layout={"fill"}/>
+                          <Image draggable={false}
+                                 src={"https://res.cloudinary.com/dfddk8jjr/image/upload/v1704321746/CV%20PICS/sbqqkhr64gxosjcopvya.svg"}
+                                 alt={"Placeholder"} layout={"fill"}/>
                         </div>
                         <TitleAndDescription
                             text-align="center"
-                            label={<Description color={label_color} text="About me"/>}
+                            label={<Description color={accent_color} text="About me"/>}
                             title={
-                            <>
-                              <AnimatedText text="Welcome to my portfolio!" variant="h2"/>
-                              <AnimatedText text="I'm Ovidiu, a dedicated frontend developer specializing in web design and web development." variant="h2"/>
-                            </>
+                              <>
+                                <AnimatedText text="Welcome to my portfolio!" variant="h2"/>
+                                <AnimatedText
+                                    text="I'm Ovidiu, a dedicated frontend developer specializing in web design and web development."
+                                    variant="h2"/>
+                              </>
                             }
                             description={<motion.h6
                                 initial={{opacity: 0, y: 100}}
                                 animate={{opacity: 1, y: 0}}
                                 transition={{duration: duration_fast}}
-                            >{`I'm`} passionate about creating visually stunning and functional websites and I strive to craft seamless user experiences through innovative design and new frontend technologies.</motion.h6>}
+                            >{`I'm`} passionate about creating visually stunning and functional websites and I strive to
+                              craft seamless user experiences through innovative design and new frontend
+                              technologies.</motion.h6>}
                             action={""}
                         />
                       </motion.div>
@@ -146,11 +154,11 @@ export default function Homepage() {
                         lg-offset={1}
                     >
                       <motion.div
-                          initial={{ opacity: 0, y: 50 }}
-                          animate={{ opacity: 1, y: 0 }}
+                          initial={{opacity: 0, y: 50}}
+                          animate={{opacity: 1, y: 0}}
                           className={styles["m-listing-logos"]}
                       >
-                        <ListingLogos />
+                        <ListingLogos/>
                       </motion.div>
                     </CustomGridColumn>
                   </CustomGridRow>
@@ -159,18 +167,33 @@ export default function Homepage() {
             </motion.div>
 
             <div id="education" className={styles["education"]}>
-              <Education />
+              <Education/>
             </div>
+
+            <div id="work_update" className={styles["work"]}>
+              <Work_Update/>
+            </div>
+
+            <SimpleDivider
+                animate
+                loop
+                animation-duration="1s"
+                border-radius="10px"
+                color="black"
+                height="5px"
+                width="100%"
+            />
+
             <div id="work" className={styles["work"]}>
-              <Work />
+              <Work/>
             </div>
 
             <div id="projects" className={styles["projects"]}>
-              <Projects />
+              <Projects/>
             </div>
 
             <div id="contact" className={styles["contact"]}>
-              <Contact />
+              <Contact/>
             </div>
           </motion.section>
       );

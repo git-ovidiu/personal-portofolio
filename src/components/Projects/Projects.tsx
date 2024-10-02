@@ -19,9 +19,9 @@ import "@splidejs/react-splide/css/core";
 import cards from "./api/cards-api";
 import buttons from "main/components/Projects/api/buttons-api";
 import {
-  delay_mid,
-  duration_fast,
-  duration_slow,
+    delay_mid,
+    duration_fast,
+    duration_slow, accent_color,
 } from "main/components/Settings/FramerMotion";
 
 export default function Projects() {
@@ -48,7 +48,8 @@ export default function Projects() {
                               animate
                               animation-duration="1s"
                               border-radius="10px"
-                              color="#FA8072"
+                              // color="#FA8072"
+                              color={accent_color}
                               height="5px"
                               width="64px"
                           />

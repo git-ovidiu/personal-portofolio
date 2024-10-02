@@ -11,7 +11,7 @@
   --m-video-has-custom-height: 337px;
 
   --a-button-slide-second-background: #{$color-white};
-  --a-button-slide-second-background-hover: salmon;
+  --a-button-slide-second-background-hover: #{$accent-color}; // aici sa repar
   --a-button-slide-second-text-color: #{$color-black};
   --o-interactive-panel-splide-card-buttons-padding-bottom: 0px;
 

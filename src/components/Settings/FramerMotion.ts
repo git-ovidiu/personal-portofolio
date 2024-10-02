@@ -7,5 +7,5 @@ export const delay_slow= 1;
 
 
 //colors
-export const label_color = "salmon"
-export const primary_color = "black"
+export const accent_color = "salmon";
+export const primary_color = "black";

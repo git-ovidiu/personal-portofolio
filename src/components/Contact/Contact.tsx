@@ -23,7 +23,7 @@ import content from "./api/Content";
 import { RiMailSendFill } from "react-icons/ri";
 import { Outfit } from "next/font/google";
 import {BiArrowBack} from "react-icons/bi"
-import {delay, duration_fast, duration_slow, label_color} from "main/components/Settings/FramerMotion"
+import {delay, duration_fast, duration_slow, accent_color} from "main/components/Settings/FramerMotion"
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -45,7 +45,7 @@ export default function Contact() {
               background-color-theme="primary"
               border-radius="0px"
               space-bottom="0"
-              custom-background-color={"black"}
+              custom-background-color={""}
               space-top=" 0"
               full-height
           >
@@ -61,7 +61,7 @@ export default function Contact() {
               >
                 <TitleAndDescription
                     action={""}
-                    label={<Description color={label_color} text="email delivery status:" />}
+                    label={<Description color={accent_color} text="email delivery status:" />}
                     text-align="left"
                     title={
                       <span>
@@ -81,7 +81,7 @@ export default function Contact() {
                                     animate
                                     animation-duration="2s"
                                     border-radius="0"
-                                    color={label_color}
+                                    color={accent_color}
                                     height="5px"
                                     width="100%"
                                 />
@@ -94,7 +94,7 @@ export default function Contact() {
                         <br/>
                         <div className={styles["button-diapositive"]}>
                           <ButtonLineDrawing
-                              icon={<BiArrowBack size={20} color={label_color} />}
+                              icon={<BiArrowBack size={20} color={accent_color} />}
                               icon-position="left"
                               line-effect="line-below"
                               link-url="/"
@@ -121,7 +121,7 @@ export default function Contact() {
         border-radius="0px"
         space-bottom="m"
         space-top="m"
-        custom-background-color={"white"}
+        custom-background-color={"black"}
       >
         <CustomGridRow vertical-alignment="center" reverse-breakpoint={"lg"}>
           <CustomGridColumn
@@ -147,7 +147,7 @@ export default function Contact() {
                       animate
                       animation-duration="1s"
                       border-radius="30px 0 0 0"
-                      color="#FA8072"
+                      color={accent_color}
                       height="5px"
                       width="100%"
                     />
@@ -260,7 +260,7 @@ export default function Contact() {
             >
               <AnimatedText
                 text={content.title}
-                color={"black"}
+                color={"white"}
                 variant={"h2"}
               />
               <Divider
@@ -270,7 +270,7 @@ export default function Contact() {
                           animate
                           animation-duration="1s"
                           border-radius="10px"
-                          color="#FA8072"
+                          color={accent_color}
                           height="5px"
                           width="64px"
                       />
@@ -282,7 +282,7 @@ export default function Contact() {
               <div className={styles["description"]}>
                 <Description
                   text={<p>{content.description}</p>}
-                  color={"black"}
+                  color={"white"}
                 />
               </div>
               <div className={styles["contact-with-icon"]}>
@@ -290,7 +290,9 @@ export default function Contact() {
                   <div className={styles["icon-and-text"]} key={index}>
                     <a href={iconAndText.href} target="_blank">
                       {iconAndText.icon}
-                      {iconAndText.text}
+                      <span className={styles["text-custom-update"]}>
+                        {iconAndText.text}
+                      </span>
                     </a>
                   </div>
                 ))}

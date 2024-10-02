@@ -17,7 +17,7 @@ import "@splidejs/react-splide/css/sea-green";
 import "@splidejs/react-splide/css/core";
 import workCard from "./api/work-card";
 import articles from "main/components/Work/api/article"
-import {delay, duration_fast, label_color} from "main/components/Settings/FramerMotion"
+import {delay, duration_fast, accent_color} from "main/components/Settings/FramerMotion"
 
 export default function Work() {
   return (
@@ -43,21 +43,7 @@ export default function Work() {
               <TitleAndDescription
                 text-align="center"
                 // label={<Description color={label_color} text="Work"/>}
-                title={
-                  <>
-                    <AnimatedText text="Work" variant="h2" />
-                    <div className={styles["simple-divider"]}>
-                      <SimpleDivider
-                        animate
-                        animation-duration="1s"
-                        border-radius="10px"
-                        color="#FA8072"
-                        height="5px"
-                        width="64px"
-                      />
-                    </div>
-                  </>
-                }
+                title={""}
                 description={""}
                 action={""}
               />

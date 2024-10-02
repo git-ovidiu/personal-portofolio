@@ -19,7 +19,7 @@ import {
   delay_mid,
   duration_fast,
   duration_slow,
-  label_color,
+  accent_color,
 } from "main/components/Settings/FramerMotion";
 
 export default function Education() {
@@ -49,16 +49,16 @@ export default function Education() {
                         <Description
                           color={"white"}
                           text={
-                            "Through hard work and determination, I successfully completed a frontend course at Codecool and combined with the invaluable insights gained from obtaining a Master's degree in Integrated Information Systems for Business from the University Transylvania of Brasov and a Bachelor's degree in Applied Modern Languages from the University of Bucharest, I bring forth a comprehensive skill set that spans across multiple dimensions in this domain."
+                            "sa schimb informatiile de aici si sa pun ca ca stiu frontend + am inceput sa invat chestii legate de networking."
                           }
                         />
                       </>
                     }
-                    label={<Description color={label_color} text="Education" />}
+                    label={<Description color={accent_color} text="Education" />}
                     text-align="center"
                     title={
                       <AnimatedText
-                        text="Diverse Background in Web Development, E-commerce, and Economics"
+                        text="titlu reprezentativ sa includa doar networking cred"
                         variant="h4"
                         color={"white"}
                       />
